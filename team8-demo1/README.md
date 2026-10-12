@@ -98,8 +98,7 @@ This prototype serves only on the local computer. It is not a production constru
 - A recording or working live demo that shows actual behavior.
 - This repository with code, data, generation script, prompts and dependencies.
 - A note of no more than 500 words reporting real observations, including failures.
-- Each student's truthful individual contribution statement.
-- Test results explicitly distinguish connected AI from rule practice. No fabricated numbers.
+- Individual contribution statement.
 
 Developed with AI assistance. The team should review the code, sources and generated data, run the connected model, and report its own observations before submission.
 
