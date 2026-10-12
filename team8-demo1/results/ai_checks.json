@@ -1,0 +1,374 @@
+[
+  {
+    "case_id": "D01",
+    "at": "2026-10-11T20:29:02.277018+00:00",
+    "input": {
+      "title": "Camera specification",
+      "location": "",
+      "trade": "Electrical",
+      "question": "Please clarify the camera type for the added camera locations.",
+      "needed_by": "",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "E-202, E-203, E-204"
+    },
+    "output": {
+      "summary": "The RFI is missing specific location details and a required response date, both of which should be provided by the human reviewer.",
+      "findings": [
+        {
+          "message": "The location field is empty.",
+          "follow_up": "Specify the exact building area, room, or gridlines for the added camera locations.",
+          "evidence": "Not supplied in the RFI",
+          "field": "location"
+        },
+        {
+          "message": "The needed_by field is empty.",
+          "follow_up": "Provide a specific response-needed date to help the GC prioritize.",
+          "evidence": "Not supplied in the RFI",
+          "field": "needed_by"
+        }
+      ],
+      "references": [
+        {
+          "reference": "E-202",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 5, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+          "page": 1
+        },
+        {
+          "reference": "E-203",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 5, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+          "page": 1
+        },
+        {
+          "reference": "E-204",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 5, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+          "page": 1
+        }
+      ],
+      "engine": "ai",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "requested_model": "gemini-3.5-flash-lite",
+      "prompt_sha256": "6230a6f34abdc94bc6746ffdac4b0ac5a461f4ff8beacb0e7c103b970a269849",
+      "response_id": "jfHLavqqE7CsjrEP7ti0WA",
+      "usage": {
+        "promptTokenCount": 552,
+        "candidatesTokenCount": 133,
+        "totalTokenCount": 685,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 552
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "expected_missing_fields": [
+      "location",
+      "needed_by"
+    ]
+  },
+  {
+    "case_id": "D02",
+    "at": "2026-10-11T20:30:21.120725+00:00",
+    "input": {
+      "title": "Countertop information",
+      "location": "Hallway 101; Rooms 105 and 107",
+      "trade": "Casework",
+      "question": "Please clarify the conflicting countertop material notes.",
+      "needed_by": "2026-10-23",
+      "impact": "Work planning is waiting for clarification.",
+      "references": ""
+    },
+    "output": {
+      "summary": "The RFI specifies location, trade, needed-by date, and impact, but the question lacks specific details about the conflict, and document references are empty.",
+      "findings": [
+        {
+          "message": "The question mentions conflicting countertop material notes without specifying where the conflict occurs or which materials are in conflict.",
+          "follow_up": "Can you specify which drawing notes or specifications are conflicting regarding the countertop materials?",
+          "evidence": "Please clarify the conflicting countertop material notes.",
+          "field": "question"
+        },
+        {
+          "message": "No document references or drawing numbers are provided to point the GC to the conflicting notes.",
+          "follow_up": "Can you add the specific sheet numbers, detail identifiers, or specification sections that contain the conflicting notes?",
+          "evidence": "Not supplied in the RFI",
+          "field": "references"
+        }
+      ],
+      "references": [],
+      "engine": "ai",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "requested_model": "gemini-3.5-flash-lite",
+      "prompt_sha256": "6230a6f34abdc94bc6746ffdac4b0ac5a461f4ff8beacb0e7c103b970a269849",
+      "response_id": "2_HLarb8PKywsOIPrsXSqQQ",
+      "usage": {
+        "promptTokenCount": 563,
+        "candidatesTokenCount": 167,
+        "totalTokenCount": 730,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 563
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "expected_missing_fields": [
+      "references"
+    ]
+  },
+  {
+    "case_id": "D03",
+    "at": "2026-10-11T20:30:30.440536+00:00",
+    "input": {
+      "title": "Plumbing scope",
+      "location": "Toilet rooms 140 and 143",
+      "trade": "Plumbing",
+      "question": "Please clarify the conflicting existing and new plumbing scope.",
+      "needed_by": "2026-10-23",
+      "impact": "",
+      "references": "P-100A, P-201, P-202"
+    },
+    "output": {
+      "summary": "The RFI provides location, trade, question, needed_by date, and references, but leaves the impact field blank. Human verification is needed to determine schedule or cost impacts.",
+      "findings": [
+        {
+          "message": "The impact field is empty. Subcontractor should state whether there is any cost or schedule impact, or explicitly note that it is unknown.",
+          "follow_up": "Is there any schedule or cost impact resulting from this plumbing scope conflict?",
+          "evidence": "Not supplied in the RFI",
+          "field": "impact"
+        }
+      ],
+      "references": [
+        {
+          "reference": "P-100A",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 5, PDF page 3",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+          "page": 3
+        },
+        {
+          "reference": "P-201",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 5, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+          "page": 1
+        },
+        {
+          "reference": "P-202",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 5, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+          "page": 1
+        }
+      ],
+      "engine": "ai",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "requested_model": "gemini-3.5-flash-lite",
+      "prompt_sha256": "6230a6f34abdc94bc6746ffdac4b0ac5a461f4ff8beacb0e7c103b970a269849",
+      "response_id": "5fHLavijIavW-8YPu-6c-Qc",
+      "usage": {
+        "promptTokenCount": 570,
+        "candidatesTokenCount": 113,
+        "totalTokenCount": 683,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 570
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "expected_missing_fields": [
+      "impact"
+    ]
+  },
+  {
+    "case_id": "D04",
+    "at": "2026-10-11T20:30:39.054863+00:00",
+    "input": {
+      "title": "PV conduit information",
+      "location": "PV equipment feeder",
+      "trade": "Electrical",
+      "question": "Please clarify the conduit size where the electrical and PV sheets disagree.",
+      "needed_by": "",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "E-600, PV-600"
+    },
+    "output": {
+      "summary": "The RFI is missing the required response needed date.",
+      "findings": [
+        {
+          "message": "The response-needed date is missing.",
+          "follow_up": "What is the date by which a response is needed?",
+          "evidence": "Not supplied in the RFI",
+          "field": "needed_by"
+        }
+      ],
+      "references": [
+        {
+          "reference": "E-600",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 6, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+          "page": 1
+        },
+        {
+          "reference": "PV-600",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 6, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+          "page": 1
+        }
+      ],
+      "engine": "ai",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "requested_model": "gemini-3.5-flash-lite",
+      "prompt_sha256": "6230a6f34abdc94bc6746ffdac4b0ac5a461f4ff8beacb0e7c103b970a269849",
+      "response_id": "7vHLap6nD9uA_PUP-tvEuQE",
+      "usage": {
+        "promptTokenCount": 553,
+        "candidatesTokenCount": 67,
+        "totalTokenCount": 620,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 553
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "expected_missing_fields": [
+      "needed_by"
+    ]
+  },
+  {
+    "case_id": "D05",
+    "at": "2026-10-11T20:30:48.009597+00:00",
+    "input": {
+      "title": "Metering detail",
+      "location": "Circuit metering installation",
+      "trade": "",
+      "question": "Please provide the metering wiring detail and equipment specification.",
+      "needed_by": "2026-10-23",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "E-702"
+    },
+    "output": {
+      "summary": "The RFI review identified a missing trade field and noted that the reference sheet E-702 appears in the partial drawing index.",
+      "findings": [
+        {
+          "message": "The affected trade is not specified.",
+          "follow_up": "Please specify the affected trade (e.g., Electrical).",
+          "evidence": "Not supplied in the RFI",
+          "field": "trade"
+        }
+      ],
+      "references": [
+        {
+          "reference": "E-702",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 6, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+          "page": 1
+        }
+      ],
+      "engine": "ai",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "requested_model": "gemini-3.5-flash-lite",
+      "prompt_sha256": "6230a6f34abdc94bc6746ffdac4b0ac5a461f4ff8beacb0e7c103b970a269849",
+      "response_id": "9_HLau7cEeLb-8YP87GMiQQ",
+      "usage": {
+        "promptTokenCount": 552,
+        "candidatesTokenCount": 82,
+        "totalTokenCount": 634,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 552
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "expected_missing_fields": [
+      "trade"
+    ]
+  },
+  {
+    "case_id": "D06",
+    "at": "2026-10-11T20:30:56.450837+00:00",
+    "input": {
+      "title": "Item beside sink",
+      "location": "Care Room 101E",
+      "trade": "Casework",
+      "question": "Please clarify whether the item beside the sink is casework or furniture.",
+      "needed_by": "2026-10-23",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "A-210"
+    },
+    "output": {
+      "summary": "The RFI provides location, trade, question, date, impact, and reference, but the question could be more specific regarding the exact item or drawing detail in question.",
+      "findings": [
+        {
+          "message": "The question asks about an item beside the sink without specifying a detail or tag number.",
+          "follow_up": "Can you specify which item or detail number beside the sink is in question?",
+          "evidence": "Please clarify whether the item beside the sink is casework or furniture.",
+          "field": "question"
+        }
+      ],
+      "references": [
+        {
+          "reference": "A-210",
+          "status": "observed_in_partial_index",
+          "message": "Identifier observed in the inspected addenda. Content, detail and current revision still need human verification.",
+          "source_label": "Dett Addendum 5, PDF page 1",
+          "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+          "page": 1
+        }
+      ],
+      "engine": "ai",
+      "provider": "gemini",
+      "model": "gemini-3.5-flash-lite",
+      "requested_model": "gemini-3.5-flash-lite",
+      "prompt_sha256": "6230a6f34abdc94bc6746ffdac4b0ac5a461f4ff8beacb0e7c103b970a269849",
+      "response_id": "__HLauePIreR_uMPm_GWuA0",
+      "usage": {
+        "promptTokenCount": 563,
+        "candidatesTokenCount": 107,
+        "totalTokenCount": 670,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 563
+          }
+        ],
+        "serviceTier": "standard"
+      }
+    },
+    "expected_missing_fields": []
+  }
+]
