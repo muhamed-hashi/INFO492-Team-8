@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Team 8 · AI-Checked RFIs</title>
+<meta name="description" content="INFO 492 C Team 8 — Thesis and Coordination Posture Design: an AI review step for subcontractor RFIs.">
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --ink: #1d1f1e;
+    --muted: #5b625f;
+    --line: #e2e0d8;
+    --accent: #d9661f;       /* safety orange */
+    --accent-soft: #fbe9dd;
+    --steel: #2f4858;
+    --steel-soft: #e6edf1;
+    --radius: 12px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #141716;
+      --surface: #1c201f;
+      --ink: #ecebe6;
+      --muted: #a3aaa6;
+      --line: #2e3432;
+      --accent: #f08a4b;
+      --accent-soft: #3a261a;
+      --steel: #9fc0d3;
+      --steel-soft: #1f2b32;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+
+  /* Nav */
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in srgb, var(--bg) 90%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav .wrap { display: flex; gap: 18px; align-items: center; height: 56px; overflow-x: auto; white-space: nowrap; }
+  nav .brand { font-weight: 700; color: var(--ink); text-decoration: none; margin-right: auto; }
+  nav a.link { color: var(--muted); text-decoration: none; font-size: 15px; }
+  nav a.link:hover { color: var(--ink); }
+
+  /* Hero */
+  header.hero { padding: 72px 0 48px; }
+  .eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 12px; }
+  h1 { font-size: clamp(32px, 5.5vw, 50px); line-height: 1.1; margin: 0 0 20px; letter-spacing: -0.02em; }
+  h1 span { color: var(--accent); }
+  .lede { font-size: 20px; color: var(--muted); max-width: 680px; margin: 0; }
+  .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-top: 36px; }
+  .stat { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px 20px; }
+  .stat b { display: block; font-size: 30px; line-height: 1.1; color: var(--accent); }
+  .stat small { color: var(--muted); font-size: 14px; }
+
+  /* Sections */
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  h3 { font-size: 19px; margin: 28px 0 8px; }
+  .sub { color: var(--muted); margin: 0 0 24px; }
+  p { margin: 0 0 16px; }
+
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; }
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  @media (max-width: 420px) { .grid-2 { grid-template-columns: 1fr; } }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+
+  .thesis {
+    background: var(--accent-soft);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    padding: 20px 24px; font-size: 19px; margin: 0 0 24px;
+  }
+
+  /* Team */
+  .member h3 { margin: 0 0 4px; }
+  .member p { margin: 0; color: var(--muted); font-size: 15px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase;
+         background: var(--steel-soft); color: var(--steel); padding: 3px 9px; border-radius: 999px; margin-bottom: 10px; }
+
+  /* Workflow */
+  .flow { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; counter-reset: step; }
+  .step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; position: relative; }
+  .step::before { counter-increment: step; content: counter(step);
+    display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--steel); color: var(--bg); font-weight: 700; font-size: 14px; margin-bottom: 10px; }
+  .step.ai { border-color: var(--accent); background: var(--accent-soft); }
+  .step.ai::before { background: var(--accent); }
+  .step h4 { margin: 0 0 6px; font-size: 16px; }
+  .step p { margin: 0; font-size: 14.5px; color: var(--muted); }
+  .who { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+
+  ul.clean { padding-left: 20px; margin: 0; }
+  ul.clean li { margin-bottom: 8px; }
+  .checks { list-style: none; padding: 0; margin: 0; }
+  .checks li { padding-left: 28px; position: relative; margin-bottom: 10px; }
+  .checks li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .nos li::before { content: "✕"; color: var(--muted); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 15.5px; }
+  th, td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); font-weight: 600; }
+  .table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); }
+
+  ol.rules { padding-left: 22px; margin: 0; }
+  ol.rules li { margin-bottom: 10px; }
+
+  .note { font-size: 15px; color: var(--muted); }
+  .refs li { margin-bottom: 14px; }
+
+  .btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; padding: 10px 18px; border-radius: 8px; margin: 4px 10px 4px 0; }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .badge { display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; margin-left: 6px; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Team 8</a>
+    <a class="link" href="#team">Team</a>
+    <a class="link" href="#thesis">Thesis</a>
+    <a class="link" href="#workflow">Workflow</a>
+    <a class="link" href="#experiments">Experiments</a>
+    <a class="link" href="#demo1">Demo 1</a>
+    <a class="link" href="#dataset">Dataset</a>
+    <a class="link" href="#limitations">Limitations</a>
+    <a class="link" href="#references">References</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">INFO 492 C · Construction Informatics · Autumn 2026 · Subcontractor team</p>
+    <h1>Better RFIs before they reach the GC: <span>an AI review step</span> for subcontractors</h1>
+    <p class="lede">Thesis + Coordination Posture Design. We propose adding an AI check to an existing RFI form that catches missing details, unclear questions, and document references before the RFI is sent to the general contractor.</p>
+    <div class="stat-row">
+      <div class="stat"><b>≥ 25%</b><small>Target reduction in median GC first-review time</small></div>
+      <div class="stat"><b>0</b><small>Increase in information errors allowed</small></div>
+      <div class="stat"><b>2</b><small>Finished public construction projects as data sources</small></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="team">
+  <div class="wrap">
+    <h2>Team 8</h2>
+    <p class="sub">Who is working on what.</p>
+    <div class="grid-3">
+      <div class="card member">
+        <span class="tag">Data</span>
+        <h3>Vincent Ma</h3>
+        <p>Dataset, experiment approaches</p>
+      </div>
+      <div class="card member">
+        <span class="tag">Coordination</span>
+        <h3>Muhamed Hashi</h3>
+        <p>Website app, GC/subcontractor coordination</p>
+      </div>
+      <div class="card member">
+        <span class="tag">Research</span>
+        <h3>Jinkun He</h3>
+        <p>Research summary, thesis draft</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="thesis">
+  <div class="wrap">
+    <h2>Thesis</h2>
+    <p class="sub">What we believe, and how we'll know if we're right.</p>
+
+    <div class="thesis">
+      Adding an AI review step to an existing subcontractor RFI form can reduce <strong>median GC first-review time by at least 25%</strong> compared with the same form completed without AI assistance, <strong>without increasing information errors</strong>.
+    </div>
+    <p class="note">The 25% reduction is our proposed target. We will test this claim through our demos during the quarter.</p>
+
+    <h3>The problem</h3>
+    <p>Unclear questions and missing context can make RFIs harder to understand and review. In <em>RFIs: A contractor's guide to requests for information</em> (2025), Medina and Tell recommend making requests specific and providing enough background information.</p>
+    <p>That context may include:</p>
+    <div class="grid-2" style="margin-bottom:16px">
+      <div class="card">
+        <ul class="checks">
+          <li>Where the issue occurs</li>
+          <li>Which work it affects</li>
+        </ul>
+      </div>
+      <div class="card">
+        <ul class="checks">
+          <li>Which people it affects</li>
+          <li><strong>When the answer is needed</strong> (the deadline)</li>
+        </ul>
+      </div>
+    </div>
+    <p>These details help the recipient understand the request. If important information is missing, the GC may need to ask the subcontractor for more details before moving forward, which takes extra time and effort. Checking the information before submission could reduce that extra communication and review work.</p>
+    <p>However, this guidance does not prove that AI will save time. Our proposed experiments will test whether AI assistance actually improves this process.</p>
+
+    <h3>Building on what exists</h3>
+    <p>Procore already offers an AI feature that helps users draft RFIs and find related project information. Building on this approach, we propose testing an AI check <em>before submission</em>.</p>
+  </div>
+</section>
+
+<section id="workflow">
+  <div class="wrap">
+    <h2>Coordination posture</h2>
+    <p class="sub">How the AI fits between the subcontractor and the GC, from the subcontractor's side.</p>
+
+    <div class="flow">
+      <div class="step">
+        <div class="who">Subcontractor</div>
+        <h4>Draft the RFI</h4>
+        <p>Fill out the existing RFI form as usual.</p>
+      </div>
+      <div class="step ai">
+        <div class="who">AI agent</div>
+        <h4>Review the draft</h4>
+        <p>Flag missing context, unclear questions, and document references that need checking.</p>
+      </div>
+      <div class="step ai">
+        <div class="who">AI agent</div>
+        <h4>Ask for what's missing</h4>
+        <p>If something is unclear, automatically ask the subcontractor for the missing information. Every suggested reference includes its source.</p>
+      </div>
+      <div class="step">
+        <div class="who">Subcontractor</div>
+        <h4>Review &amp; approve</h4>
+        <p>Check the suggestions, verify sources, and approve the final request.</p>
+      </div>
+      <div class="step">
+        <div class="who">General contractor</div>
+        <h4>First review</h4>
+        <p>The GC receives a complete RFI and decides if it can move forward.</p>
+      </div>
+    </div>
+
+    <div class="grid-2" style="margin-top:24px">
+      <div class="card">
+        <h3 style="margin-top:0">What the agent does</h3>
+        <ul class="checks">
+          <li>Checks for missing details</li>
+          <li>Flags unclear questions</li>
+          <li>Checks document references, with a source for each so the user can verify it</li>
+          <li>Asks the subcontractor to fill in gaps before the RFI goes to the GC</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">What the agent will not do</h3>
+        <ul class="checks nos">
+          <li>Approve design changes</li>
+          <li>Authorize construction work</li>
+          <li>Send an RFI without the subcontractor's approval</li>
+        </ul>
+        <p class="note" style="margin:12px 0 0">Follows the limits on agent authority discussed in class. The human stays in charge of the final request.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experiments">
+  <div class="wrap">
+    <h2>Experiments &amp; demos</h2>
+    <p class="sub">How we'll test the thesis this quarter.</p>
+
+    <h3 style="margin-top:0">Proposed demos</h3>
+    <div class="grid-2" style="margin-bottom:24px">
+      <div class="card"><strong>1. Finding missing details</strong><span class="badge">Built</span><br><span class="note">Can the agent spot what the RFI leaves out? <a href="#demo1">See the demo →</a></span></div>
+      <div class="card"><strong>2. Checking references</strong><br><span class="note">Are drawing and spec references correct and sourced?</span></div>
+      <div class="card"><strong>3. Improving drafts</strong><br><span class="note">Does the agent make questions clearer and more specific?</span></div>
+      <div class="card"><strong>4. Sending the final RFI to the GC</strong><br><span class="note">The approved RFI moves to the GC for first review.</span></div>
+    </div>
+
+    <h3>Method</h3>
+    <p>We will compare the <strong>same form with and without AI</strong>, using examples of similar difficulty.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>What we measure</th><th>How</th></tr></thead>
+        <tbody>
+          <tr><td><strong>GC first-review time</strong> (main measure)</td><td>Time the GC from opening an RFI to deciding whether it can move forward or needs more information. Compare median times.</td></tr>
+          <tr><td>Information errors</td><td>Count errors in each RFI.</td></tr>
+          <tr><td>Requests for clarification</td><td>Count how often the GC has to ask for more information.</td></tr>
+          <tr><td>Subcontractor prep time</td><td>Record how long subcontractors spend preparing each RFI.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Why first-review time</h3>
+    <p>Chin (2009), <em>Work-in-Process and Construction Project Information Flows</em>, found that having more RFIs waiting for review was linked to delays. Our study focuses on how long the GC spends on the first review. <strong>It does not measure</strong> the total time needed to resolve an RFI or complete the project.</p>
+  </div>
+</section>
+
+<section id="dataset">
+  <div class="wrap">
+    <h2>Dataset</h2>
+    <p class="sub">Public documents from two finished construction projects. Both were public, so their RFIs and answers were shared online.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <span class="tag">Main project</span>
+        <h3 style="margin-top:0">Robert Nathaniel Dett Elementary School</h3>
+        <p class="note" style="margin-bottom:10px">Chicago, IL · Finished 2024</p>
+        <p>Built a new one-story building next to an existing school and renovated the old school. Six addenda, all on one official website.</p>
+        <a href="https://pbcchicago.com/opportunities/advertisement-for-bids-contract-c1604-robert-nathaniel-dett-elementary-school-annex-and-renovations/" target="_blank" rel="noopener">Project portal →</a>
+      </div>
+      <div class="card">
+        <span class="tag">Second project</span>
+        <h3 style="margin-top:0">Pomfret Public Library</h3>
+        <p class="note" style="margin-bottom:10px">Pomfret, CT · Finished April 2026</p>
+        <p>A small library addition and renovation. 22 RFIs in its RFI log, plus more RFIs after the bid.</p>
+        <a href="https://www.pomfretct.gov/board-of-selectmen/files/addendum-4-library" target="_blank" rel="noopener">Addendum #4 →</a><br>
+        <a href="https://www.pomfretct.gov/first-selectmans-office/files/addendum-7" target="_blank" rel="noopener">Addendum #7 →</a>
+      </div>
+    </div>
+
+    <h3>Why we chose them</h3>
+    <ul class="checks">
+      <li>They are finished and the documents are free to use.</li>
+      <li>The RFIs are real questions from contractors, with real answers from the architects.</li>
+      <li>The RFIs use the same format, so they're easy to turn into a table.</li>
+      <li>Each addendum shows which drawings were changed, which we can use as the correct answer when testing our AI agent.</li>
+    </ul>
+
+    <h3>Simulated data</h3>
+    <p>These RFIs come from the bid stage, but our project is about RFIs from a subcontractor to a GC during construction. So we will rewrite some real RFIs in that format, following these rules:</p>
+    <div class="card">
+      <ol class="rules">
+        <li>Keep the same problem and drawing numbers.</li>
+        <li>Add information a subcontractor would include, like location, deadline, and impact.</li>
+        <li>Make some versions with missing or wrong information, to test whether the agent can find the problems.</li>
+        <li>Mark every rewritten RFI as <strong>"simulated"</strong> and link it to the original RFI.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="limitations">
+  <div class="wrap">
+    <h2>Limitations</h2>
+    <p class="sub">What our data can't tell us.</p>
+    <div class="card">
+      <ul class="clean">
+        <li>The RFIs are from the bid stage, not construction, so our rewritten RFIs are not fully real.</li>
+        <li>We can't get the full original drawings for free. We only have the changed drawings in the addenda.</li>
+        <li>One Pomfret addendum (#3) is missing, so some answers are incomplete.</li>
+        <li>We only have a limited number of real RFIs (exact count to be confirmed), so we will add simulated ones to get more data.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="references">
+  <div class="wrap">
+    <h2>References</h2>
+    <ul class="clean refs">
+      <li>Medina, H., &amp; Tell, J. (2025, October 3). <em>RFIs: A contractor's guide to requests for information.</em> Procore. <a href="https://www.procore.com/library/rfi-construction" target="_blank" rel="noopener">procore.com/library/rfi-construction</a></li>
+      <li>Procore. <em>Draft an RFI with Procore AI (Beta).</em> <a href="https://support.procore.com/products/online/user-guide/project-level/rfi/tutorials/draft-an-rfi-with-assist" target="_blank" rel="noopener">support.procore.com</a></li>
+      <li>Chin, C.-S. (2009). <em>Work-in-Process and Construction Project Information Flows.</em> IGLC. <a href="https://www.iglc.net/papers/details/629" target="_blank" rel="noopener">iglc.net/papers/details/629</a></li>
+      <li>Public Building Commission of Chicago. <em>Contract C1604: Robert Nathaniel Dett Elementary School Annex and Renovations.</em> <a href="https://pbcchicago.com/opportunities/advertisement-for-bids-contract-c1604-robert-nathaniel-dett-elementary-school-annex-and-renovations/" target="_blank" rel="noopener">pbcchicago.com</a></li>
+      <li>Town of Pomfret. <em>Library Addendum #4</em>. <a href="https://www.pomfretct.gov/board-of-selectmen/files/addendum-4-library" target="_blank" rel="noopener">pomfretct.gov</a></li>
+      <li>Town of Pomfret. <em>Addendum #7</em>. <a href="https://www.pomfretct.gov/first-selectmans-office/files/addendum-7" target="_blank" rel="noopener">pomfretct.gov</a></li>
+    </ul>
+  </div>
+</section>
+
+<section id="demo1">
+  <div class="wrap">
+    <h2>Demo 1: Finding missing details</h2>
+    <p class="sub">A working prototype of the AI check on the RFI form, run on simulated cases.</p>
+    <div class="card">
+      <p>The subcontractor prepares an RFI in one of three modes: <strong>without AI</strong> (control), <strong>with AI</strong> (a Gemini check flags missing context before submission), or a <strong>rule checklist</strong> (offline practice only). A separate GC reviewer then opens the saved RFI blind to the preparation mode, and the app times the first review.</p>
+      <p>The AI never invents missing dates or approves changes; the subcontractor edits the form themselves.</p>
+      <!-- TODO: replace the href below with the walkthrough video link -->
+      <a class="btn" href="https://REPLACE-WITH-WALKTHROUGH-VIDEO-LINK" target="_blank" rel="noopener">Watch the walkthrough →</a>
+      <a class="btn ghost" href="https://github.com/muhamed-hashi/INFO492-Team-8/tree/main/team8-demo1" target="_blank" rel="noopener">Source code</a>
+      <p class="note" style="margin-top:12px">The prototype runs locally (<code>python3 app.py</code>), so it can't be hosted on this page. See the source code README to run it yourself.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Team 8 · Vincent Ma, Muhamed Hashi, Jinkun He · INFO 492 C Construction Informatics, University of Washington, Autumn 2026
+  </div>
+</footer>
+
+</body>
+</html>

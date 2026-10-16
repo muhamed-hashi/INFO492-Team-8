@@ -1,0 +1,7 @@
+# Local secrets and runtime data - never commit
+config.local.json
+.env
+runtime/
+__pycache__/
+*.pyc
+.DS_Store
