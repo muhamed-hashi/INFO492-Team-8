@@ -1,0 +1,97 @@
+[
+  {
+    "case_id": "D01",
+    "expected_missing_fields": [
+      "location",
+      "needed_by"
+    ],
+    "historical_response_summary": "Referenced electrical sheets were revised.",
+    "source": {
+      "id": "Dett-A5-RFI2",
+      "addendum": 5,
+      "rfi": 2,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "scoring_note": "Pilot annotation only. Review against the full source and chosen field rubric before an experiment. A blank field can be satisfied elsewhere in the text."
+  },
+  {
+    "case_id": "D02",
+    "expected_missing_fields": [
+      "references"
+    ],
+    "historical_response_summary": "A-210 and A-221 were revised.",
+    "source": {
+      "id": "Dett-A5-RFI3",
+      "addendum": 5,
+      "rfi": 3,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "scoring_note": "Pilot annotation only. Review against the full source and chosen field rubric before an experiment. A blank field can be satisfied elsewhere in the text."
+  },
+  {
+    "case_id": "D03",
+    "expected_missing_fields": [
+      "impact"
+    ],
+    "historical_response_summary": "P-201 and P-202 were revised.",
+    "source": {
+      "id": "Dett-A5-RFI7",
+      "addendum": 5,
+      "rfi": 7,
+      "pdf_page": 3,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "scoring_note": "Pilot annotation only. Review against the full source and chosen field rubric before an experiment. A blank field can be satisfied elsewhere in the text."
+  },
+  {
+    "case_id": "D04",
+    "expected_missing_fields": [
+      "needed_by"
+    ],
+    "historical_response_summary": "The electrical and PV sheets were updated.",
+    "source": {
+      "id": "Dett-A6-RFI2",
+      "addendum": 6,
+      "rfi": 2,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "scoring_note": "Pilot annotation only. Review against the full source and chosen field rubric before an experiment. A blank field can be satisfied elsewhere in the text."
+  },
+  {
+    "case_id": "D05",
+    "expected_missing_fields": [
+      "trade"
+    ],
+    "historical_response_summary": "Scope was clarified on E-702.",
+    "source": {
+      "id": "Dett-A6-RFI3",
+      "addendum": 6,
+      "rfi": 3,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "scoring_note": "Pilot annotation only. Review against the full source and chosen field rubric before an experiment. A blank field can be satisfied elsewhere in the text."
+  },
+  {
+    "case_id": "D06",
+    "expected_missing_fields": [],
+    "historical_response_summary": "The response identifies owner furniture.",
+    "source": {
+      "id": "Dett-A6-RFI4",
+      "addendum": 6,
+      "rfi": 4,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "scoring_note": "Pilot annotation only. Review against the full source and chosen field rubric before an experiment. A blank field can be satisfied elsewhere in the text."
+  }
+]

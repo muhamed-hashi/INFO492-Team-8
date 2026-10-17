@@ -1,0 +1,243 @@
+[
+  {
+    "case_id": "D01",
+    "seed": "S05",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Lockers are 12\" wide per CPS specification. Locker size and quantity have been updated in Addendum No. 2. Refer to Specification Section 10 51 13 for locker base, issued in this addendum.",
+    "source": "Dett-A3-RFI6",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D02",
+    "seed": "S09",
+    "variant": "blank_deadline",
+    "expected_flags": [
+      "needed_by"
+    ],
+    "historical_response": "Keynote AE.18 on sheets A-401 and A-402 has been revised to refer to detail 2A/A-446 and are included in this addendum.",
+    "source": "Dett-A3-RFI43",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D03",
+    "seed": "S08",
+    "variant": "placeholder_deadline",
+    "expected_flags": [
+      "needed_by"
+    ],
+    "historical_response": "Drawings E600 and PV600 has been updated and are included in this addendum.",
+    "source": "Dett-A6-RFI2",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D04",
+    "seed": "S09",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Keynote AE.18 on sheets A-401 and A-402 has been revised to refer to detail 2A/A-446 and are included in this addendum.",
+    "source": "Dett-A3-RFI43",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D05",
+    "seed": "S08",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Drawings E600 and PV600 has been updated and are included in this addendum.",
+    "source": "Dett-A6-RFI2",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D06",
+    "seed": "S11",
+    "variant": "clean_short_question",
+    "expected_flags": [],
+    "historical_response": "RT-11 is static dissipative flooring per the Contract Documents. RT-1 is resilient flooring per Addendum No. 2. Please refer to Finish Legend A503 revised and issued in Addendum No. 2.",
+    "source": "Dett-A3-RFI38",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D07",
+    "seed": "S11",
+    "variant": "placeholder_impact",
+    "expected_flags": [
+      "impact"
+    ],
+    "historical_response": "RT-11 is static dissipative flooring per the Contract Documents. RT-1 is resilient flooring per Addendum No. 2. Please refer to Finish Legend A503 revised and issued in Addendum No. 2.",
+    "source": "Dett-A3-RFI38",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D08",
+    "seed": "S12",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Drawing A-502 has been revised and is included in this addendum.",
+    "source": "Dett-A5-RFI10",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D09",
+    "seed": "S07",
+    "variant": "blank_impact",
+    "expected_flags": [
+      "impact"
+    ],
+    "historical_response": "Feeder sizes have been adjusted to the correct sizes on revised Drawing E-600 included in this addendum.",
+    "source": "Dett-A3-RFI24",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D10",
+    "seed": "S07",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Feeder sizes have been adjusted to the correct sizes on revised Drawing E-600 included in this addendum.",
+    "source": "Dett-A3-RFI24",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D11",
+    "seed": "S06",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Drawings A-210 and A-221 have been revised and are included in this addendum.",
+    "source": "Dett-A5-RFI3",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D12",
+    "seed": "S04",
+    "variant": "bad_reference",
+    "expected_flags": [
+      "references"
+    ],
+    "historical_response": "Caisson schedule on Drawing S-301 has been revised and is included in this addendum.",
+    "source": "Dett-A3-RFI48",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D13",
+    "seed": "S10",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "The cove lights in restroom 177 are type C7. Drawing E-301 has been revised to change C8 tag to C7 for these fixtures and is included in this addendum.",
+    "source": "Dett-A3-RFI63",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D14",
+    "seed": "S03",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Room 221 Accessible All Gender toilet room has been updated to Terrazzo Floor. Refer to revised Drawing ID-015 included in this addendum.",
+    "source": "Dett-A2-RFI5",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D15",
+    "seed": "S02",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Per Drawing E-500, (5) 2\" conduits are required. Drawings E-500 and E-700 have been revised to correct number of conduits and are included in this addendum.",
+    "source": "Dett-A3-RFI10",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D16",
+    "seed": "S04",
+    "variant": "clean",
+    "expected_flags": [],
+    "historical_response": "Caisson schedule on Drawing S-301 has been revised and is included in this addendum.",
+    "source": "Dett-A3-RFI48",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D17",
+    "seed": "S03",
+    "variant": "subtle_vague_location",
+    "expected_flags": [
+      "location"
+    ],
+    "historical_response": "Room 221 Accessible All Gender toilet room has been updated to Terrazzo Floor. Refer to revised Drawing ID-015 included in this addendum.",
+    "source": "Dett-A2-RFI5",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D18",
+    "seed": "S12",
+    "variant": "blank_location",
+    "expected_flags": [
+      "location"
+    ],
+    "historical_response": "Drawing A-502 has been revised and is included in this addendum.",
+    "source": "Dett-A5-RFI10",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D19",
+    "seed": "S01",
+    "variant": "subtle_deadline",
+    "expected_flags": [
+      "needed_by"
+    ],
+    "historical_response": "Gym Office 173A will use Type C12 fixtures. Refer to revised Drawing E-301 issued in Addendum No. 1.",
+    "source": "Dett-A2-RFI12",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D20",
+    "seed": "S01",
+    "variant": "clean_location_in_question",
+    "expected_flags": [],
+    "historical_response": "Gym Office 173A will use Type C12 fixtures. Refer to revised Drawing E-301 issued in Addendum No. 1.",
+    "source": "Dett-A2-RFI12",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D21",
+    "seed": "S05",
+    "variant": "placeholder_impact",
+    "expected_flags": [
+      "impact"
+    ],
+    "historical_response": "Lockers are 12\" wide per CPS specification. Locker size and quantity have been updated in Addendum No. 2. Refer to Specification Section 10 51 13 for locker base, issued in this addendum.",
+    "source": "Dett-A3-RFI6",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D22",
+    "seed": "S06",
+    "variant": "vague_question",
+    "expected_flags": [
+      "question"
+    ],
+    "historical_response": "Drawings A-210 and A-221 have been revised and are included in this addendum.",
+    "source": "Dett-A5-RFI3",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D23",
+    "seed": "S02",
+    "variant": "subtle_vague_question",
+    "expected_flags": [
+      "question"
+    ],
+    "historical_response": "Per Drawing E-500, (5) 2\" conduits are required. Drawings E-500 and E-700 have been revised to correct number of conduits and are included in this addendum.",
+    "source": "Dett-A3-RFI10",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  },
+  {
+    "case_id": "D24",
+    "seed": "S10",
+    "variant": "missing_reference+subtle_impact",
+    "expected_flags": [
+      "references",
+      "impact"
+    ],
+    "historical_response": "The cove lights in restroom 177 are type C7. Drawing E-301 has been revised to change C8 tag to C7 for these fixtures and is included in this addendum.",
+    "source": "Dett-A3-RFI63",
+    "scoring_note": "Team-made label: the fields we deliberately broke. A complete version expects no flags."
+  }
+]

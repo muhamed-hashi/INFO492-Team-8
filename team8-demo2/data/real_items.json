@@ -1,0 +1,172 @@
+[
+  {
+    "item_id": "T01",
+    "source_id": "Dett-A3-RFI12",
+    "addendum": "3",
+    "rfi_no": "12",
+    "pdf_page": "8",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A3-RFI12",
+      "location": "",
+      "trade": "",
+      "question": "Drawing E-302 says to relamp fixtures in the Lunchroom. Drawing Drawing A101D says to provide new fixtures. Please provide a fixture type for the Lunchroom if new fixtures are required.",
+      "needed_by": "",
+      "impact": "",
+      "references": "E-302, A101D"
+    }
+  },
+  {
+    "item_id": "T02",
+    "source_id": "Dett-A3-RFI1",
+    "addendum": "3",
+    "rfi_no": "1",
+    "pdf_page": "7",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A3-RFI1",
+      "location": "",
+      "trade": "",
+      "question": "Gym Storage a. Drawing A-101A calls for Keynote D.38 in Room 144/Gym Storage. D.38 is not defined in the Keynotes, please provide detail b. Drawing A-102A calls for Keynote D.39 in Classroom 106. D.39 is not defined in the Keynotes, please provide detail.",
+      "needed_by": "",
+      "impact": "",
+      "references": "A-101A, A-102A"
+    }
+  },
+  {
+    "item_id": "T03",
+    "source_id": "Dett-A2-RFI4",
+    "addendum": "2",
+    "rfi_no": "4",
+    "pdf_page": "6",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo2_20230530_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A2-RFI4",
+      "location": "",
+      "trade": "",
+      "question": "Drawing E-304 Keynote 1: Provide new lights in this area. Looks maybe these are to be re-lamped instead? If they are new, please provide the type of fixture in these areas.",
+      "needed_by": "",
+      "impact": "",
+      "references": "E-304"
+    }
+  },
+  {
+    "item_id": "T04",
+    "source_id": "Dett-A1-RFI2",
+    "addendum": "1",
+    "rfi_no": "2",
+    "pdf_page": "5",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo1_20230523_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A1-RFI2",
+      "location": "",
+      "trade": "",
+      "question": "Drawing E-301, Rm 172 Community Room, along Vestibule’s A & B, there are unmarked lighting fixtures in these areas. I checked the RCP drawings and the RCPs do not list fixture types either. Please clarify.",
+      "needed_by": "",
+      "impact": "",
+      "references": "E-301"
+    }
+  },
+  {
+    "item_id": "T05",
+    "source_id": "Dett-A2-RFI3",
+    "addendum": "2",
+    "rfi_no": "3",
+    "pdf_page": "6",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo2_20230530_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A2-RFI3",
+      "location": "",
+      "trade": "",
+      "question": "Drawing E-303 THESE AREAS NOTE NEW FIXTURES, BUT HAVE UNMARKED FIXTURE TYPES •Corridor #200 •Elevator/Machine Rm #202B •Storage Rm #202A •Sensorial RM #211",
+      "needed_by": "",
+      "impact": "",
+      "references": "E-303"
+    }
+  },
+  {
+    "item_id": "T06",
+    "source_id": "Dett-A1-RFI7",
+    "addendum": "1",
+    "rfi_no": "7",
+    "pdf_page": "5",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo1_20230523_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A1-RFI7",
+      "location": "",
+      "trade": "",
+      "question": "The spec calls for wall mounted bleachers, can you please confirm this? The walls are not structural so these should be floor mounted bleachers.",
+      "needed_by": "",
+      "impact": "",
+      "references": ""
+    }
+  },
+  {
+    "item_id": "T07",
+    "source_id": "Dett-A3-RFI29",
+    "addendum": "3",
+    "rfi_no": "29",
+    "pdf_page": "10",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A3-RFI29",
+      "location": "",
+      "trade": "",
+      "question": "On sheet A-105 “Roof Plan Annex”there is a prefinished aluminum screen wall around the RTU units, but there is no specification for the Equipment Screens. Please provide a specification for the custom color screen wall per the details on A-444 & A-445.",
+      "needed_by": "",
+      "impact": "",
+      "references": "A-105, A-444, A-445"
+    }
+  },
+  {
+    "item_id": "T08",
+    "source_id": "Dett-A3-RFI3",
+    "addendum": "3",
+    "rfi_no": "3",
+    "pdf_page": "7",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A3-RFI3",
+      "location": "",
+      "trade": "",
+      "question": "Are the fixtures to be cleaned and re-lamped already LED or do we need to furnish and install retro-fit kits?",
+      "needed_by": "",
+      "impact": "",
+      "references": ""
+    }
+  },
+  {
+    "item_id": "T09",
+    "source_id": "Dett-A2-RFI15",
+    "addendum": "2",
+    "rfi_no": "15",
+    "pdf_page": "7",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo2_20230530_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A2-RFI15",
+      "location": "",
+      "trade": "",
+      "question": "There appears to be no specification in the technical specifications for the concrete caissons shown on the drawings. Are specifications going to be issued?",
+      "needed_by": "",
+      "impact": "",
+      "references": ""
+    }
+  },
+  {
+    "item_id": "T10",
+    "source_id": "Dett-A3-RFI46",
+    "addendum": "3",
+    "rfi_no": "46",
+    "pdf_page": "12",
+    "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+    "rfi": {
+      "title": "Dett Dett-A3-RFI46",
+      "location": "",
+      "trade": "",
+      "question": "Page A-502, General Paint Note 3 – Remove all loose, cracked, and peeling paint, where not at CMU walls, Skim coat surface in order to achieve a uniform finish. Please provide either a quantity or allowance for this work.",
+      "needed_by": "",
+      "impact": "",
+      "references": "A-502"
+    }
+  }
+]

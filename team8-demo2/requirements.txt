@@ -1,0 +1,4 @@
+# The app, the checks and scripts/run_eval.py use the Python 3.10+ standard library only.
+# Only needed to re-extract data from the addenda PDFs (scripts/extract_addenda.py):
+pypdf>=4.0
+# External service: Google Gemini API (model gemini-3.5-flash-lite), called over HTTPS from core.py.

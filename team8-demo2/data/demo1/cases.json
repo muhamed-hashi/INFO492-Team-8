@@ -1,0 +1,200 @@
+[
+  {
+    "case_id": "D01",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A5-RFI2",
+      "addendum": 5,
+      "rfi": 2,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "initial": {
+      "title": "Camera specification",
+      "location": "",
+      "trade": "Electrical",
+      "question": "Please clarify the camera type for the added camera locations.",
+      "needed_by": "",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "E-202, E-203, E-204"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Camera specification",
+        "location": "Camera installation areas",
+        "trade": "Electrical",
+        "question": "Please clarify the camera type for the added camera locations.",
+        "needed_by": "2026-10-23",
+        "impact": "Work planning is waiting for clarification.",
+        "references": "E-202, E-203, E-204"
+      },
+      "simulation_note": "Construction setting, trade assignment, needed-by date and impact are invented for this exercise. Some location wording is generalized. Historical design answers are not supplied to the agent."
+    }
+  },
+  {
+    "case_id": "D02",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A5-RFI3",
+      "addendum": 5,
+      "rfi": 3,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "initial": {
+      "title": "Countertop information",
+      "location": "Hallway 101; Rooms 105 and 107",
+      "trade": "Casework",
+      "question": "Please clarify the conflicting countertop material notes.",
+      "needed_by": "2026-10-23",
+      "impact": "Work planning is waiting for clarification.",
+      "references": ""
+    },
+    "brief": {
+      "known_details": {
+        "title": "Countertop information",
+        "location": "Hallway 101; Rooms 105 and 107",
+        "trade": "Casework",
+        "question": "Please clarify the conflicting countertop material notes.",
+        "needed_by": "2026-10-23",
+        "impact": "Work planning is waiting for clarification.",
+        "references": "A-210, A-703"
+      },
+      "simulation_note": "Construction setting, trade assignment, needed-by date and impact are invented for this exercise. Some location wording is generalized. Historical design answers are not supplied to the agent."
+    }
+  },
+  {
+    "case_id": "D03",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A5-RFI7",
+      "addendum": 5,
+      "rfi": 7,
+      "pdf_page": 3,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "initial": {
+      "title": "Plumbing scope",
+      "location": "Toilet rooms 140 and 143",
+      "trade": "Plumbing",
+      "question": "Please clarify the conflicting existing and new plumbing scope.",
+      "needed_by": "2026-10-23",
+      "impact": "",
+      "references": "P-100A, P-201, P-202"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Plumbing scope",
+        "location": "Toilet rooms 140 and 143",
+        "trade": "Plumbing",
+        "question": "Please clarify the conflicting existing and new plumbing scope.",
+        "needed_by": "2026-10-23",
+        "impact": "Work planning is waiting for clarification.",
+        "references": "P-100A, P-201, P-202"
+      },
+      "simulation_note": "Construction setting, trade assignment, needed-by date and impact are invented for this exercise. Some location wording is generalized. Historical design answers are not supplied to the agent."
+    }
+  },
+  {
+    "case_id": "D04",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A6-RFI2",
+      "addendum": 6,
+      "rfi": 2,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "initial": {
+      "title": "PV conduit information",
+      "location": "PV equipment feeder",
+      "trade": "Electrical",
+      "question": "Please clarify the conduit size where the electrical and PV sheets disagree.",
+      "needed_by": "",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "E-600, PV-600"
+    },
+    "brief": {
+      "known_details": {
+        "title": "PV conduit information",
+        "location": "PV equipment feeder",
+        "trade": "Electrical",
+        "question": "Please clarify the conduit size where the electrical and PV sheets disagree.",
+        "needed_by": "2026-10-23",
+        "impact": "Work planning is waiting for clarification.",
+        "references": "E-600, PV-600"
+      },
+      "simulation_note": "Construction setting, trade assignment, needed-by date and impact are invented for this exercise. Some location wording is generalized. Historical design answers are not supplied to the agent."
+    }
+  },
+  {
+    "case_id": "D05",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A6-RFI3",
+      "addendum": 6,
+      "rfi": 3,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "initial": {
+      "title": "Metering detail",
+      "location": "Circuit metering installation",
+      "trade": "",
+      "question": "Please provide the metering wiring detail and equipment specification.",
+      "needed_by": "2026-10-23",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "E-702"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Metering detail",
+        "location": "Circuit metering installation",
+        "trade": "Electrical",
+        "question": "Please provide the metering wiring detail and equipment specification.",
+        "needed_by": "2026-10-23",
+        "impact": "Work planning is waiting for clarification.",
+        "references": "E-702"
+      },
+      "simulation_note": "Construction setting, trade assignment, needed-by date and impact are invented for this exercise. Some location wording is generalized. Historical design answers are not supplied to the agent."
+    }
+  },
+  {
+    "case_id": "D06",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A6-RFI4",
+      "addendum": 6,
+      "rfi": 4,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage question; paraphrased"
+    },
+    "initial": {
+      "title": "Item beside sink",
+      "location": "Care Room 101E",
+      "trade": "Casework",
+      "question": "Please clarify whether the item beside the sink is casework or furniture.",
+      "needed_by": "2026-10-23",
+      "impact": "Work planning is waiting for clarification.",
+      "references": "A-210"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Item beside sink",
+        "location": "Care Room 101E",
+        "trade": "Casework",
+        "question": "Please clarify whether the item beside the sink is casework or furniture.",
+        "needed_by": "2026-10-23",
+        "impact": "Work planning is waiting for clarification.",
+        "references": "A-210"
+      },
+      "simulation_note": "Construction setting, trade assignment, needed-by date and impact are invented for this exercise. Some location wording is generalized. Historical design answers are not supplied to the agent."
+    }
+  }
+]

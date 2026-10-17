@@ -1,0 +1,194 @@
+[
+  {
+    "case_id": "R01",
+    "seed": "S05",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R02",
+    "seed": "S09",
+    "variant": "typo",
+    "reference_problem": true,
+    "change": "A-401 -> A-4O1 in the references field (letter O for zero)",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R03",
+    "seed": "S08",
+    "variant": "unrelated",
+    "reference_problem": true,
+    "change": "PV-600 (SINGLE LINE DIAGRAM) -> A-433 (EXTERIOR DETAILS), a real sheet unrelated to the question",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R04",
+    "seed": "S09",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R05",
+    "seed": "S08",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R06",
+    "seed": "S11",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R07",
+    "seed": "S11",
+    "variant": "unrelated",
+    "reference_problem": true,
+    "change": "A-503 (FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE) -> S-301 (DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS), a real sheet unrelated to the question",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R08",
+    "seed": "S12",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R09",
+    "seed": "S07",
+    "variant": "typo",
+    "reference_problem": true,
+    "change": "FP-200 -> FP-2O0 in the references field (letter O for zero)",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R10",
+    "seed": "S07",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R11",
+    "seed": "S06",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R12",
+    "seed": "S04",
+    "variant": "nonexistent",
+    "reference_problem": true,
+    "change": "S-101 -> S-103 (not in the drawing index)",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R13",
+    "seed": "S10",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R14",
+    "seed": "S03",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R15",
+    "seed": "S02",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R16",
+    "seed": "S04",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R17",
+    "seed": "S03",
+    "variant": "unrelated",
+    "reference_problem": true,
+    "change": "ID-015 (CLRM WING - FLOOR & WALL FINISH PLANS) -> FP-200 (FIRE PROTECTION DETAILS AND SCHEDULE), a real sheet unrelated to the question",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R18",
+    "seed": "S12",
+    "variant": "unrelated",
+    "reference_problem": true,
+    "change": "A-503 (FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE) -> E-700 (ELECTRICAL DETAILS), a real sheet unrelated to the question",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R19",
+    "seed": "S01",
+    "variant": "nonexistent",
+    "reference_problem": true,
+    "change": "E-801 -> E-802 (not in the drawing index)",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R20",
+    "seed": "S01",
+    "variant": "clean",
+    "reference_problem": false,
+    "change": "",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R21",
+    "seed": "S05",
+    "variant": "vague",
+    "reference_problem": true,
+    "change": "sheet numbers replaced by \"See architectural drawings; Spec 10 51 13\"",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R22",
+    "seed": "S06",
+    "variant": "typo",
+    "reference_problem": true,
+    "change": "A-703 -> A-7O3 in the references field (letter O for zero)",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R23",
+    "seed": "S02",
+    "variant": "nonexistent",
+    "reference_problem": true,
+    "change": "E-500 -> E-501 (not in the drawing index)",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  },
+  {
+    "case_id": "R24",
+    "seed": "S10",
+    "variant": "vague",
+    "reference_problem": true,
+    "change": "sheet numbers replaced by \"Per electrical plans\"",
+    "scoring_note": "Team-made label. A clean case keeps the real sheet numbers."
+  }
+]

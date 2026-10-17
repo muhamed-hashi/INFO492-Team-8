@@ -1,0 +1,7 @@
+case_id,expected,ai_status,model,seconds,unedited_draft,ai_flags,ai_found,ai_missed,ai_extra,ai_extra_detail,rule_flags,rule_found,rule_missed,rule_extra
+D01,location;needed_by,ok,gemini-3.5-flash-lite,1.293,True,location;needed_by,2,0,0,,location;needed_by,2,0,0
+D02,references,ok,gemini-3.5-flash-lite,1.338,True,question;references,1,0,1,question: The question mentions conflicting countertop material notes without specifying where the conflict occurs or which materials are in conflict.,references,1,0,0
+D03,impact,ok,gemini-3.5-flash-lite,1.124,True,impact,1,0,0,,impact,1,0,0
+D04,needed_by,ok,gemini-3.5-flash-lite,1.072,True,needed_by,1,0,0,,needed_by,1,0,0
+D05,trade,ok,gemini-3.5-flash-lite,0.976,True,trade,1,0,0,,trade,1,0,0
+D06,,ok,gemini-3.5-flash-lite,1.169,True,question,0,0,1,question: The question asks about an item beside the sink without specifying a detail or tag number.,,0,0,0

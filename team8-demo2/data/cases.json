@@ -1,0 +1,818 @@
+[
+  {
+    "case_id": "D01",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI6",
+      "addendum": 3,
+      "rfi": 6,
+      "pdf_page": 7,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "The drawings scale show the lockers to have 15’’ width, while the specs mention 12’’ . Please clarify the size of the lockers, along with if they’re single tier or double tier, and what the base under them will need to be."
+    },
+    "initial": {
+      "title": "Locker width, tier and base",
+      "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+      "trade": "Specialties (lockers)",
+      "question": "The lockers scale at 15 inches wide on the floor plans, but Specification 10 51 13 lists 12-inch-wide lockers. Please confirm the locker width, whether lockers are single- or double-tier, and what base is required under them.",
+      "needed_by": "2023-12-01",
+      "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+      "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Locker width, tier and base",
+        "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+        "trade": "Specialties (lockers)",
+        "question": "The lockers scale at 15 inches wide on the floor plans, but Specification 10 51 13 lists 12-inch-wide lockers. Please confirm the locker width, whether lockers are single- or double-tier, and what base is required under them.",
+        "needed_by": "2023-12-01",
+        "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+        "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D02",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI43",
+      "addendum": 3,
+      "rfi": 43,
+      "pdf_page": 11,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Keynote AE.18 is referencing to 3/A433, detail doesn't exist, please advise."
+    },
+    "initial": {
+      "title": "Missing detail for keynote AE.18",
+      "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+      "trade": "Masonry",
+      "question": "Keynote AE.18 on Sheets A-401 and A-402 refers to detail 3/A-433, but that detail does not exist on A-433. Please identify the correct detail for keynote AE.18.",
+      "needed_by": "",
+      "impact": "Masonry repair at AE.18 locations cannot be priced or scheduled until the detail is identified.",
+      "references": "A-401, A-402, A-433"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Missing detail for keynote AE.18",
+        "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+        "trade": "Masonry",
+        "question": "Keynote AE.18 on Sheets A-401 and A-402 refers to detail 3/A-433, but that detail does not exist on A-433. Please identify the correct detail for keynote AE.18.",
+        "needed_by": "2023-10-06",
+        "impact": "Masonry repair at AE.18 locations cannot be priced or scheduled until the detail is identified.",
+        "references": "A-401, A-402, A-433"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D03",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A6-RFI2",
+      "addendum": 6,
+      "rfi": 2,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Drawing E600 says the feed to the PV equipment is to be in a 3-1/2\" conduit. Drawing PV-600 says the conduit size is 2-1/2\". Please clarify this conduit size."
+    },
+    "initial": {
+      "title": "PV feed conduit size",
+      "location": "PV feed from the roof array to the main electrical room",
+      "trade": "Electrical (PV)",
+      "question": "Drawing E-600 says the feed to the PV equipment is in a 3-1/2\" conduit, while Drawing PV-600 shows 2-1/2\". Please confirm the conduit size for the PV feed.",
+      "needed_by": "ASAP",
+      "impact": "Roof penetrations and the conduit run for the PV feed are on hold until the size is confirmed.",
+      "references": "E-600, PV-600"
+    },
+    "brief": {
+      "known_details": {
+        "title": "PV feed conduit size",
+        "location": "PV feed from the roof array to the main electrical room",
+        "trade": "Electrical (PV)",
+        "question": "Drawing E-600 says the feed to the PV equipment is in a 3-1/2\" conduit, while Drawing PV-600 shows 2-1/2\". Please confirm the conduit size for the PV feed.",
+        "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+        "impact": "Roof penetrations and the conduit run for the PV feed are on hold until the size is confirmed.",
+        "references": "E-600, PV-600"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D04",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI43",
+      "addendum": 3,
+      "rfi": 43,
+      "pdf_page": 11,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Keynote AE.18 is referencing to 3/A433, detail doesn't exist, please advise."
+    },
+    "initial": {
+      "title": "Missing detail for keynote AE.18",
+      "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+      "trade": "Masonry",
+      "question": "Keynote AE.18 on Sheets A-401 and A-402 refers to detail 3/A-433, but that detail does not exist on A-433. Please identify the correct detail for keynote AE.18.",
+      "needed_by": "2023-10-06",
+      "impact": "Masonry repair at AE.18 locations cannot be priced or scheduled until the detail is identified.",
+      "references": "A-401, A-402, A-433"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Missing detail for keynote AE.18",
+        "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+        "trade": "Masonry",
+        "question": "Keynote AE.18 on Sheets A-401 and A-402 refers to detail 3/A-433, but that detail does not exist on A-433. Please identify the correct detail for keynote AE.18.",
+        "needed_by": "2023-10-06",
+        "impact": "Masonry repair at AE.18 locations cannot be priced or scheduled until the detail is identified.",
+        "references": "A-401, A-402, A-433"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D05",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A6-RFI2",
+      "addendum": 6,
+      "rfi": 2,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo6_20230615_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Drawing E600 says the feed to the PV equipment is to be in a 3-1/2\" conduit. Drawing PV-600 says the conduit size is 2-1/2\". Please clarify this conduit size."
+    },
+    "initial": {
+      "title": "PV feed conduit size",
+      "location": "PV feed from the roof array to the main electrical room",
+      "trade": "Electrical (PV)",
+      "question": "Drawing E-600 says the feed to the PV equipment is in a 3-1/2\" conduit, while Drawing PV-600 shows 2-1/2\". Please confirm the conduit size for the PV feed.",
+      "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+      "impact": "Roof penetrations and the conduit run for the PV feed are on hold until the size is confirmed.",
+      "references": "E-600, PV-600"
+    },
+    "brief": {
+      "known_details": {
+        "title": "PV feed conduit size",
+        "location": "PV feed from the roof array to the main electrical room",
+        "trade": "Electrical (PV)",
+        "question": "Drawing E-600 says the feed to the PV equipment is in a 3-1/2\" conduit, while Drawing PV-600 shows 2-1/2\". Please confirm the conduit size for the PV feed.",
+        "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+        "impact": "Roof penetrations and the conduit run for the PV feed are on hold until the size is confirmed.",
+        "references": "E-600, PV-600"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D06",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI38",
+      "addendum": 3,
+      "rfi": 38,
+      "pdf_page": 11,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Is RT-1 flooring the same as RT-11?"
+    },
+    "initial": {
+      "title": "RT-1 vs RT-11 flooring",
+      "location": "Rooms scheduled for RT-1 or RT-11 on the A-502 finish schedule",
+      "trade": "Flooring",
+      "question": "Is RT-1 flooring the same as RT-11?",
+      "needed_by": "2023-11-17",
+      "impact": "Resilient flooring order for the classroom wing is waiting on this answer.",
+      "references": "A-502, A-503"
+    },
+    "brief": {
+      "known_details": {
+        "title": "RT-1 vs RT-11 flooring",
+        "location": "Rooms scheduled for RT-1 or RT-11 on the A-502 finish schedule",
+        "trade": "Flooring",
+        "question": "Is RT-1 flooring the same as RT-11?",
+        "needed_by": "2023-11-17",
+        "impact": "Resilient flooring order for the classroom wing is waiting on this answer.",
+        "references": "A-502, A-503"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D07",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI38",
+      "addendum": 3,
+      "rfi": 38,
+      "pdf_page": 11,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Is RT-1 flooring the same as RT-11?"
+    },
+    "initial": {
+      "title": "RT-1 vs RT-11 flooring",
+      "location": "Rooms scheduled for RT-1 or RT-11 on the A-502 finish schedule",
+      "trade": "Flooring",
+      "question": "Is RT-1 flooring the same as RT-11?",
+      "needed_by": "2023-11-17",
+      "impact": "N/A",
+      "references": "A-502, A-503"
+    },
+    "brief": {
+      "known_details": {
+        "title": "RT-1 vs RT-11 flooring",
+        "location": "Rooms scheduled for RT-1 or RT-11 on the A-502 finish schedule",
+        "trade": "Flooring",
+        "question": "Is RT-1 flooring the same as RT-11?",
+        "needed_by": "2023-11-17",
+        "impact": "Resilient flooring order for the classroom wing is waiting on this answer.",
+        "references": "A-502, A-503"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D08",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A5-RFI10",
+      "addendum": 5,
+      "rfi": 10,
+      "pdf_page": 3,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Per addendum #3 Sheet A-502, Toilet Rooms 140, 143, and 160 call for T-2 6” ceramic cove base finish and T-1 wall finishes existing to remain. Is the cove base to be installed over the existing tile and will there be any patch work associated with the existing wall tile? Please provide more detail on installation of cove base and abutment to floor tile."
+    },
+    "initial": {
+      "title": "Cove base over existing wall tile",
+      "location": "Classroom wing Level 1, Toilet Rooms 140, 143 and 160",
+      "trade": "Tile",
+      "question": "The finish schedule on A-502 calls for T-2 6-inch ceramic cove base in these toilet rooms, with T-1 existing wall tile to remain. Is the cove base installed over the existing wall tile, and is any patching of the existing tile required? Please provide the installation detail for the cove base and its transition to the floor tile.",
+      "needed_by": "2023-12-20",
+      "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+      "references": "A-502, A-503"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Cove base over existing wall tile",
+        "location": "Classroom wing Level 1, Toilet Rooms 140, 143 and 160",
+        "trade": "Tile",
+        "question": "The finish schedule on A-502 calls for T-2 6-inch ceramic cove base in these toilet rooms, with T-1 existing wall tile to remain. Is the cove base installed over the existing wall tile, and is any patching of the existing tile required? Please provide the installation detail for the cove base and its transition to the floor tile.",
+        "needed_by": "2023-12-20",
+        "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+        "references": "A-502, A-503"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D09",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI24",
+      "addendum": 3,
+      "rfi": 24,
+      "pdf_page": 9,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Addendum 1 Drawing E600 shows a S4-8 (1-1/4\" C with 5 #8) feeding the Fire Pump. Drawing FP200 says the Fire Pump is 40 HP, which would require a much larger feed. Please clarify the Fire Pump feed size."
+    },
+    "initial": {
+      "title": "Fire pump feeder size",
+      "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+      "trade": "Electrical",
+      "question": "Drawing E-600 shows feeder S4-8 (1-1/4\" conduit with 5 #8) to the fire pump, but Drawing FP-200 lists the fire pump as 40 HP, which needs a much larger feeder. Please confirm the fire pump feeder size.",
+      "needed_by": "2023-10-27",
+      "impact": "",
+      "references": "E-600, FP-200"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Fire pump feeder size",
+        "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+        "trade": "Electrical",
+        "question": "Drawing E-600 shows feeder S4-8 (1-1/4\" conduit with 5 #8) to the fire pump, but Drawing FP-200 lists the fire pump as 40 HP, which needs a much larger feeder. Please confirm the fire pump feeder size.",
+        "needed_by": "2023-10-27",
+        "impact": "The fire pump feeder and conduit cannot be ordered or installed; fire pump acceptance testing is on the critical path to occupancy.",
+        "references": "E-600, FP-200"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D10",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI24",
+      "addendum": 3,
+      "rfi": 24,
+      "pdf_page": 9,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Addendum 1 Drawing E600 shows a S4-8 (1-1/4\" C with 5 #8) feeding the Fire Pump. Drawing FP200 says the Fire Pump is 40 HP, which would require a much larger feed. Please clarify the Fire Pump feed size."
+    },
+    "initial": {
+      "title": "Fire pump feeder size",
+      "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+      "trade": "Electrical",
+      "question": "Drawing E-600 shows feeder S4-8 (1-1/4\" conduit with 5 #8) to the fire pump, but Drawing FP-200 lists the fire pump as 40 HP, which needs a much larger feeder. Please confirm the fire pump feeder size.",
+      "needed_by": "2023-10-27",
+      "impact": "The fire pump feeder and conduit cannot be ordered or installed; fire pump acceptance testing is on the critical path to occupancy.",
+      "references": "E-600, FP-200"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Fire pump feeder size",
+        "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+        "trade": "Electrical",
+        "question": "Drawing E-600 shows feeder S4-8 (1-1/4\" conduit with 5 #8) to the fire pump, but Drawing FP-200 lists the fire pump as 40 HP, which needs a much larger feeder. Please confirm the fire pump feeder size.",
+        "needed_by": "2023-10-27",
+        "impact": "The fire pump feeder and conduit cannot be ordered or installed; fire pump acceptance testing is on the critical path to occupancy.",
+        "references": "E-600, FP-200"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D11",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A5-RFI3",
+      "addendum": 5,
+      "rfi": 3,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Sheet A-210 detail 1. In Hallway 101 there are keynotes A.18 & A.19. There are no elevations, but from these keynotes and the detail associated with KN A.18 (6/A-703), this is a new base cabinet with a solid surface top, which contradicts KN A.19 which states to replace with a plastic laminate countertop. Please advise. Note: Same for Room 105, 107"
+    },
+    "initial": {
+      "title": "Countertop material conflict at Hallway 101",
+      "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+      "trade": "Casework",
+      "question": "On Sheet A-210 detail 1, Hallway 101 has keynotes A.18 and A.19. KN A.18 and detail 6/A-703 show a new base cabinet with a solid surface top, but KN A.19 says to replace with a plastic laminate countertop. Please confirm which countertop material to provide. The same conflict occurs in Rooms 105 and 107.",
+      "needed_by": "2024-01-12",
+      "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+      "references": "A-210, A-703"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Countertop material conflict at Hallway 101",
+        "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+        "trade": "Casework",
+        "question": "On Sheet A-210 detail 1, Hallway 101 has keynotes A.18 and A.19. KN A.18 and detail 6/A-703 show a new base cabinet with a solid surface top, but KN A.19 says to replace with a plastic laminate countertop. Please confirm which countertop material to provide. The same conflict occurs in Rooms 105 and 107.",
+        "needed_by": "2024-01-12",
+        "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+        "references": "A-210, A-703"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D12",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI48",
+      "addendum": 3,
+      "rfi": 48,
+      "pdf_page": 12,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Sheet S-001 states that the compressive strength psi of caissons should be 4500 psi while the Caisson Schedule on S-301 states it should be 4,000 psi. Please clarify which is correct."
+    },
+    "initial": {
+      "title": "Caisson concrete strength",
+      "location": "Annex foundations, all caissons shown on S-101",
+      "trade": "Concrete / foundations",
+      "question": "Sheet S-001 states that caisson concrete is 4,500 psi, while the Caisson Schedule on S-301 states 4,000 psi. Please confirm the required compressive strength for the caissons.",
+      "needed_by": "2023-09-20",
+      "impact": "The concrete mix design submittal and the first caisson pours (scheduled 2023-09-25) are on hold.",
+      "references": "S-001, S-306, S-101"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Caisson concrete strength",
+        "location": "Annex foundations, all caissons shown on S-101",
+        "trade": "Concrete / foundations",
+        "question": "Sheet S-001 states that caisson concrete is 4,500 psi, while the Caisson Schedule on S-301 states 4,000 psi. Please confirm the required compressive strength for the caissons.",
+        "needed_by": "2023-09-20",
+        "impact": "The concrete mix design submittal and the first caisson pours (scheduled 2023-09-25) are on hold.",
+        "references": "S-001, S-301, S-101"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D13",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI63",
+      "addendum": 3,
+      "rfi": 63,
+      "pdf_page": 14,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "On Drawing E-301 the cove fixture in the two large toilet rooms changed to Type C8. A Type C8 fixture is a pole mount fixture. Please confirm these cove fixtures should be a Type C7 as they were shown before."
+    },
+    "initial": {
+      "title": "Cove fixture type in large toilet rooms",
+      "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+      "trade": "Electrical",
+      "question": "The cove fixtures in the two large toilet rooms are now tagged Type C8, but Type C8 is a pole-mounted site fixture. Please confirm that these cove fixtures should be Type C7, as previously shown.",
+      "needed_by": "2023-12-15",
+      "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+      "references": "E-301, E-801"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Cove fixture type in large toilet rooms",
+        "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+        "trade": "Electrical",
+        "question": "The cove fixtures in the two large toilet rooms are now tagged Type C8, but Type C8 is a pole-mounted site fixture. Please confirm that these cove fixtures should be Type C7, as previously shown.",
+        "needed_by": "2023-12-15",
+        "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+        "references": "E-301, E-801"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D14",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A2-RFI5",
+      "addendum": 2,
+      "rfi": 5,
+      "pdf_page": 6,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo2_20230530_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "The finish plan A-502 lists room 221 Access all gender as Terrazzo floor however drawing ID-015 show the room as VCT. Please advise which is to be followed."
+    },
+    "initial": {
+      "title": "Floor finish conflict, terrazzo vs VCT",
+      "location": "Classroom wing Level 2, Room 221 Accessible All-Gender Toilet Room",
+      "trade": "Flooring",
+      "question": "The finish schedule on A-502 lists this room with a terrazzo floor, but Drawing ID-015 shows the same room as VCT. Please confirm which floor finish is to be installed.",
+      "needed_by": "2023-11-10",
+      "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+      "references": "A-502, ID-015"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Floor finish conflict, terrazzo vs VCT",
+        "location": "Classroom wing Level 2, Room 221 Accessible All-Gender Toilet Room",
+        "trade": "Flooring",
+        "question": "The finish schedule on A-502 lists this room with a terrazzo floor, but Drawing ID-015 shows the same room as VCT. Please confirm which floor finish is to be installed.",
+        "needed_by": "2023-11-10",
+        "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+        "references": "A-502, ID-015"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D15",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI10",
+      "addendum": 3,
+      "rfi": 10,
+      "pdf_page": 8,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Drawing E700 shows (4) 2\" conduits from the IDF Rm to the MDF Rm. Drawing E-500 says (5) 2\" conduits are required. Please clarify how many 2\" conduits are required from the MDF to the IDF Room."
+    },
+    "initial": {
+      "title": "Number of 2\" conduits MDF to IDF",
+      "location": "Level 1, conduit route between the MDF room and the IDF room",
+      "trade": "Electrical",
+      "question": "Drawing E-700 shows (4) 2-inch conduits from the IDF room to the MDF room, but Drawing E-500 calls for (5) 2-inch conduits. Please confirm how many 2-inch conduits are required between the MDF and IDF rooms.",
+      "needed_by": "2023-11-03",
+      "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+      "references": "E-700, E-500"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Number of 2\" conduits MDF to IDF",
+        "location": "Level 1, conduit route between the MDF room and the IDF room",
+        "trade": "Electrical",
+        "question": "Drawing E-700 shows (4) 2-inch conduits from the IDF room to the MDF room, but Drawing E-500 calls for (5) 2-inch conduits. Please confirm how many 2-inch conduits are required between the MDF and IDF rooms.",
+        "needed_by": "2023-11-03",
+        "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+        "references": "E-700, E-500"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D16",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI48",
+      "addendum": 3,
+      "rfi": 48,
+      "pdf_page": 12,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Sheet S-001 states that the compressive strength psi of caissons should be 4500 psi while the Caisson Schedule on S-301 states it should be 4,000 psi. Please clarify which is correct."
+    },
+    "initial": {
+      "title": "Caisson concrete strength",
+      "location": "Annex foundations, all caissons shown on S-101",
+      "trade": "Concrete / foundations",
+      "question": "Sheet S-001 states that caisson concrete is 4,500 psi, while the Caisson Schedule on S-301 states 4,000 psi. Please confirm the required compressive strength for the caissons.",
+      "needed_by": "2023-09-20",
+      "impact": "The concrete mix design submittal and the first caisson pours (scheduled 2023-09-25) are on hold.",
+      "references": "S-001, S-301, S-101"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Caisson concrete strength",
+        "location": "Annex foundations, all caissons shown on S-101",
+        "trade": "Concrete / foundations",
+        "question": "Sheet S-001 states that caisson concrete is 4,500 psi, while the Caisson Schedule on S-301 states 4,000 psi. Please confirm the required compressive strength for the caissons.",
+        "needed_by": "2023-09-20",
+        "impact": "The concrete mix design submittal and the first caisson pours (scheduled 2023-09-25) are on hold.",
+        "references": "S-001, S-301, S-101"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D17",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A2-RFI5",
+      "addendum": 2,
+      "rfi": 5,
+      "pdf_page": 6,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo2_20230530_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "The finish plan A-502 lists room 221 Access all gender as Terrazzo floor however drawing ID-015 show the room as VCT. Please advise which is to be followed."
+    },
+    "initial": {
+      "title": "Floor finish conflict, terrazzo vs VCT",
+      "location": "Second floor bathroom",
+      "trade": "Flooring",
+      "question": "The finish schedule on A-502 lists this room with a terrazzo floor, but Drawing ID-015 shows the same room as VCT. Please confirm which floor finish is to be installed.",
+      "needed_by": "2023-11-10",
+      "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+      "references": "A-502, ID-015"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Floor finish conflict, terrazzo vs VCT",
+        "location": "Classroom wing Level 2, Room 221 Accessible All-Gender Toilet Room",
+        "trade": "Flooring",
+        "question": "The finish schedule on A-502 lists this room with a terrazzo floor, but Drawing ID-015 shows the same room as VCT. Please confirm which floor finish is to be installed.",
+        "needed_by": "2023-11-10",
+        "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+        "references": "A-502, ID-015"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D18",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A5-RFI10",
+      "addendum": 5,
+      "rfi": 10,
+      "pdf_page": 3,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Per addendum #3 Sheet A-502, Toilet Rooms 140, 143, and 160 call for T-2 6” ceramic cove base finish and T-1 wall finishes existing to remain. Is the cove base to be installed over the existing tile and will there be any patch work associated with the existing wall tile? Please provide more detail on installation of cove base and abutment to floor tile."
+    },
+    "initial": {
+      "title": "Cove base over existing wall tile",
+      "location": "",
+      "trade": "Tile",
+      "question": "The finish schedule on A-502 calls for T-2 6-inch ceramic cove base in these toilet rooms, with T-1 existing wall tile to remain. Is the cove base installed over the existing wall tile, and is any patching of the existing tile required? Please provide the installation detail for the cove base and its transition to the floor tile.",
+      "needed_by": "2023-12-20",
+      "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+      "references": "A-502, A-503"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Cove base over existing wall tile",
+        "location": "Classroom wing Level 1, Toilet Rooms 140, 143 and 160",
+        "trade": "Tile",
+        "question": "The finish schedule on A-502 calls for T-2 6-inch ceramic cove base in these toilet rooms, with T-1 existing wall tile to remain. Is the cove base installed over the existing wall tile, and is any patching of the existing tile required? Please provide the installation detail for the cove base and its transition to the floor tile.",
+        "needed_by": "2023-12-20",
+        "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+        "references": "A-502, A-503"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D19",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A2-RFI12",
+      "addendum": 2,
+      "rfi": 12,
+      "pdf_page": 7,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo2_20230530_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Drawing E-301 does not specify a fixture type in the Gym Office. Please specify a fixture."
+    },
+    "initial": {
+      "title": "Fixture type for Gym Office 173A",
+      "location": "Annex Level 1, Gym Office 173A",
+      "trade": "Electrical",
+      "question": "Drawing E-301 does not specify a light fixture type in Gym Office 173A (Annex Level 1), and the fixture schedule on E-801 does not say which type applies there. Please confirm the fixture type to be installed in Gym Office 173A.",
+      "needed_by": "Next week",
+      "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+      "references": "E-301, E-801"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Fixture type for Gym Office 173A",
+        "location": "Annex Level 1, Gym Office 173A",
+        "trade": "Electrical",
+        "question": "Drawing E-301 does not specify a light fixture type in Gym Office 173A (Annex Level 1), and the fixture schedule on E-801 does not say which type applies there. Please confirm the fixture type to be installed in Gym Office 173A.",
+        "needed_by": "2023-10-13",
+        "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+        "references": "E-301, E-801"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D20",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A2-RFI12",
+      "addendum": 2,
+      "rfi": 12,
+      "pdf_page": 7,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/05/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo2_20230530_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Drawing E-301 does not specify a fixture type in the Gym Office. Please specify a fixture."
+    },
+    "initial": {
+      "title": "Fixture type for Gym Office 173A",
+      "location": "",
+      "trade": "Electrical",
+      "question": "Drawing E-301 does not specify a light fixture type in Gym Office 173A (Annex Level 1), and the fixture schedule on E-801 does not say which type applies there. Please confirm the fixture type to be installed in Gym Office 173A.",
+      "needed_by": "2023-10-13",
+      "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+      "references": "E-301, E-801"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Fixture type for Gym Office 173A",
+        "location": "Annex Level 1, Gym Office 173A",
+        "trade": "Electrical",
+        "question": "Drawing E-301 does not specify a light fixture type in Gym Office 173A (Annex Level 1), and the fixture schedule on E-801 does not say which type applies there. Please confirm the fixture type to be installed in Gym Office 173A.",
+        "needed_by": "2023-10-13",
+        "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+        "references": "E-301, E-801"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D21",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI6",
+      "addendum": 3,
+      "rfi": 6,
+      "pdf_page": 7,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "The drawings scale show the lockers to have 15’’ width, while the specs mention 12’’ . Please clarify the size of the lockers, along with if they’re single tier or double tier, and what the base under them will need to be."
+    },
+    "initial": {
+      "title": "Locker width, tier and base",
+      "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+      "trade": "Specialties (lockers)",
+      "question": "The lockers scale at 15 inches wide on the floor plans, but Specification 10 51 13 lists 12-inch-wide lockers. Please confirm the locker width, whether lockers are single- or double-tier, and what base is required under them.",
+      "needed_by": "2023-12-01",
+      "impact": "TBD",
+      "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Locker width, tier and base",
+        "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+        "trade": "Specialties (lockers)",
+        "question": "The lockers scale at 15 inches wide on the floor plans, but Specification 10 51 13 lists 12-inch-wide lockers. Please confirm the locker width, whether lockers are single- or double-tier, and what base is required under them.",
+        "needed_by": "2023-12-01",
+        "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+        "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D22",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A5-RFI3",
+      "addendum": 5,
+      "rfi": 3,
+      "pdf_page": 2,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo5_20230609_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Sheet A-210 detail 1. In Hallway 101 there are keynotes A.18 & A.19. There are no elevations, but from these keynotes and the detail associated with KN A.18 (6/A-703), this is a new base cabinet with a solid surface top, which contradicts KN A.19 which states to replace with a plastic laminate countertop. Please advise. Note: Same for Room 105, 107"
+    },
+    "initial": {
+      "title": "Countertop material conflict at Hallway 101",
+      "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+      "trade": "Casework",
+      "question": "Please clarify the countertops in these rooms.",
+      "needed_by": "2024-01-12",
+      "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+      "references": "A-210, A-703"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Countertop material conflict at Hallway 101",
+        "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+        "trade": "Casework",
+        "question": "On Sheet A-210 detail 1, Hallway 101 has keynotes A.18 and A.19. KN A.18 and detail 6/A-703 show a new base cabinet with a solid surface top, but KN A.19 says to replace with a plastic laminate countertop. Please confirm which countertop material to provide. The same conflict occurs in Rooms 105 and 107.",
+        "needed_by": "2024-01-12",
+        "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+        "references": "A-210, A-703"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D23",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI10",
+      "addendum": 3,
+      "rfi": 10,
+      "pdf_page": 8,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "Drawing E700 shows (4) 2\" conduits from the IDF Rm to the MDF Rm. Drawing E-500 says (5) 2\" conduits are required. Please clarify how many 2\" conduits are required from the MDF to the IDF Room."
+    },
+    "initial": {
+      "title": "Number of 2\" conduits MDF to IDF",
+      "location": "Level 1, conduit route between the MDF room and the IDF room",
+      "trade": "Electrical",
+      "question": "We found an issue with the conduit quantities on the drawings, please advise what to do.",
+      "needed_by": "2023-11-03",
+      "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+      "references": "E-700, E-500"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Number of 2\" conduits MDF to IDF",
+        "location": "Level 1, conduit route between the MDF room and the IDF room",
+        "trade": "Electrical",
+        "question": "Drawing E-700 shows (4) 2-inch conduits from the IDF room to the MDF room, but Drawing E-500 calls for (5) 2-inch conduits. Please confirm how many 2-inch conduits are required between the MDF and IDF rooms.",
+        "needed_by": "2023-11-03",
+        "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+        "references": "E-700, E-500"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  },
+  {
+    "case_id": "D24",
+    "is_simulated": true,
+    "source": {
+      "id": "Dett-A3-RFI63",
+      "addendum": 3,
+      "rfi": 63,
+      "pdf_page": 14,
+      "url": "https://pbcchicago.com/wp-content/uploads/2023/06/AD_PBC_PXM_RNDettESAnnexandRenoC1604_AddendumNo3_20230605_Final.pdf",
+      "type": "public bid-stage RFI, rewritten as a construction-stage subcontractor RFI (simulated)",
+      "original_question": "On Drawing E-301 the cove fixture in the two large toilet rooms changed to Type C8. A Type C8 fixture is a pole mount fixture. Please confirm these cove fixtures should be a Type C7 as they were shown before."
+    },
+    "initial": {
+      "title": "Cove fixture type in large toilet rooms",
+      "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+      "trade": "Electrical",
+      "question": "The cove fixtures in the two large toilet rooms are now tagged Type C8, but Type C8 is a pole-mounted site fixture. Please confirm that these cove fixtures should be Type C7, as previously shown.",
+      "needed_by": "2023-12-15",
+      "impact": "Could cause problems later.",
+      "references": "See drawings"
+    },
+    "brief": {
+      "known_details": {
+        "title": "Cove fixture type in large toilet rooms",
+        "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+        "trade": "Electrical",
+        "question": "The cove fixtures in the two large toilet rooms are now tagged Type C8, but Type C8 is a pole-mounted site fixture. Please confirm that these cove fixtures should be Type C7, as previously shown.",
+        "needed_by": "2023-12-15",
+        "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+        "references": "E-301, E-801"
+      },
+      "simulation_note": "SIMULATED. The problem and sheet numbers come from a real Dett RFI; the construction-stage framing, trade, dates and impact were written by Team 8 for this exercise. Historical answers are not shown to the AI."
+    }
+  }
+]
