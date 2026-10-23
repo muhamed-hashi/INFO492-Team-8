@@ -34,4 +34,6 @@ This evaluation tests the reference-checking step of our thesis. It does not mea
 
 Prepared for: Team 8, with AI writing assistance.
 Date drafted: October 17, 2026.
-Status: human labels, final answer key, real-item runs, and final worksheet results are still pending.
+Run completed: October 23, 2026 (`python3 scripts/run_real_eval.py`).
+
+**Observed (10 real RFIs vs answer key):** agent **8/10** and **9/10**; no-AI checklist **9/10**. **Target met** (both agent runs ≥ 8/10).

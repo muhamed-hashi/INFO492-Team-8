@@ -2,14 +2,14 @@ case_id,kind,change,references,code,ai_only_runs,code_ai_runs
 R01,clean,,"A-102B, A-103B, A-104B; Spec 10 51 13",ok,ok ok ok,ok ok ok
 R02,typo,A-401 -> A-4O1 in the references field (letter O for zero),"A-4O1, A-402, A-433",ok,FLAG FLAG FLAG,FLAG FLAG FLAG
 R03,unrelated,"PV-600 (SINGLE LINE DIAGRAM) -> A-433 (EXTERIOR DETAILS), a real sheet unrelated to the question","E-600, A-433",ok,FLAG FLAG FLAG,FLAG FLAG FLAG
-R04,clean,,"A-401, A-402, A-433",ok,ok FLAG ok,ok ok ok
-R05,clean,,"E-600, PV-600",ok,FLAG ok FLAG,ok ok ok
-R06,clean,,"A-502, A-503",ok,ok ok ok,ok ok ok
+R04,clean,,"A-401, A-402, A-433",ok,ok ok ok,ok ok ok
+R05,clean,,"E-600, PV-600",ok,FLAG FLAG FLAG,ok ok ok
+R06,clean,,"A-502, A-503",ok,FLAG FLAG ok,ok ok ok
 R07,unrelated,"A-503 (FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE) -> S-301 (DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS), a real sheet unrelated to the question","A-502, S-301",ok,FLAG FLAG FLAG,FLAG FLAG FLAG
 R08,clean,,"A-502, A-503",ok,ok ok ok,ok ok ok
 R09,typo,FP-200 -> FP-2O0 in the references field (letter O for zero),"E-600, FP-2O0",ok,FLAG FLAG FLAG,FLAG FLAG FLAG
-R10,clean,,"E-600, FP-200",ok,ok ok ok,ok ok ok
-R11,clean,,"A-210, A-703",ok,FLAG FLAG ok,ok ok ok
+R10,clean,,"E-600, FP-200",ok,ok ok FLAG,ok ok ok
+R11,clean,,"A-210, A-703",ok,FLAG FLAG FLAG,ok ok ok
 R12,nonexistent,S-101 -> S-103 (not in the drawing index),"S-001, S-301, S-103",FLAG,FLAG FLAG FLAG,FLAG FLAG FLAG
 R13,clean,,"E-301, E-801",ok,ok ok ok,ok ok ok
 R14,clean,,"A-502, ID-015",ok,FLAG ok FLAG,ok ok ok
@@ -17,9 +17,9 @@ R15,clean,,"E-700, E-500",ok,ok ok ok,ok ok ok
 R16,clean,,"S-001, S-301, S-101",ok,ok ok ok,ok ok ok
 R17,unrelated,"ID-015 (CLRM WING - FLOOR & WALL FINISH PLANS) -> FP-200 (FIRE PROTECTION DETAILS AND SCHEDULE), a real sheet unrelated to the question","A-502, FP-200",ok,FLAG FLAG FLAG,FLAG FLAG FLAG
 R18,unrelated,"A-503 (FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE) -> E-700 (ELECTRICAL DETAILS), a real sheet unrelated to the question","A-502, E-700",ok,FLAG FLAG FLAG,FLAG FLAG FLAG
-R19,nonexistent,E-801 -> E-802 (not in the drawing index),"E-301, E-802",FLAG,FLAG ok FLAG,FLAG FLAG FLAG
+R19,nonexistent,E-801 -> E-802 (not in the drawing index),"E-301, E-802",FLAG,ok FLAG ok,FLAG FLAG FLAG
 R20,clean,,"E-301, E-801",ok,ok ok ok,ok ok ok
 R21,vague,"sheet numbers replaced by ""See architectural drawings; Spec 10 51 13""",See architectural drawings; Spec 10 51 13,FLAG,FLAG FLAG FLAG,FLAG FLAG FLAG
 R22,typo,A-703 -> A-7O3 in the references field (letter O for zero),"A-210, A-7O3",ok,FLAG FLAG FLAG,FLAG FLAG FLAG
-R23,nonexistent,E-500 -> E-501 (not in the drawing index),"E-700, E-501",FLAG,FLAG ok FLAG,FLAG FLAG FLAG
+R23,nonexistent,E-500 -> E-501 (not in the drawing index),"E-700, E-501",FLAG,ok FLAG ok,FLAG FLAG FLAG
 R24,vague,"sheet numbers replaced by ""Per electrical plans""",Per electrical plans,FLAG,FLAG FLAG FLAG,FLAG FLAG FLAG
