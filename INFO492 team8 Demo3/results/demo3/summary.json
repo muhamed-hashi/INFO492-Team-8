@@ -1,0 +1,66 @@
+{
+  "run_at": "2026-11-01T02:38:18+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "runs": 2,
+  "prompt_sha256": {
+    "draft_agent.txt": "6496c06042445971",
+    "check_agent.txt": "0a3989dd25f66b11",
+    "reference_review.txt": "88d66960353578d9"
+  },
+  "cases": 12,
+  "total_missing_items": 23,
+  "rfis_with_reference_problems": 6,
+  "conditions": [
+    {
+      "label": "As sent (no help)",
+      "missing_caught": "0/23",
+      "false_asks": 0,
+      "ref_caught": "0/6",
+      "ref_false_alarms": 0,
+      "invented": "0",
+      "needs_return_after": "10/12"
+    },
+    {
+      "label": "Checklist only (code)",
+      "runs": 1,
+      "missing_caught": "19/23",
+      "false_asks": 0,
+      "ref_caught": "4/6",
+      "ref_false_alarms": 0,
+      "invented": "0 (copies the message)",
+      "needs_return_after": "4/12"
+    },
+    {
+      "label": "Draft agent (code + AI)",
+      "runs": 2,
+      "missing_caught": "41/46",
+      "false_asks": 2,
+      "ref_caught": "10/12",
+      "ref_false_alarms": 2,
+      "invented": "2 blocked by guard, 0 reached the RFI",
+      "needs_return_after": "7/24"
+    }
+  ],
+  "check_agent_on_completed_rfis": {
+    "checked": 24,
+    "false_returns": 8,
+    "cost_or_scope_flags": 0,
+    "routes": {
+      "gc_can_answer": 0,
+      "design_team": 24,
+      "unclear": 0
+    }
+  },
+  "watch_agent_replay": {
+    "alerts": 4,
+    "detail": [
+      "F01: E-301 revised in Addendum 2",
+      "F07: E-600 revised in Addendum 2",
+      "F01: E-301 revised in Addendum 3",
+      "F07: E-600 revised in Addendum 3"
+    ],
+    "note": "Code only, from data/revisions.json. A mistyped sheet (FP-2O0) cannot be watched until it is corrected."
+  },
+  "errors": 0,
+  "note": "Simulated rough RFIs written by the team from 12 real Dett RFIs; the foreman's answers come from the scenario brief."
+}

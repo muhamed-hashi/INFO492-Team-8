@@ -1,0 +1,10 @@
+{
+  "_note": "Fictional demo users, not real people or companies. PINs are for the local demo only (shown in README); this is not real authentication.",
+  "users": [
+    {"id": "u-foreman", "name": "Foreman A (demo)", "role": "foreman", "company": "Electrical subcontractor (fictional)", "pin": "1111"},
+    {"id": "u-foreman2", "name": "Foreman B (demo)", "role": "foreman", "company": "Finishes subcontractor (fictional)", "pin": "1112"},
+    {"id": "u-site", "name": "Site Manager (demo)", "role": "site_manager", "company": "General contractor (fictional)", "pin": "2222"},
+    {"id": "u-pm", "name": "Project Manager (demo)", "role": "project_manager", "company": "General contractor (fictional)", "pin": "3333"},
+    {"id": "u-arch", "name": "Architect (demo)", "role": "architect", "company": "Design team (fictional)", "pin": "4444"}
+  ]
+}

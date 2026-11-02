@@ -1,0 +1,1095 @@
+{
+  "source": "Dett Elementary School Annex and Renovations (PBC Chicago, C1604), Addenda 1-6",
+  "note": "Sheets issued or revised in each addendum. Real data; see scripts/build_revisions.py for the limitation.",
+  "addenda": [
+    {
+      "addendum": 1,
+      "date": "2023-05-23",
+      "sheets": [
+        {
+          "sheet": "A-100A",
+          "title": "ANNEX FLOOR PLAN - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-100B",
+          "title": "ANNEX RCP - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-200",
+          "title": "ANNEX ENLARGED LOBBY PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-201",
+          "title": "ANNEX ENLARGED CORRIDOR PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-202",
+          "title": "ANNEX ENLARGED HALLWAY LINK PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-203A",
+          "title": "ANNEX ENLARGED GYMNASIUM PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-203B",
+          "title": "ANNEX ENLARGED GYMNASIUM RCP",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-204",
+          "title": "ANNEX ENLARGED COMMUNITY ROOM PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-205",
+          "title": "ANNEX ENLARGED BATHROOM PLAN AND RCP",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-300",
+          "title": "ANNEX CORRIDOR INTERIOR ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-301",
+          "title": "ANNEX COMMUNITY ROOM AND CORRIDOR INTERIOR ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-301B",
+          "title": "ANNEX HALLWAY LINK AND SERVICE CORRIDOR INTERIOR ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-302",
+          "title": "ANNEX GYMNASIUM INTERIOR ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-303",
+          "title": "ANNEX GYMNASIUM INTERIOR ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-303A",
+          "title": "ANNEX INTERIOR BATHROOM ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-410",
+          "title": "ANNEX BUILDING SECTIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-423",
+          "title": "WALL SECTIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-430",
+          "title": "EXTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-432",
+          "title": "EXTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-433",
+          "title": "EXTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-501A",
+          "title": "DOOR SCHEDULE",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-501B",
+          "title": "DOOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-502",
+          "title": "FINISH NOTES AND SCHEDULE",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-503",
+          "title": "FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-700",
+          "title": "INTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-701",
+          "title": "INTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "A-703",
+          "title": "INTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "C-1-00",
+          "title": "SITE DEMOLITION PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "C-2-00",
+          "title": "SITE DIMENSION PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "C-4-00",
+          "title": "SITE UTILITY PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-010",
+          "title": "ELECTRICAL SITE PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-201",
+          "title": "FIRST FLOOR POWER PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-201A",
+          "title": "FIRST FLOOR MECHANICAL POWER PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-202",
+          "title": "FIRST FLOOR POWER PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-202A",
+          "title": "FIRST FLOOR MECHANICAL POWER PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-203",
+          "title": "SECOND FLOOR POWER PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-205",
+          "title": "ROOF LEVEL MECHANICAL POWER PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-206",
+          "title": "ROOF LEVEL MECHANICAL POWER PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-301",
+          "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-302",
+          "title": "FIRST FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-303",
+          "title": "SECOND FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-304",
+          "title": "THIRD FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-500",
+          "title": "PARTIAL PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-600",
+          "title": "ELECTRICAL ONE LINE DIAGRAM",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-701",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-702",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-800",
+          "title": "ELECTRICAL SCHEDULES",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "E-801",
+          "title": "ELECTRICAL SCHEDULES",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "ED-201",
+          "title": "FIRST FLOOR ELECTRICAL DEMOLITION PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "ED-203",
+          "title": "SECOND FLOOR ELECTRICAL DEMOLITION PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "ED-204",
+          "title": "THIRD FLOOR ELECTRICAL DEMOLITION PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "ED-301",
+          "title": "FIRST FLOOR LIGHTING DEMOLITION PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "FP-000",
+          "title": "FIRE PROTECTION LEGENDS, NOTES & ABBREVIATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "FP-101",
+          "title": "FIRST FLOOR FIRE PROTECTION PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "L-1-00",
+          "title": "LANDSCAPE PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-200",
+          "title": "ANNEX LEVEL 1 - HVAC FLOOR PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-200A",
+          "title": "ANNEX LEVEL 1 - HVAC RETURN AIR PLENUM FLOOR PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-201",
+          "title": "SERVICE WING LEVEL 1 - HVAC FLOOR PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-202",
+          "title": "CLRM WING LEVEL 1 - HVAC FLOOR PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-203",
+          "title": "CLRM WING LEVEL 2 - HVAC FLOOR PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-204",
+          "title": "CLRM WING LEVEL 3 - HVAC FLOOR PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-206",
+          "title": "SERVICE WING - HVAC ROOF PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-301",
+          "title": "ANNEX & SERVICE WING LEVEL 1 - HVAC PIPING PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-800",
+          "title": "MECHANICAL SCHEDULES",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-801",
+          "title": "MECHANICAL SCHEDULES",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-907",
+          "title": "BAS - RTU-4",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "M-908",
+          "title": "BAS - RTU-3 & RTU-5",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "MD-201",
+          "title": "SERVICE WING LEVEL 1 - HVAC DEMO PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-100A",
+          "title": "PLUMBING UNDERFLOOR PLAN - SERVICE WING - NEW WORK",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-100B",
+          "title": "PLUMBING UNDERFLOOR PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-201",
+          "title": "FIRST FLOOR PLUMBING PLAN - SERVICE WING - NEW WORK",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-202",
+          "title": "FIRST FLOOR PLUMBING PLAN - CLRM WING - NEW WORK",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-203",
+          "title": "SECOND FLOOR PLUMBING PLAN - CLRM WING - NEW WORK",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-204",
+          "title": "THIRD FLOOR PLUMBING PLAN - CLRM WING - NEW WORK",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-500",
+          "title": "PLUMBING ENLARGED VIEWS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "P-800",
+          "title": "PLUMBING SCHEDULES",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "PD-100",
+          "title": "PLUMBING DEMOLITION PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "PD-201",
+          "title": "FIRST FLOOR PLUMBING DEMOLITION PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "PD-202",
+          "title": "FIRST FLOOR PLUMBING DEMOLITION PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "PD-203",
+          "title": "SECOND FLOOR PLUMBING DEMOLITION PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "PD-204",
+          "title": "THIRD FLOOR PLUMBING DEMOLITION PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 7), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "S-101",
+          "title": "ANNEX FOUNDATION AND GROUND FLOOR PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "S-102",
+          "title": "ANNEX ROOF FRAMING PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "S-104",
+          "title": "CLRM WING PARTIAL FOUNDATION AND FRAMING PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "S-201",
+          "title": "FRAMING ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "S-402",
+          "title": "SERVICE WING ENLARGED FRAMING PLAN AND DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "S-504",
+          "title": "STEEL TRUSS DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        },
+        {
+          "sheet": "S-601",
+          "title": "MASONRY DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 1 (PDF page 6), drawing list, dated 05/19/2023"
+        }
+      ]
+    },
+    {
+      "addendum": 2,
+      "date": "2023-05-30",
+      "sheets": [
+        {
+          "sheet": "A-101B",
+          "title": "SERVICE WING FLOOR PLAN - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-101C",
+          "title": "SERVICE WING DEMO RCP - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-101D",
+          "title": "SERVICE WING RCP - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-102A",
+          "title": "CLRM WING DEMOLITION PLAN & RCP- LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-102B",
+          "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-103A",
+          "title": "CLRM WING DEMOLITION PLAN & RCP - LEVEL 2",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-103B",
+          "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 2",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-104A",
+          "title": "CLRM WING DEMOLITION PLAN & RCP - LEVEL 3",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-104B",
+          "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 3",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-106A",
+          "title": "DEMOLITION ROOF PLAN SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-106B",
+          "title": "ROOF PLAN SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-206",
+          "title": "SERVICE WING ENLARGED TOILET ROOM PLAN AND RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-207",
+          "title": "SERVICE WING ENLARGED ADMIN SUITE PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-208",
+          "title": "CLRM WING ENLARGED TOILET ROOM PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-208A",
+          "title": "CLRM WING ENLARGED TOILET ROOM PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-208B",
+          "title": "CLRM WING ENLARGED TOILET ROOM PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-209",
+          "title": "CLRM WING ENLARGED TOILET ROOM PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-209A",
+          "title": "CLRM WING ENLARGED TOILET ROOM PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-210",
+          "title": "CLRM WING ENLARGED OFFICE SUITE 103/101 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-220",
+          "title": "CLRM WING ENLARGED OFFICE SUITE 102/104 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-221",
+          "title": "CLRM WING ENLARGED MULTIPURPOSE ROOM 105 & 107 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-222",
+          "title": "CLRM WING ENLARGED COMPUTER ROOM 201 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-223",
+          "title": "CLRM WING ENLARGED MULTI-PURPOSE 202 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-225",
+          "title": "CLRM WING ENLARGED DANCE ROOM 213 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-226",
+          "title": "CLRM WING ENLARGED ROOMS 302 & 304 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-227",
+          "title": "CLRM WING ENLARGED CLRM 306 & PULL OUT RM PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-228",
+          "title": "CLRM WING ENLARGED SCIENCE LAB 309/STORAGE 307 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-230",
+          "title": "CLRM WING ENLARGED MUSIC ROOM 311 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-307B",
+          "title": "CLRM WING INTERIOR ELEVATIONS - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-308",
+          "title": "CLRM WING INTERIOR ELEVATIONS - LEVEL 2",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-308B",
+          "title": "CLRM WING INTERIOR ELEVATIONS - LEVEL 2",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-309B",
+          "title": "CLRM WING INTERIOR ELEVATIONS - LEVEL 3",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-309C",
+          "title": "CLRM WING INTERIOR ELEVATIONS - LEVEL 3",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-400",
+          "title": "ANNEX BUILDING ELEVATION",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-434",
+          "title": "EXTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-446",
+          "title": "ROOF DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-500",
+          "title": "WALL PARTITION",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-505",
+          "title": "DRINKING FOUNTAINS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-600",
+          "title": "HOISTWAY PLANS & SECTIONS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "A-704",
+          "title": "MILLWORK DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "C-3-00",
+          "title": "SITE GRADING PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "C-3-04",
+          "title": "DETAILED SITE GRADING PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "C-5-00",
+          "title": "SITE DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "E-000",
+          "title": "ELECTRICAL LEGENDS, NOTES & ABBREVIATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "E-001",
+          "title": "LIGHTING CONTROL DIAGRAM AND NOTES",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "E-010",
+          "title": "ELECTRICAL SITE PLAN",
+          "evidence": "Architect's response to Dett-A2-RFI9 refers to a revised E-010 in this addendum"
+        },
+        {
+          "sheet": "E-301",
+          "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+          "evidence": "Architect's response to Dett-A2-RFI11 refers to a revised E-301 in this addendum"
+        },
+        {
+          "sheet": "E-302",
+          "title": "FIRST FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Architect's response to Dett-A2-RFI2 refers to a revised E-302 in this addendum"
+        },
+        {
+          "sheet": "E-303",
+          "title": "SECOND FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Architect's response to Dett-A2-RFI3 refers to a revised E-303 in this addendum"
+        },
+        {
+          "sheet": "E-304",
+          "title": "THIRD FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Architect's response to Dett-A2-RFI1 refers to a revised E-304 in this addendum"
+        },
+        {
+          "sheet": "E-600",
+          "title": "ELECTRICAL ONE LINE DIAGRAM",
+          "evidence": "Architect's response to Dett-A2-RFI10 refers to a revised E-600 in this addendum"
+        },
+        {
+          "sheet": "E-701",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Architect's response to Dett-A2-RFI10 refers to a revised E-701 in this addendum"
+        },
+        {
+          "sheet": "ED-202",
+          "title": "FIRST FLOOR ELECTRICAL DEMOLITION PLAN -CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "ED-302",
+          "title": "FIRST FLOOR LIGHTING DEMOLITION PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 10), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "ED-303",
+          "title": "SECOND FLOOR LIGHTING DEMOLITION PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 10), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "ED-304",
+          "title": "THIRD FLOOR LIGHTING DEMOLITION PLAN - SERVICE WING",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 10), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "ID-012",
+          "title": "SERVICE WING - FLOOR FINISH PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "ID-015",
+          "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "L-2-01",
+          "title": "ORNAMENTAL FENCE DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "M-600",
+          "title": "MECHANICAL ONE LINE DIAGRAM",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "M-700",
+          "title": "MECHANICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "M-701",
+          "title": "MECHANICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "MD-202",
+          "title": "CLRM WING LEVEL 1 - HVAC DEMO PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "MD-204",
+          "title": "CLRM WING LEVEL 3 - HVAC DEMO PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 9), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "S-200",
+          "title": "FRAMING ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        },
+        {
+          "sheet": "S-501",
+          "title": "STEEL CONNECTION DETAILS - DELEGATED DESIGN",
+          "evidence": "Listed in the drawings attached to Addendum 2 (PDF page 8), drawing list, dated 05/26/2023"
+        }
+      ]
+    },
+    {
+      "addendum": 3,
+      "date": "2023-06-05",
+      "sheets": [
+        {
+          "sheet": "A-010B",
+          "title": "SITE PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-101A",
+          "title": "SERVICE WING DEMOLITION PLAN - LEVEL 1",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-105",
+          "title": "ROOF PLAN ANNEX",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-107",
+          "title": "ROOF PLANS CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-224",
+          "title": "CLRM WING ENLARGED SENSORIAL SPACE 211 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-229",
+          "title": "CLRM WING ENLARGED RESOURCE ROOM 310 & GAME ROOM 312 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-231",
+          "title": "CLRM WING ENLARGED VISUAL ARTS ROOM 313 PLAN & RCP",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-305",
+          "title": "SERVICE WING INTERIOR BATHROOM ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-305A",
+          "title": "SERVICE WING INTERIOR GYM ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-306",
+          "title": "CLRM WING INTERIOR BATHROOM ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-309",
+          "title": "CLRM WING INTERIOR ELEVATIONS - LEVEL 3",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-401",
+          "title": "CLRM WING BUILDING ELEVATIONS - SOUTH",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-402",
+          "title": "CLRM WING BUILDING ELEVATIONS - NORTH",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-404",
+          "title": "SERVICE WING BUILDING ELEVATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-420",
+          "title": "WALL SECTIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-421",
+          "title": "WALL SECTIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-422",
+          "title": "WALL SECTIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-424",
+          "title": "WALL SECTIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-445",
+          "title": "ROOF & RTU SCREEN WALL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-504",
+          "title": "INTERIOR SIGNAGE SCHEDULE",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-702",
+          "title": "INTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "A-702A",
+          "title": "INTERIOR DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "E-010",
+          "title": "ELECTRICAL SITE PLAN",
+          "evidence": "Architect's response to Dett-A3-RFI27 refers to a revised E-010 in this addendum"
+        },
+        {
+          "sheet": "E-204",
+          "title": "THIRD FLOOR POWER PLAN - CLRM WING",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "E-301",
+          "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+          "evidence": "Architect's response to Dett-A3-RFI11 refers to a revised E-301 in this addendum"
+        },
+        {
+          "sheet": "E-303",
+          "title": "SECOND FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Architect's response to Dett-A3-RFI13 refers to a revised E-303 in this addendum"
+        },
+        {
+          "sheet": "E-304",
+          "title": "THIRD FLOOR LIGHTING PLAN - CLRM WING",
+          "evidence": "Architect's response to Dett-A3-RFI16 refers to a revised E-304 in this addendum"
+        },
+        {
+          "sheet": "E-600",
+          "title": "ELECTRICAL ONE LINE DIAGRAM",
+          "evidence": "Architect's response to Dett-A3-RFI24 refers to a revised E-600 in this addendum"
+        },
+        {
+          "sheet": "E-700",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "E-703",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "E-704",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "E-705",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "E-706",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "E-707",
+          "title": "ELECTRICAL DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "FP-200",
+          "title": "FIRE PROTECTION DETAILS AND SCHEDULE",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 18), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "G-000",
+          "title": "CODE MATRIX",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "G-001",
+          "title": "GENERAL NOTES, ABBREVIATIONS, AND SYMBOLS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "G-002",
+          "title": "CODE INFORMATION & EGRESS PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "G-003",
+          "title": "CODE INFORMATION & EGRESS PLANS - FLOORS 2 AND 3",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "ID-010",
+          "title": "ANNEX FLOOR FINISH PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 16), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "ID-011",
+          "title": "ANNEX WALL FINISH PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "ID-013",
+          "title": "SERVICE WING - WALL FINISH PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "ID-014",
+          "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "ID-016",
+          "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "ID-021",
+          "title": "FINISH AND FURNITURE PLANS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "M-900",
+          "title": "BAS - GENERAL SYMBOLS & ABBREVIATIONS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "M-903",
+          "title": "EXHAUST FANS, HEATERS & MISCELLANEOUS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "M-906",
+          "title": "BAS MAU S 3",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 17), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "P-300",
+          "title": "PLUMBING ENLARGED VIEWS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 18), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "PD-205",
+          "title": "ROOF LEVEL PLUMBING DEMOLITION PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 18), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "S-001",
+          "title": "STRUCTURAL GENERAL NOTES",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "S-002",
+          "title": "STRUCTURAL GENERAL NOTES AND LOADING CRITERIA",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "S-100",
+          "title": "ANNEX CAISSON PLAN",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "S-300",
+          "title": "SLAB ON GRADE SECTIONS AND DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "S-301",
+          "title": "DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        },
+        {
+          "sheet": "S-600",
+          "title": "MASONRY DETAILS",
+          "evidence": "Listed in the drawings attached to Addendum 3 (PDF page 15), drawing list, dated 06/05/2023"
+        }
+      ]
+    },
+    {
+      "addendum": 4,
+      "date": "2023-06-06",
+      "sheets": []
+    },
+    {
+      "addendum": 5,
+      "date": "2023-06-09",
+      "sheets": []
+    },
+    {
+      "addendum": 6,
+      "date": "2023-06-15",
+      "sheets": [
+        {
+          "sheet": "PV-600",
+          "title": "SINGLE LINE DIAGRAM",
+          "evidence": "Listed in the drawings attached to Addendum 6 (PDF page 2), drawing list, dated 06/15/2023"
+        }
+      ]
+    }
+  ]
+}

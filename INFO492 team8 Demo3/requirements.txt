@@ -1,0 +1,2 @@
+# Python 3.10+ standard library only. No pip packages required.
+# External service: Google Gemini API (model gemini-3.5-flash-lite), called over HTTPS from core.py and agents.py.
