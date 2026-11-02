@@ -10,6 +10,7 @@
 |---|---|
 | Demo 1: finding missing details | [`team8-demo1/`](team8-demo1/) |
 | Demo 2: checking drawing references | [`team8-demo2/`](team8-demo2/) |
+| Demo 3: sub ↔ GC ↔ design-team RFI exchange | [`INFO492 team8 Demo3/`](INFO492%20team8%20Demo3/) |
 | Stakeholder interview transcripts | [`interviews/`](interviews/) |
 | LLM summary of class feedback on Demos 1–2 | [`class_feedback/`](class_feedback/) |
 | Team website | [`index.html`](index.html) |
@@ -41,14 +42,29 @@ Code looks up every cited sheet number in a 206-sheet drawing index; the AI judg
 | Evaluation Lab, 10 real RFIs | [`eval/`](team8-demo2/eval/) (labels, answer key, [`RESULTS.md`](team8-demo2/eval/RESULTS.md), write-up) and [`results/demo2_real/`](team8-demo2/results/demo2_real/) |
 | How to run | [`team8-demo2/README.md`](team8-demo2/README.md) |
 
+## Demo 3: RFI exchange between subcontractor, GC and design team
+
+A foreman's rough site message becomes a clearer RFI (draft agent, foreman approves); the GC's agents check it and watch for drawing revisions; the architect's agent orders the queue. Agents only suggest or flag; people with the right role decide. Main measure: RFIs the GC can act on without a clarification round.
+
+| | Location |
+|---|---|
+| Code | [`app.py`](INFO492%20team8%20Demo3/app.py), [`agents.py`](INFO492%20team8%20Demo3/agents.py), [`protocol.py`](INFO492%20team8%20Demo3/protocol.py), [`core.py`](INFO492%20team8%20Demo3/core.py), [`static/`](INFO492%20team8%20Demo3/static/), [`scripts/`](INFO492%20team8%20Demo3/scripts/), [`tests/`](INFO492%20team8%20Demo3/tests/) |
+| Data | [`data/`](INFO492%20team8%20Demo3/data/): 12 rough RFIs from real Dett RFIs (simulated wording), answer key, drawing index, addendum revisions; sources in [`docs/DATA_PROVENANCE.md`](INFO492%20team8%20Demo3/docs/DATA_PROVENANCE.md) |
+| LLM prompts | [`prompts/`](INFO492%20team8%20Demo3/prompts/): `draft_agent.txt`, `check_agent.txt`, `reference_review.txt` |
+| Dependencies | [`requirements.txt`](INFO492%20team8%20Demo3/requirements.txt): Python 3.10+ standard library; Google Gemini API |
+| Protocol (roles, messages, escalation, audit trail) | [`docs/PROTOCOL.md`](INFO492%20team8%20Demo3/docs/PROTOCOL.md) |
+| Results | [`results/demo3/`](INFO492%20team8%20Demo3/results/demo3/) and [`NOTES.md`](INFO492%20team8%20Demo3/results/demo3/NOTES.md); first run kept in [`results/demo3_v1_before_cost_fix/`](INFO492%20team8%20Demo3/results/demo3_v1_before_cost_fix/) |
+| How to run | [`README.md`](INFO492%20team8%20Demo3/README.md) |
+
 ## Stakeholder interviews
 
-Transcripts of our interviews with construction industry stakeholders are in [`interviews/`](interviews/). [TO ADD: one line per interview: role, date, file name]
+Transcripts of our interviews with construction industry stakeholders are in [`interviews/`](interviews/). Interview 1: assistant project manager at a small general contractor in St. Louis, October 2026, conducted in Chinese and translated into English ([`GC interview transcript with Kevin Chen.pdf`](interviews/GC%20interview%20transcript%20with%20Kevin%20Chen.pdf)).
 
 ## Class feedback
 
-[`class_feedback/`](class_feedback/) holds the class feedback on Demos 1 and 2, the prompt we used, and the LLM-generated summary. [TO ADD: file names and the model used]
+[`class_feedback/README`](class_feedback/README) holds the LLM-generated summary of peer and TA feedback on Demos 1 and 2.
 
 ## AI assistance
 
 The prototypes were built with AI coding assistance. The thesis, dataset choice, case review and reported results are the team's.
+
