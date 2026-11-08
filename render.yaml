@@ -1,0 +1,29 @@
+# One public URL. Web process also runs the watch loop when WATCH_EVERY_SECONDS > 0.
+# Render → New Blueprint → select this repo.
+services:
+  - type: web
+    name: team8-rfi-demo3
+    runtime: python
+    rootDir: INFO492 team8 Demo3
+    buildCommand: pip install --upgrade pip
+    startCommand: python3 app.py
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.7"
+      - key: DEMO3_RUNTIME
+        value: /var/data/runtime
+      - key: MAX_AI_CALLS_PER_DAY
+        value: "200"
+      - key: AI_RATE_LIMIT_PER_IP
+        value: "15"
+      - key: WATCH_EVERY_SECONDS
+        value: "86400"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+    disk:
+      name: demo3-data
+      mountPath: /var/data
+      sizeGB: 1

@@ -1,15 +1,17 @@
 """Team 8 Demo #3: one RFI exchanged between subcontractor, GC and design team, each with its own agent.
 
-    python3 app.py            then open http://127.0.0.1:8766
-    python3 app.py --watch-every 60   also publish the next addendum automatically every 60 seconds
+    python3 app.py                         local → http://127.0.0.1:8766
+    python3 app.py --watch-every 60        auto-issue addenda in the web process
+    python3 scripts/watch_worker.py        background addenda loop (Render worker)
 
-Local only. State lives in runtime/ (never uploaded). See README.md for the demo users and PINs.
+State: DEMO3_RUNTIME (default ./runtime). See README.md for Render deploy and demo PINs.
 """
 import argparse
 import csv
 import hmac
 import io
 import json
+import logging
 import os
 import secrets
 import statistics
@@ -30,6 +32,12 @@ AUDIT = AuditLog(RUNTIME / 'audit.jsonl')
 STUDY_FILE = RUNTIME / 'study.csv'
 LOCK = threading.RLock()
 SESSIONS = {}
+AI_RATE_WINDOW = 60
+AI_RATE_MAX = int(os.getenv('AI_RATE_LIMIT_PER_IP', '15'))
+_ai_rate_hits = {}
+agents.init_budget(RUNTIME / 'ai_budget.json')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
+logger = logging.getLogger('demo3')
 USERS = {u['id']: u for u in json.loads((ROOT / 'data' / 'users.json').read_text(encoding='utf-8'))['users']}
 CTX = {'index': agents.load('drawing_index.json'), 'revisions': agents.load('revisions.json')}
 CASES = {c['case_id']: c for c in agents.load('rough_rfis.json')}
@@ -118,12 +126,32 @@ def create_rfi(st, user, body):
     return r
 
 
-def act(st, user, rid, action, body):
+def client_ip(handler):
+    fwd = handler.headers.get('X-Forwarded-For') or handler.headers.get('X-Real-Ip') or ''
+    if fwd:
+        return fwd.split(',')[0].strip()
+    return handler.client_address[0]
+
+
+def rate_limit_ai(handler):
+    now = time.time()
+    ip = client_ip(handler)
+    with LOCK:
+        hits = _ai_rate_hits.setdefault(ip, [])
+        hits[:] = [t for t in hits if now - t < AI_RATE_WINDOW]
+        if len(hits) >= AI_RATE_MAX:
+            raise ValueError('Too many AI requests from your network. Wait about a minute and try again.')
+        hits.append(now)
+
+
+def act(st, user, rid, action, body, handler=None):
     r = get_rfi(st, rid, user)
     if action == 'draft':
         require(user, 'request_draft')
         if r['created_by'] != user['id']: raise Denied('Only the foreman who wrote this RFI can draft it.')
         use_ai = body.get('use_ai', True)
+        if use_ai and handler:
+            rate_limit_ai(handler)
         fn = agents.draft_agent if use_ai else agents.code_draft
         msg = r['rough']['message'] if r['status'] != 'returned' else (r['final'] or {}).get('question', r['rough']['message'])
         r['draft'] = fn(msg, r['rough']['sheets_as_written'], r['drawing_set'], ctx(st))
@@ -144,7 +172,10 @@ def act(st, user, rid, action, body):
     elif action == 'check':
         require(user, 'run_check')
         if not r.get('final'): raise ValueError('Nothing submitted to check yet.')
-        r['check'] = agents.check_agent(r['final'], r['drawing_set'], ctx(st), use_ai=body.get('use_ai', True))
+        use_ai = body.get('use_ai', True)
+        if use_ai and handler:
+            rate_limit_ai(handler)
+        r['check'] = agents.check_agent(r['final'], r['drawing_set'], ctx(st), use_ai=use_ai)
         log('check_result', rid, agent='check_agent', to_party='gc', body={'to_role': user['role'], 'check': r['check']})
     elif action in ('return', 'answer', 'forward'):
         require(user, action)
@@ -277,7 +308,8 @@ def study_results():
 class Handler(BaseHTTPRequestHandler):
     server_version = 'Team8Demo3/1.0'
 
-    def log_message(self, *a): pass
+    def log_message(self, fmt, *args):
+        logger.info('%s - %s', self.address_string(), fmt % args)
 
     def user(self):
         cookie = self.headers.get('Cookie', '')
@@ -307,6 +339,8 @@ class Handler(BaseHTTPRequestHandler):
             ctype = {'html': 'text/html', 'js': 'text/javascript', 'css': 'text/css'}[f.suffix[1:]]
             return self.send(200, raw=f.read_bytes(), ctype=ctype)
         try:
+            if p == '/health':
+                return self.send(200, {'ok': True, 'service': 'team8-demo3'})
             with LOCK:
                 st = load_state(); u = self.user()
                 if p == '/api/meta':
@@ -316,7 +350,8 @@ class Handler(BaseHTTPRequestHandler):
                                            'agents': {k: dict(v, may_send=sorted(v['may_send'])) for k, v in AGENTS.items()},
                                            'me': u and {**{k: u[k] for k in ('id', 'name', 'role', 'company')}, 'can': sorted(ROLES[u['role']]['can'])},
                                            'issued_through': st['issued_through'], 'today': agents.DEMO_TODAY.isoformat(),
-                                           'ai': {'connected': bool(cfg.get('key')), 'model': cfg.get('model')},
+                                           'ai': {'connected': bool(cfg.get('key')), 'model': cfg.get('model'), 'budget': agents.ai_calls()},
+                                           'demo_pins': {u['id']: u['pin'] for u in USERS.values()},
                                            'cases': [{'case_id': c['case_id'], 'title': c['source']['title'], 'drawing_set': c['drawing_set']} for c in CASES.values()]})
                 if p.startswith('/api/study/items'):
                     reviewer = int(parse_qs(url.query).get('reviewer', ['1'])[0])
@@ -374,9 +409,12 @@ class Handler(BaseHTTPRequestHandler):
                         return self.send(401, {'error': 'Wrong user or PIN.'})
                     token = secrets.token_urlsafe(24); SESSIONS[token] = cand
                     log('session', None, cand, body={'event': 'sign_in'})
-                    return self.send(200, {'ok': True}, headers={'Set-Cookie': f'd3session={token}; HttpOnly; SameSite=Strict; Path=/'})
+                    secure = ' Secure;' if os.getenv('RENDER') or os.getenv('HTTPS_COOKIES') else ''
+                    return self.send(200, {'ok': True},
+                                      headers={'Set-Cookie': f'd3session={token}; HttpOnly; SameSite=Lax; Path=/{secure}'})
                 if p == '/api/logout':
-                    return self.send(200, {'ok': True}, headers={'Set-Cookie': 'd3session=; Max-Age=0; Path=/'})
+                    secure = ' Secure;' if os.getenv('RENDER') or os.getenv('HTTPS_COOKIES') else ''
+                    return self.send(200, {'ok': True}, headers={'Set-Cookie': f'd3session=; Max-Age=0; Path=/{secure}'})
                 if p == '/api/study/record':
                     return self.send(200, study_record(body))
                 if not u: return self.send(401, {'error': 'Sign in first.'})
@@ -384,7 +422,7 @@ class Handler(BaseHTTPRequestHandler):
                     r = create_rfi(st, u, body); save_state(st); return self.send(200, summary(r))
                 if p.startswith('/api/rfis/'):
                     _, _, _, rid, action = p.split('/')
-                    r = act(st, u, rid, action, body); save_state(st); return self.send(200, {'rfi': r})
+                    r = act(st, u, rid, action, body, handler=self); save_state(st); return self.send(200, {'rfi': r})
                 if p == '/api/watch/next':
                     require(u, 'run_watcher'); out = publish_next(st); save_state(st); return self.send(200, out)
                 if p == '/api/watch/reset':
@@ -415,24 +453,44 @@ class Handler(BaseHTTPRequestHandler):
 
 
 def watch_loop(every):
+    logger.info('Watch loop started (every %ss)', every)
     while True:
         time.sleep(every)
         with LOCK:
             st = load_state()
             if st['issued_through'] < 6:
-                publish_next(st); save_state(st)
+                out = publish_next(st)
+                save_state(st)
+                logger.info('Issued addendum %s (%s alerts)', out.get('addendum'), len(out.get('alerts', [])))
+
+
+def default_host():
+    port_env = os.getenv('PORT')
+    if port_env or os.getenv('RENDER'):
+        return os.getenv('HOST', '0.0.0.0')
+    return os.getenv('HOST', '127.0.0.1')
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--port', type=int, default=8766)
-    ap.add_argument('--watch-every', type=int, default=0, help='seconds between automatic addendum releases (0 = manual)')
+    ap.add_argument('--host', default=default_host())
+    ap.add_argument('--port', type=int, default=int(os.getenv('PORT', '8766')))
+    env_watch = int(os.getenv('WATCH_EVERY_SECONDS', '0') or '0')
+    ap.add_argument('--watch-every', type=int, default=env_watch,
+                    help='seconds between automatic addendum releases in this process (0 = off)')
+    ap.add_argument('--watch-only', action='store_true', help='run only the watch loop (Render background worker)')
     a = ap.parse_args()
-    if a.watch_every: threading.Thread(target=watch_loop, args=(a.watch_every,), daemon=True).start()
-    srv = ThreadingHTTPServer(('127.0.0.1', a.port), Handler)
-    print(f'Team 8 Demo #3 running at http://127.0.0.1:{a.port}  (study page: /study).  Ctrl+C to stop.')
+    RUNTIME.mkdir(parents=True, exist_ok=True)
+    if a.watch_only:
+        every = a.watch_every or int(os.getenv('WATCH_EVERY_SECONDS', '3600'))
+        watch_loop(every)
+        return
+    if a.watch_every:
+        threading.Thread(target=watch_loop, args=(a.watch_every,), daemon=True).start()
+    srv = ThreadingHTTPServer((a.host, a.port), Handler)
+    logger.info('Listening on http://%s:%s (study: /study)', a.host, a.port)
     try: srv.serve_forever()
-    except KeyboardInterrupt: print('\nStopped.')
+    except KeyboardInterrupt: logger.info('Stopped.')
 
 
 if __name__ == '__main__':

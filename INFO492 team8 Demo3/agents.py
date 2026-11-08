@@ -13,15 +13,55 @@ import json
 import os
 import re
 from datetime import date, timedelta
+from pathlib import Path
 
 from core import ROOT, ai_reference_review, gemini_json, normalize_sheet, settings
 
 SHEET_RE = re.compile(r'\b([A-Za-z]{1,3})-?(\d{3}[A-Za-z]?)\b')
 NOT_SHEETS = {'RT', 'KN', 'AE', 'S4'}           # finish tags, keynotes etc. that look like sheet numbers
 DEMO_TODAY = date.fromisoformat(os.getenv('DEMO_TODAY', '2023-09-15'))
-MAX_AI_CALLS = int(os.getenv('MAX_AI_CALLS', '300'))
-_ai_calls = {'n': 0}
+MAX_AI_CALLS = int(os.getenv('MAX_AI_CALLS_PER_DAY', os.getenv('MAX_AI_CALLS', '300')))
+_ai_calls = {'n': 0, 'day': None}
+_budget_path = None
 MONTHS = {m: i for i, m in enumerate(['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'], 1)}
+
+
+def init_budget(path):
+    """Persist daily AI usage across restarts (cloud demo)."""
+    global _budget_path
+    _budget_path = Path(path) if path else None
+    _refresh_budget_day()
+
+
+def _today():
+    return date.today().isoformat()
+
+
+def _refresh_budget_day():
+    today = _today()
+    if _ai_calls.get('day') == today:
+        return
+    if _budget_path and _budget_path.exists():
+        try:
+            data = json.loads(_budget_path.read_text(encoding='utf-8'))
+            if data.get('day') == today:
+                _ai_calls['n'] = int(data.get('n', 0))
+                _ai_calls['day'] = today
+                return
+        except (OSError, ValueError, TypeError):
+            pass
+    _ai_calls['n'] = 0
+    _ai_calls['day'] = today
+    _persist_budget()
+
+
+def _persist_budget():
+    if not _budget_path:
+        return
+    _budget_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = _budget_path.with_suffix('.tmp')
+    tmp.write_text(json.dumps({'day': _ai_calls['day'], 'n': _ai_calls['n']}), encoding='utf-8')
+    os.replace(tmp, _budget_path)
 
 
 def load(name):
@@ -29,19 +69,23 @@ def load(name):
 
 
 def ai_calls():
-    return dict(_ai_calls, limit=MAX_AI_CALLS)
+    _refresh_budget_day()
+    return {'n': _ai_calls['n'], 'day': _ai_calls['day'], 'limit': MAX_AI_CALLS}
 
 
 def _ai(cfg, prompt_file, user, schema):
-    """One budgeted Gemini call (guardrail: the app stops calling the AI after MAX_AI_CALLS)."""
+    """One budgeted Gemini call (daily cap, persisted when init_budget was set)."""
+    _refresh_budget_day()
     if _ai_calls['n'] >= MAX_AI_CALLS:
-        raise ValueError(f'AI call budget reached ({MAX_AI_CALLS}). Restart the app or raise MAX_AI_CALLS.')
+        raise ValueError(
+            f'This demo has used its daily AI limit ({MAX_AI_CALLS} calls). Try again tomorrow or use checklist-only.')
     if not cfg.get('key'):
         raise ValueError('AI is not connected. Run python3 setup_ai.py in this folder first.')
     if cfg.get('provider', 'gemini') != 'gemini':
         raise ValueError('Demo #3 agents use Gemini. Run python3 setup_ai.py.')
     prompt = (ROOT / 'prompts' / prompt_file).read_text(encoding='utf-8')
     _ai_calls['n'] += 1
+    _persist_budget()
     out, raw = gemini_json(cfg, prompt, user, schema)
     if not isinstance(out, dict):
         raise ValueError('The AI returned an invalid object. No result was accepted.')

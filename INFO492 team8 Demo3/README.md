@@ -26,6 +26,24 @@ python3 setup_ai.py        # once; paste your Gemini key (skip if you already di
 python3 app.py             # open http://127.0.0.1:8766
 ```
 
+### Deploy on Render (one public URL)
+
+1. Push this repo to GitHub.
+2. In [Render](https://render.com) → **New** → **Blueprint** → connect the repo → use the root [`render.yaml`](../render.yaml).
+3. Set **GEMINI_API_KEY** on the web service (Environment).
+4. Open the `.onrender.com` URL — everyone uses the same link; sign in by role (PINs shown in the app after you pick a user).
+
+Persistent state lives on the attached disk at `DEMO3_RUNTIME=/var/data/runtime`. Health check: `GET /health`.
+Optional: `WATCH_EVERY_SECONDS` (default 86400) runs the code-only watch agent in the web process.
+Guardrails: `MAX_AI_CALLS_PER_DAY`, `AI_RATE_LIMIT_PER_IP` (see [`.env.example`](.env.example)).
+
+Local production-style run:
+
+```bash
+export GEMINI_API_KEY=... DEMO3_RUNTIME=./runtime HOST=0.0.0.0 PORT=8766
+python3 app.py
+```
+
 Demo users (fictional people and companies; PINs are for this local demo only):
 
 | User | Role | PIN |

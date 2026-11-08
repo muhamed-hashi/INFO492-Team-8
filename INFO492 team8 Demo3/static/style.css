@@ -3,8 +3,11 @@
 * { box-sizing:border-box; }
 body { margin:0; font:15px/1.5 -apple-system, "Segoe UI", Roboto, sans-serif; color:var(--ink); background:var(--bg); }
 .top { display:flex; flex-wrap:wrap; gap:8px 24px; align-items:center; padding:12px 20px; background:#1f2a27; color:#eef; }
-.brand b { font-size:18px; margin-right:10px; } .brand span { color:#b9c4c0; font-size:13px; }
-.clock { font-size:13px; color:#d6dfdc; } .who { margin-left:auto; font-size:14px; }
+.brand b { font-size:18px; margin-right:10px; } .brand-sub { color:#b9c4c0; font-size:13px; display:block; }
+@media (min-width:700px){ .brand-sub { display:inline; margin-left:8px; } }
+.clock { font-size:13px; color:#d6dfdc; flex:1; text-align:center; } .who { margin-left:auto; font-size:14px; }
+.ai-dot { display:inline-block; width:8px; height:8px; border-radius:50%; background:#888; margin-right:4px; vertical-align:middle; }
+.ai-dot.on { background:#6fdc6f; } .ai-dot.off { background:#e88; }
 .warn { color:var(--warn); } .ok { color:var(--ok); } .miss { color:var(--bad); }
 main { max-width:1200px; margin:0 auto; padding:16px; }
 .tabs { display:flex; gap:6px; margin-bottom:12px; flex-wrap:wrap; }
@@ -51,3 +54,20 @@ table { width:100%; border-collapse:collapse; font-size:14px; margin:6px 0; } th
 .toast { position:fixed; bottom:20px; right:20px; background:#1f2a27; color:#fff; padding:10px 16px; border-radius:10px; z-index:9; max-width:420px; }
 .toast.bad { background:var(--bad); }
 .study { max-width:760px; margin:0 auto; } .study .big { font-size:17px; }
+.party-pick { display:grid; gap:10px; margin:16px 0; }
+.party-card { text-align:left; padding:14px 16px; border:1px solid var(--line); border-radius:12px; background:#fff; cursor:pointer; font:inherit; width:100%; }
+.party-card b { display:block; font-size:16px; margin-bottom:4px; }
+.party-card span { color:var(--muted); font-size:13px; }
+.party-card:hover { border-color:var(--accent); }
+.steps { display:flex; gap:8px; margin:0 0 12px; font-size:12px; color:var(--muted); }
+.steps span { padding:4px 10px; border-radius:20px; background:#e8e6e1; }
+.steps span.on { background:var(--accent); color:#fff; }
+button.wide, .button.wide { width:100%; max-width:420px; padding:12px 16px; font-size:16px; }
+.actions-primary { justify-content:stretch; }
+.pin-row input { min-width:120px; }
+.pin-hint { font-size:13px; }
+.help-drawer { margin-top:12px; font-size:13px; }
+.sr-only { position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+.gc-actions { display:flex; flex-wrap:wrap; gap:8px; position:sticky; bottom:0; padding:12px 0 4px; background:linear-gradient(transparent, var(--bg) 20%); }
+.gc-actions button { flex:1; min-width:100px; padding:12px; }
+.signin .back { margin-bottom:8px; }
