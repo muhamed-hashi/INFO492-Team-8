@@ -138,6 +138,7 @@
     <a class="link" href="#experiments">Experiments</a>
     <a class="link" href="#demo1">Demo 1</a>
     <a class="link" href="#demo2">Demo 2</a>
+    <a class="link" href="#demo3">Demo 3</a>
     <a class="link" href="#dataset">Dataset</a>
     <a class="link" href="#limitations">Limitations</a>
     <a class="link" href="#references">References</a>
@@ -149,6 +150,10 @@
     <p class="eyebrow">INFO 492 C · Construction Informatics · Autumn 2026 · Subcontractor team</p>
     <h1>Better RFIs before they reach the GC: <span>an AI review step</span> for subcontractors</h1>
     <p class="lede">Thesis + Coordination Posture Design. We propose adding an AI check to an existing RFI form that catches missing details, unclear questions, and document references before the RFI is sent to the general contractor.</p>
+    <p style="margin-top:20px">
+      <a class="btn" href="https://info492-team-8.onrender.com" target="_blank" rel="noopener">Open Demo 3 (live app) →</a>
+      <a class="btn ghost" href="#demo3">What Demo 3 does</a>
+    </p>
     <div class="stat-row">
       <div class="stat"><b>≥ 25%</b><small>Target reduction in median GC first-review time</small></div>
       <div class="stat"><b>0</b><small>Increase in information errors allowed</small></div>
@@ -283,8 +288,8 @@
     <div class="grid-2" style="margin-bottom:24px">
       <div class="card"><strong>1. Finding missing details</strong><span class="badge">Built</span><br><span class="note">Can the agent spot what the RFI leaves out? <a href="#demo1">See the demo →</a></span></div>
       <div class="card"><strong>2. Checking references</strong><span class="badge">Built</span><br><span class="note">Code looks up sheet numbers in a 206-sheet index; AI checks titles for fit. <a href="#demo2">See the demo →</a></span></div>
-      <div class="card"><strong>3. Improving drafts</strong><br><span class="note">Does the agent make questions clearer and more specific?</span></div>
-      <div class="card"><strong>4. Sending the final RFI to the GC</strong><br><span class="note">The approved RFI moves to the GC for first review.</span></div>
+      <div class="card"><strong>3. RFI exchange (live)</strong><span class="badge">Built</span><br><span class="note">Rough site messages → draft agent → GC check → design queue. <a href="#demo3">See the demo →</a></span></div>
+      <div class="card"><strong>4. Measuring fewer GC round-trips</strong><br><span class="note">Compare RFIs that reach the GC without a clarification request (Demo 3 evaluation).</span></div>
     </div>
 
     <h3>Method</h3>
@@ -403,6 +408,21 @@
       <a class="btn ghost" href="https://github.com/muhamed-hashi/INFO492-Team-8/tree/main/team8-demo2" target="_blank" rel="noopener">Source code</a>
       <a class="btn ghost" href="https://github.com/muhamed-hashi/INFO492-Team-8/blob/main/team8-demo2/eval/RESULTS.md" target="_blank" rel="noopener">Evaluation Lab results</a>
       <p class="note" style="margin-top:12px">Runs locally from <code>team8-demo2/</code> (<code>python3 setup_ai.py</code> once, then <code>python3 app.py</code> → <code>http://127.0.0.1:8765</code>). Same as Demo 1, it is not hosted on GitHub Pages.</p>
+    </div>
+  </div>
+</section>
+
+<section id="demo3">
+  <div class="wrap">
+    <h2>Demo 3: RFI exchange (live)</h2>
+    <p class="sub">One public URL for subcontractor, GC, and design team — hosted on Render. Simulated Dett construction-stage scenario.</p>
+    <div class="card">
+      <p>A foreman’s rough site note becomes a structured RFI (<strong>draft agent</strong> + code sheet lookup). The foreman approves before the GC sees it. <strong>Check agent</strong> and <strong>watch agent</strong> flag missing context and revised drawings; agents suggest only — each role signs in and decides. Same code + AI split as Demo 2 for sheet numbers.</p>
+      <p>Try scenario <strong>F03</strong> as <strong>Foreman A</strong> (demo PIN <strong>1111</strong> after you pick the user). GC demo PINs: Site Manager <strong>2222</strong>, PM <strong>3333</strong>, Architect <strong>4444</strong>.</p>
+      <a class="btn" href="https://info492-team-8.onrender.com" target="_blank" rel="noopener">Open live app →</a>
+      <a class="btn ghost" href="https://info492-team-8.onrender.com/health" target="_blank" rel="noopener">Health check</a>
+      <a class="btn ghost" href="https://github.com/muhamed-hashi/INFO492-Team-8/tree/main/INFO492%20team8%20Demo3" target="_blank" rel="noopener">Source code</a>
+      <p class="note" style="margin-top:12px">Free tier may sleep when idle; first load can take up to a minute. Data is simulated; do not upload confidential project documents.</p>
     </div>
   </div>
 </section>
