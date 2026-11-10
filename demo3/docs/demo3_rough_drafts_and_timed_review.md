@@ -20,15 +20,20 @@ Files:
 | File | What it holds |
 |---|---|
 | `scripts/make_rough_drafts.py` | Generation script. Re-running it rebuilds both data files. |
-| `data/rough_drafts.json` | 10 drafts plus the list of planted issue types. |
-| `data/rough_drafts.csv` | Same data as a table. |
+| `data/rough_drafts.json` | 10 drafts (rough RFI forms plus answer key) and the list of planted issue types. |
+| `data/rough_drafts.csv` | Same data as a table. `form_*` columns are the RFI form; the other columns are the answer key. |
+| `data/timed_review_log_template.csv` | Empty log for the timed review test. |
+
+Only the `form_*` fields (or `rough_draft`) may be given to the AI or the reviewers. All other columns are the answer key.
 
 ## 3. How we rewrote each RFI
+
+**Format.** Each draft uses the part of a standard RFI form that a subcontractor fills in: date, from, to, subject, location, references, question, proposed solution, needed by, impact, attachments. The interview showed that even when subs use a template (his company uses a Word form based on AIA G716), they fill it in roughly: blank fields, "ASAP", wrong sheet numbers. So every form has all the fields, but the content is rough. These fields also match the RFI form in our Demo 1 app. The `form` fields are what the reviewer and the AI see. A one-line text version (`rough_draft`) is kept for agents that take plain text.
 
 Rules:
 
 1. Keep the original technical problem. Never invent a new problem.
-2. Rewrite in a foreman's voice: short, abbreviations ("dwg", "rm", "plam"), little punctuation.
+2. Fill the form in a foreman's voice: short, abbreviations ("dwg", "rm", "plam"), little punctuation. Leave fields blank where the sub would skip them.
 3. Plant only the problems Kevin described (table below). Every planted problem is listed in `planted_issues`.
 4. Keep the correct answer in the record: `correct_location`, `correct_references`, `source_question`, `source_response`.
 5. Mark every record `is_simulated: true` and list anything invented in `invented_details` (for example, needed-by dates).

@@ -318,7 +318,63 @@ DRAFTS = [
 ]
 
 
+# Standard sub-to-GC RFI form, filled in roughly (what the reviewer and the AI see).
+# Fields follow the parts of a standard RFI that the subcontractor fills in.
+# Dates are invented for the exercise.
+FORM_FIELDS = ["date", "from", "to", "subject", "location", "references", "question",
+               "proposed_solution", "needed_by", "impact", "attachments"]
+
+FORMS = {
+    "R01": {"date": "9/12", "from": "Casework sub", "to": "GC", "subject": "countertop??",
+            "location": "hallway by office suite + 2 MP rms", "references": "6/A-703",
+            "question": "cab detail says solid surface top but other note says plam. which one",
+            "proposed_solution": "", "needed_by": "", "impact": "", "attachments": "pic"},
+    "R02": {"date": "9/12", "from": "Casework sub", "to": "GC", "subject": "drop sink",
+            "location": "hallway", "references": "",
+            "question": "drop sink in the millwork - no elev. is it a base cab? what top?",
+            "proposed_solution": "", "needed_by": "ASAP", "impact": "need to order", "attachments": ""},
+    "R03": {"date": "9/13", "from": "Plumbing sub", "to": "GC", "subject": "staff toilets",
+            "location": "service wing staff toilets", "references": "P2, underfloor dwg",
+            "question": "P2 says connect new WC + lav but underfloor dwg says existing no work. which is it?? also need a fixture schedule",
+            "proposed_solution": "not carrying extra fixtures unless directed", "needed_by": "", "impact": "",
+            "attachments": ""},
+    "R04": {"date": "9/15", "from": "Solid surface sub", "to": "GC", "subject": "AX42 at panel joints",
+            "location": "", "references": "A-30 elevs",
+            "question": "AX42 points at the joints between solid surface panels but the note is about an operable partition closure panel?? doesnt make sense. what mfr for the joints. happens all over the elevs",
+            "proposed_solution": "", "needed_by": "", "impact": "", "attachments": ""},
+    "R05": {"date": "9/14", "from": "Tile sub", "to": "GC", "subject": "T-1 floor?",
+            "location": "kinder toilet rms", "references": "finish sched, legend",
+            "question": "finish sched says T-1 on the floor but legend says T-1 is existing wall tile to remain. so what goes on the floor? and whats the pattern for T-2",
+            "proposed_solution": "", "needed_by": "", "impact": "", "attachments": ""},
+    "R06": {"date": "9/14", "from": "Tile sub", "to": "GC", "subject": "cove base over existing tile",
+            "location": "Toilet Rms 140, 143, 160", "references": "A-502",
+            "question": "A-502 calls T-2 6in ceramic cove base, T-1 wall tile existing to remain. Is cove base installed over existing tile? Any patching of existing wall tile? Pls send detail for cove base to floor tile.",
+            "proposed_solution": "", "needed_by": "9/22",
+            "impact": "need to order tile, floor tile in these rooms on hold", "attachments": ""},
+    "R07": {"date": "9/11", "from": "Security / low voltage sub", "to": "GC", "subject": "camera types",
+            "location": "", "references": "elec dwgs, last addendum",
+            "question": "new cameras showed up after the last addendum but no type/model. what cameras r we installing??",
+            "proposed_solution": "", "needed_by": "", "impact": "", "attachments": ""},
+    "R08": {"date": "9/18", "from": "Electrical sub", "to": "GC", "subject": "PV conduit size",
+            "location": "", "references": "E-60, PV single line",
+            "question": "conduit size dont match between elec dwgs. which one??",
+            "proposed_solution": "", "needed_by": "ASAP", "impact": "", "attachments": ""},
+    "R09": {"date": "9/19", "from": "Electrical sub", "to": "GC", "subject": "meter wiring + spec",
+            "location": "panels on E-702 metering schedule", "references": "E-702",
+            "question": "Detail shows CTs but no meters. Need a typical wiring diagram for one meter monitoring several circuits, plus product spec for the meters and CTs.",
+            "proposed_solution": "", "needed_by": "10/2",
+            "impact": "metering submittal, gear order on hold until then", "attachments": ""},
+    "R10": {"date": "9/15", "from": "Casework sub", "to": "GC", "subject": "cabinet by sink - our scope?",
+            "location": "Care Room 101E", "references": "A-210",
+            "question": "cabinet next to the sink - is that casework in our scope? no detail or elev. if ours pls send detail + elev",
+            "proposed_solution": "", "needed_by": "9/29", "impact": "shop dwgs", "attachments": ""},
+}
+
+
 def check(drafts):
+    for d in drafts:
+        form = FORMS[d["draft_id"]]
+        assert list(form) == FORM_FIELDS, f"{d['draft_id']}: form fields out of order"
     ids = [d["draft_id"] for d in drafts]
     assert len(ids) == len(set(ids)) == 10, "need 10 unique drafts"
     for d in drafts:
@@ -336,7 +392,9 @@ def main():
     check(DRAFTS)
     records = []
     for d in DRAFTS:
-        r = dict(d)
+        r = {"draft_id": d["draft_id"], "form": FORMS[d["draft_id"]]}
+        r.update({k: v for k, v in d.items() if k != "draft_id"})
+        r["invented_details"] = r["invented_details"] + ["RFI form dates"]
         r["expected_followup_count"] = len(d["expected_followups"])
         r["is_simulated"] = True
         records.append(r)
@@ -347,7 +405,8 @@ def main():
     with open(out_dir / "rough_drafts.json", "w", encoding="utf-8") as f:
         json.dump({"patterns": PATTERNS, "drafts": records}, f, indent=2, ensure_ascii=False)
 
-    cols = ["draft_id", "source_rfi", "source_file", "source_page", "trade", "difficulty",
+    form_cols = [f"form_{k}" for k in FORM_FIELDS]
+    cols = ["draft_id"] + form_cols + ["source_rfi", "source_file", "source_page", "trade", "difficulty",
             "rough_draft", "planted_issues", "expected_followup_count", "expected_followups",
             "correct_location", "correct_references", "source_question", "source_response",
             "related_revision", "invented_details", "is_simulated"]
@@ -356,6 +415,8 @@ def main():
         w.writeheader()
         for r in records:
             row = {c: r.get(c) for c in cols}
+            for k in FORM_FIELDS:
+                row[f"form_{k}"] = r["form"][k]
             for c in ("planted_issues", "expected_followups", "correct_references", "invented_details"):
                 row[c] = "; ".join(r[c])
             w.writerow(row)

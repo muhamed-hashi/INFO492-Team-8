@@ -13,6 +13,19 @@
   "drafts": [
     {
       "draft_id": "R01",
+      "form": {
+        "date": "9/12",
+        "from": "Casework sub",
+        "to": "GC",
+        "subject": "countertop??",
+        "location": "hallway by office suite + 2 MP rms",
+        "references": "6/A-703",
+        "question": "cab detail says solid surface top but other note says plam. which one",
+        "proposed_solution": "",
+        "needed_by": "",
+        "impact": "",
+        "attachments": "pic"
+      },
       "source_rfi": "Dett-A5-RFI3",
       "source_file": "Dett Addendum No. 5 (2023-06-09)",
       "source_page": 2,
@@ -47,13 +60,27 @@
       ],
       "invented_details": [
         "construction-stage setting",
-        "photo mention"
+        "photo mention",
+        "RFI form dates"
       ],
       "expected_followup_count": 5,
       "is_simulated": true
     },
     {
       "draft_id": "R02",
+      "form": {
+        "date": "9/12",
+        "from": "Casework sub",
+        "to": "GC",
+        "subject": "drop sink",
+        "location": "hallway",
+        "references": "",
+        "question": "drop sink in the millwork - no elev. is it a base cab? what top?",
+        "proposed_solution": "",
+        "needed_by": "ASAP",
+        "impact": "need to order",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A5-RFI4",
       "source_file": "Dett Addendum No. 5 (2023-06-09)",
       "source_page": 2,
@@ -80,13 +107,27 @@
         "'ASAP' - what date do you need it by to keep the order on schedule?"
       ],
       "invented_details": [
-        "ordering pressure"
+        "ordering pressure",
+        "RFI form dates"
       ],
       "expected_followup_count": 3,
       "is_simulated": true
     },
     {
       "draft_id": "R03",
+      "form": {
+        "date": "9/13",
+        "from": "Plumbing sub",
+        "to": "GC",
+        "subject": "staff toilets",
+        "location": "service wing staff toilets",
+        "references": "P2, underfloor dwg",
+        "question": "P2 says connect new WC + lav but underfloor dwg says existing no work. which is it?? also need a fixture schedule",
+        "proposed_solution": "not carrying extra fixtures unless directed",
+        "needed_by": "",
+        "impact": "",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A5-RFI7",
       "source_file": "Dett Addendum No. 5 (2023-06-09)",
       "source_page": 3,
@@ -119,13 +160,27 @@
         "When do you need an answer?"
       ],
       "invented_details": [
-        "construction-stage setting"
+        "construction-stage setting",
+        "RFI form dates"
       ],
       "expected_followup_count": 5,
       "is_simulated": true
     },
     {
       "draft_id": "R04",
+      "form": {
+        "date": "9/15",
+        "from": "Solid surface sub",
+        "to": "GC",
+        "subject": "AX42 at panel joints",
+        "location": "",
+        "references": "A-30 elevs",
+        "question": "AX42 points at the joints between solid surface panels but the note is about an operable partition closure panel?? doesnt make sense. what mfr for the joints. happens all over the elevs",
+        "proposed_solution": "",
+        "needed_by": "",
+        "impact": "",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A5-RFI8",
       "source_file": "Dett Addendum No. 5 (2023-06-09)",
       "source_page": 3,
@@ -154,12 +209,27 @@
         "Which elevations / where in the building?",
         "When do you need an answer?"
       ],
-      "invented_details": [],
+      "invented_details": [
+        "RFI form dates"
+      ],
       "expected_followup_count": 3,
       "is_simulated": true
     },
     {
       "draft_id": "R05",
+      "form": {
+        "date": "9/14",
+        "from": "Tile sub",
+        "to": "GC",
+        "subject": "T-1 floor?",
+        "location": "kinder toilet rms",
+        "references": "finish sched, legend",
+        "question": "finish sched says T-1 on the floor but legend says T-1 is existing wall tile to remain. so what goes on the floor? and whats the pattern for T-2",
+        "proposed_solution": "",
+        "needed_by": "",
+        "impact": "",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A5-RFI9",
       "source_file": "Dett Addendum No. 5 (2023-06-09)",
       "source_page": 3,
@@ -186,12 +256,27 @@
         "Which sheets? (Finish schedule A-502 and legend A-503?)",
         "When do you need an answer, and is tile ordering on hold?"
       ],
-      "invented_details": [],
+      "invented_details": [
+        "RFI form dates"
+      ],
       "expected_followup_count": 3,
       "is_simulated": true
     },
     {
       "draft_id": "R06",
+      "form": {
+        "date": "9/14",
+        "from": "Tile sub",
+        "to": "GC",
+        "subject": "cove base over existing tile",
+        "location": "Toilet Rms 140, 143, 160",
+        "references": "A-502",
+        "question": "A-502 calls T-2 6in ceramic cove base, T-1 wall tile existing to remain. Is cove base installed over existing tile? Any patching of existing wall tile? Pls send detail for cove base to floor tile.",
+        "proposed_solution": "",
+        "needed_by": "9/22",
+        "impact": "need to order tile, floor tile in these rooms on hold",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A5-RFI10",
       "source_file": "Dett Addendum No. 5 (2023-06-09)",
       "source_page": 3,
@@ -209,13 +294,27 @@
       "expected_followups": [],
       "invented_details": [
         "needed-by date 9/22",
-        "impact statement"
+        "impact statement",
+        "RFI form dates"
       ],
       "expected_followup_count": 0,
       "is_simulated": true
     },
     {
       "draft_id": "R07",
+      "form": {
+        "date": "9/11",
+        "from": "Security / low voltage sub",
+        "to": "GC",
+        "subject": "camera types",
+        "location": "",
+        "references": "elec dwgs, last addendum",
+        "question": "new cameras showed up after the last addendum but no type/model. what cameras r we installing??",
+        "proposed_solution": "",
+        "needed_by": "",
+        "impact": "",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A5-RFI2",
       "source_file": "Dett Addendum No. 5 (2023-06-09)",
       "source_page": 2,
@@ -244,12 +343,27 @@
         "Which addendum are you working from? Camera models were added in Addendum 5.",
         "When do you need an answer?"
       ],
-      "invented_details": [],
+      "invented_details": [
+        "RFI form dates"
+      ],
       "expected_followup_count": 3,
       "is_simulated": true
     },
     {
       "draft_id": "R08",
+      "form": {
+        "date": "9/18",
+        "from": "Electrical sub",
+        "to": "GC",
+        "subject": "PV conduit size",
+        "location": "",
+        "references": "E-60, PV single line",
+        "question": "conduit size dont match between elec dwgs. which one??",
+        "proposed_solution": "",
+        "needed_by": "ASAP",
+        "impact": "",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A6-RFI2",
       "source_file": "Dett Addendum No. 6 (2023-06-15)",
       "source_page": 2,
@@ -274,12 +388,27 @@
         "What sizes does each drawing show?",
         "'ASAP' - what date, and what is waiting?"
       ],
-      "invented_details": [],
+      "invented_details": [
+        "RFI form dates"
+      ],
       "expected_followup_count": 3,
       "is_simulated": true
     },
     {
       "draft_id": "R09",
+      "form": {
+        "date": "9/19",
+        "from": "Electrical sub",
+        "to": "GC",
+        "subject": "meter wiring + spec",
+        "location": "panels on E-702 metering schedule",
+        "references": "E-702",
+        "question": "Detail shows CTs but no meters. Need a typical wiring diagram for one meter monitoring several circuits, plus product spec for the meters and CTs.",
+        "proposed_solution": "",
+        "needed_by": "10/2",
+        "impact": "metering submittal, gear order on hold until then",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A6-RFI3",
       "source_file": "Dett Addendum No. 6 (2023-06-15)",
       "source_page": 2,
@@ -297,13 +426,27 @@
       "expected_followups": [],
       "invented_details": [
         "needed-by date 10/2",
-        "impact statement"
+        "impact statement",
+        "RFI form dates"
       ],
       "expected_followup_count": 0,
       "is_simulated": true
     },
     {
       "draft_id": "R10",
+      "form": {
+        "date": "9/15",
+        "from": "Casework sub",
+        "to": "GC",
+        "subject": "cabinet by sink - our scope?",
+        "location": "Care Room 101E",
+        "references": "A-210",
+        "question": "cabinet next to the sink - is that casework in our scope? no detail or elev. if ours pls send detail + elev",
+        "proposed_solution": "",
+        "needed_by": "9/29",
+        "impact": "shop dwgs",
+        "attachments": ""
+      },
       "source_rfi": "Dett-A6-RFI4",
       "source_file": "Dett Addendum No. 6 (2023-06-15)",
       "source_page": 2,
@@ -321,7 +464,8 @@
       "expected_followups": [],
       "invented_details": [
         "needed-by date 9/29",
-        "shop drawing impact"
+        "shop drawing impact",
+        "RFI form dates"
       ],
       "expected_followup_count": 0,
       "is_simulated": true
