@@ -30,6 +30,10 @@ Write:
    Ask about references when code_lookup shows a sheet that is not in the index or was revised after the
    foreman's drawing set, when no sheet is cited, when a sheet number looks mistyped, or when the message points to a schedule, plan or keynote without giving
    that sheet's number.
-6. changes: the main edits you made, each with why.
+6. separate_questions: list each distinct question the foreman needs the GC or architect to answer, one
+   short line each. Questions that need separate answers (different items, rooms, trades or decisions)
+   are separate. One question with several details about the same item is one question. Use the
+   message's own facts only.
+7. changes: the main edits you made, each with why.
 
 Return the required JSON object only.

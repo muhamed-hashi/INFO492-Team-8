@@ -13,6 +13,7 @@
 | Demo 1: finding missing details | [`team8-demo1/`](team8-demo1/) |
 | Demo 2: checking drawing references | [`team8-demo2/`](team8-demo2/) |
 | Demo 3: sub ↔ GC ↔ design-team RFI exchange | [`INFO492 team8 Demo3/`](INFO492%20team8%20Demo3/) |
+| Demo 3: rough RFI drafts (R01–R10) and stakeholder timed review test | [`demo3/`](demo3/) |
 | Stakeholder interview transcripts | [`interviews/`](interviews/) |
 | LLM summary of class feedback on Demos 1–2 | [`class_feedback/`](class_feedback/) |
 | Team website | [`index.html`](index.html) |
@@ -57,6 +58,8 @@ A foreman's rough site message becomes a clearer RFI (draft agent, foreman appro
 | Protocol (roles, messages, escalation, audit trail) | [`docs/PROTOCOL.md`](INFO492%20team8%20Demo3/docs/PROTOCOL.md) |
 | Results | [`results/demo3/`](INFO492%20team8%20Demo3/results/demo3/) and [`NOTES.md`](INFO492%20team8%20Demo3/results/demo3/NOTES.md); first run kept in [`results/demo3_v1_before_cost_fix/`](INFO492%20team8%20Demo3/results/demo3_v1_before_cost_fix/) |
 | How to run | [`README.md`](INFO492%20team8%20Demo3/README.md) |
+| Rough drafts and timed review plan | [`demo3/docs/demo3_rough_drafts_and_timed_review.md`](demo3/docs/demo3_rough_drafts_and_timed_review.md), data in [`demo3/data/`](demo3/data/), generator [`demo3/scripts/make_rough_drafts.py`](demo3/scripts/make_rough_drafts.py) |
+| Stakeholder test results (2 GC reviewers) | [`demo3/Team 8 – Demo 3 Timed Review Test Results.pdf`](demo3/Team%208%20%E2%80%93%20Demo%203%20Timed%20Review%20Test%20Results.pdf) |
 
 ## Stakeholder interviews
 
@@ -68,5 +71,5 @@ Transcripts of our interviews with construction industry stakeholders are in [`i
 
 ## AI assistance
 
-The prototypes were built with AI coding assistance. The thesis, dataset choice, case review and reported results are the team's.
+The prototypes were built with AI assistance. The thesis, dataset choice, case review and reported results are the team's.
 

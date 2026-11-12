@@ -17,6 +17,19 @@ RFI, and the design team answers it. Each party has its own agent, and every age
 Roles, permissions, message format, escalation and the audit trail: [docs/PROTOCOL.md](docs/PROTOCOL.md).
 Data sources and why the RFIs are simulated: [docs/DATA_PROVENANCE.md](docs/DATA_PROVENANCE.md).
 
+## Stakeholder test and what it changed
+
+Two GC reviewers (Kevin Chen, an assistant PM at a St. Louis GC, and a colleague) reviewed 10 rough RFIs
+(R01–R10, in [`../demo3/`](../demo3/)) with and without the draft agent. Median first review fell from
+6.5 to 4.5 minutes, follow-up questions to the sub from 27 to 2, and no information errors reached the GC
+(the sub rejected one wrong AI sheet suggestion). Full results:
+[`../demo3/Team 8 – Demo 3 Timed Review Test Results.pdf`](../demo3/).
+
+**Change made from that feedback:** the reviewers' only remaining follow-ups were "send this as a separate RFI",
+because the agent kept two questions in one message. The draft agent now lists each separate question and asks
+the foreman to send one RFI per question, and the GC's check agent flags RFIs that ask several things
+(`separate_questions` in `agents.py` and `prompts/draft_agent.txt`; test `test_split_multi_question_rfi`).
+
 ## Run it
 
 Python 3.10 or newer, no packages to install. The AI uses Google Gemini.
@@ -121,4 +134,4 @@ state and is not uploaded.
 
 ## AI assistance
 
-Built with AI coding assistance. The thesis, the design decisions, the case review and the reported results are the team's.
+Built with AI assistance. The thesis, the design decisions, the case review and the reported results are the team's.

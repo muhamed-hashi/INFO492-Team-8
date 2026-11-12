@@ -35,6 +35,7 @@ def fake_gemini(cfg, prompt, user, schema):
                  'location': {'found_in_message': True, 'quote': '2nd floor bathroom', 'value': 'Room 221, Level 2'},
                  'needed_by': {'found_in_message': 'asap' in msg, 'quote': 'asap' if 'asap' in msg else '', 'value': 'asap'},
                  'impact': {'found_in_message': False, 'quote': '', 'value': ''},
+                 'separate_questions': ['Single or double tier lockers?', 'What base goes under the lockers?'] if 'lockers' in msg else ['Which floor finish applies?'],
                  'questions_for_sub': [{'field': 'impact', 'ask': 'What is held up?'}],
                  'changes': [{'what': 'Rewrote the question', 'why': 'clarity'}]}, raw)
     if "site manager review an RFI" in prompt:
@@ -97,6 +98,17 @@ class Code(unittest.TestCase):
         d = agents.draft_agent(c['message'], c['sheets_as_written'], c['drawing_set'], CTX, {'key': 'k', 'model': 'm', 'provider': 'gemini'})
         self.assertEqual(d['needed_by']['value'], '')
         self.assertIn('needed_by', [q['field'] for q in d['questions_for_sub']])
+
+    def test_split_multi_question_rfi(self):
+        """Added after stakeholder testing: one RFI per question."""
+        cfg = {'key': 'k', 'model': 'm', 'provider': 'gemini'}
+        c = CASES['F05']
+        d = agents.draft_agent(c['message'], c['sheets_as_written'], c['drawing_set'], CTX, cfg)
+        self.assertEqual(len(d['split_suggestion']), 2)
+        self.assertTrue(any('its own RFI' in q['ask'] for q in d['questions_for_sub']))
+        c = CASES['F03']
+        d = agents.draft_agent(c['message'], c['sheets_as_written'], c['drawing_set'], CTX, cfg)
+        self.assertEqual(d['split_suggestion'], [])
 
     def test_watch_agent_remembers(self):
         rfis = [{'id': c['case_id'], 'status': 'submitted', 'drawing_set': c['drawing_set'], 'final': None,

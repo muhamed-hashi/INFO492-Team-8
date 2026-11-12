@@ -171,9 +171,10 @@ def supported(value, quote, message):
 
 # --------------------------------------------------------------------------- draft agent (subcontractor)
 DRAFT_SCHEMA = {'type': 'object', 'additionalProperties': False,
-    'required': ['title', 'question', 'trade', 'location', 'needed_by', 'impact', 'questions_for_sub', 'changes'],
+    'required': ['title', 'question', 'trade', 'location', 'needed_by', 'impact', 'separate_questions', 'questions_for_sub', 'changes'],
     'properties': {
         'title': {'type': 'string'}, 'question': {'type': 'string'}, 'trade': {'type': 'string'},
+        'separate_questions': {'type': 'array', 'maxItems': 6, 'items': {'type': 'string'}},
         **{f: {'type': 'object', 'additionalProperties': False, 'required': ['found_in_message', 'quote', 'value'],
                'properties': {'found_in_message': {'type': 'boolean'}, 'quote': {'type': 'string'}, 'value': {'type': 'string'}}}
            for f in ('location', 'needed_by', 'impact')},
@@ -235,6 +236,14 @@ def draft_agent(message, sheets_as_written, drawing_set, ctx, cfg=None):
     if (not refs or any(r['status'] != 'current' for r in refs)) and not any(q['field'] == 'references' for q in asks):
         asks.append({'field': 'references', 'ask': ASK['references']})
     draft['references'] = {'text': ', '.join(r['sheet'] for r in refs) or sheets_as_written, 'lookup': refs}
+    # Added after stakeholder testing (Demo 3): the GC reviewers' only remaining follow-ups were
+    # "send this as a separate RFI". When one message asks several things, suggest one RFI per question.
+    parts = [str(x).strip()[:300] for x in (out.get('separate_questions') or []) if str(x).strip()][:6]
+    draft['split_suggestion'] = parts if len(parts) > 1 else []
+    if draft['split_suggestion']:
+        listed = ' '.join(f'({i}) {q}' for i, q in enumerate(parts, 1))
+        asks.append({'field': 'question', 'ask': f'This message asks {len(parts)} separate questions. Send each as its own RFI '
+                                                 f'so each can be answered and tracked on its own: {listed}'})
     draft['questions_for_sub'] = asks
     draft['changes'] = [c for c in out.get('changes', []) if isinstance(c, dict)][:6]
     return draft
@@ -293,6 +302,10 @@ def check_agent(rfi, drawing_set, ctx, cfg=None, use_ai=True):
         result['route'] = out.get('route')
         result['cost_flag'] = out.get('possible_cost_or_scope')
         result['separate_questions'] = out.get('separate_questions')
+        n_q = out.get('separate_questions')
+        if isinstance(n_q, int) and n_q > 1:   # added after stakeholder testing: GCs asked for one RFI per question
+            findings.append({'field': 'question', 'blocking': False, 'source': 'AI',
+                             'message': f'This RFI asks {n_q} separate questions. Consider asking the sub to send them as separate RFIs.'})
     blocking = [f for f in findings if f['blocking']]
     if blocking:
         rec = 'return_to_sub'
