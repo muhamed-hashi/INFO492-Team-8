@@ -33,6 +33,16 @@ STUDY_FILE = RUNTIME / 'study.csv'
 LOCK = threading.RLock()
 SESSIONS = {}
 AI_RATE_WINDOW = 60
+
+
+def session_cookie(token=''):
+    """Build Set-Cookie for d3session (Secure on Render/HTTPS)."""
+    secure = bool(os.getenv('RENDER') or os.getenv('HTTPS_COOKIES'))
+    if token:
+        base = f'd3session={token}; HttpOnly; SameSite=Lax; Path=/'
+    else:
+        base = 'd3session=; Max-Age=0; Path=/'
+    return base + ('; Secure' if secure else '')
 AI_RATE_MAX = int(os.getenv('AI_RATE_LIMIT_PER_IP', '15'))
 _ai_rate_hits = {}
 agents.init_budget(RUNTIME / 'ai_budget.json')
@@ -409,12 +419,9 @@ class Handler(BaseHTTPRequestHandler):
                         return self.send(401, {'error': 'Wrong user or PIN.'})
                     token = secrets.token_urlsafe(24); SESSIONS[token] = cand
                     log('session', None, cand, body={'event': 'sign_in'})
-                    secure = ' Secure;' if os.getenv('RENDER') or os.getenv('HTTPS_COOKIES') else ''
-                    return self.send(200, {'ok': True},
-                                      headers={'Set-Cookie': f'd3session={token}; HttpOnly; SameSite=Lax; Path=/{secure}'})
+                    return self.send(200, {'ok': True}, headers={'Set-Cookie': session_cookie(token)})
                 if p == '/api/logout':
-                    secure = ' Secure;' if os.getenv('RENDER') or os.getenv('HTTPS_COOKIES') else ''
-                    return self.send(200, {'ok': True}, headers={'Set-Cookie': f'd3session=; Max-Age=0; Path=/{secure}'})
+                    return self.send(200, {'ok': True}, headers={'Set-Cookie': session_cookie()})
                 if p == '/api/study/record':
                     return self.send(200, study_record(body))
                 if not u: return self.send(401, {'error': 'Sign in first.'})
