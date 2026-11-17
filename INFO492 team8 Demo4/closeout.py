@@ -241,3 +241,117 @@ def closeout_agent(rfi, lists, cfg=None):
     return dict(res, source='AI + code', facts=f, commitment=commitment, revised_sheets=revised,
                 referenced_only=[norm(s) for s in out.get('referenced_only') or [] if norm(s) in f['sheets']],
                 ai_reason=str(out.get('reason', ''))[:600], guard=guard, meta=meta)
+
+
+# --------------------------------------------------------------------------- answer check (Demo #4, real messy RFIs)
+# Added after our stakeholder sent a problem list for a real public RFI log (data/gwa/). Close-out above asks
+# "was the promised drawing issued?"; the answer check asks the question our stakeholder cares about most:
+# "did the answer actually answer, or will this RFI come back for another round?" It also flags what a GC would
+# send back at intake: no date, several questions in one RFI, a question that points to something not included.
+ANSWER_STATUSES = ('answered', 'partly', 'pointed_elsewhere', 'deferred', 'not_answered')
+ANSWER_SCHEMA = {'type': 'object', 'additionalProperties': False,
+    'required': ['questions', 'scope_change', 'refers_to_missing', 'reason'],
+    'properties': {
+        'questions': {'type': 'array', 'maxItems': 10, 'items': {'type': 'object', 'additionalProperties': False,
+            'required': ['asks', 'status', 'answer_quote'],
+            'properties': {'asks': {'type': 'string'}, 'status': {'type': 'string', 'enum': list(ANSWER_STATUSES)},
+                           'answer_quote': {'type': 'string'}}}},
+        'scope_change': {'type': 'object', 'additionalProperties': False, 'required': ['value', 'quote'],
+                         'properties': {'value': {'type': 'boolean'}, 'quote': {'type': 'string'}}},
+        'refers_to_missing': {'type': 'object', 'additionalProperties': False, 'required': ['value', 'quote'],
+                              'properties': {'value': {'type': 'boolean'}, 'quote': {'type': 'string'}}},
+        'reason': {'type': 'string'}}}
+FLAG_TEXT = {'no_date': 'No submission date.',
+             'multiple_questions': 'Asks several separate questions in one RFI; consider one RFI per question.',
+             'refers_to_missing': 'Points to something not included in the text (a picture or another part of the document).',
+             'not_fully_answered': 'Not every question is answered; expect another round of questions.',
+             'scope_change': 'The answer changes the scope or design; record it as a change before closing.',
+             'copied_answer': 'The same answer text was given to a different question; check it was not pasted by mistake.'}
+MULTI_MARKERS = re.compile(r'(?:^|\s)(?:i{1,3}|iv|v|vi)\s?\.\s|(?:^|\s)\d\)\s|(?:^|\s)\d\.\s(?=[A-Z])')
+DEFER_OR_POINT = re.compile(r'\b(?:refer to|see|will be (?:available|revealed|considered|provided|announced)|future|'
+                            r'at a later|follow (?:the )?provided)\b', re.I)
+SCOPE_WORDS = re.compile(r'\b(?:delete[ds]?|add(?:ed)?|change order|is acceptable|no longer|removed?)\b', re.I)
+MISSING_REF = re.compile(r'\b(?:above|below|attached|picture|photo|image)\b', re.I)
+
+
+def _answer_rec(flags):
+    # Intake flags (no date, several questions, points to something missing, copied answer) are shown to the PM but
+    # do not stop closing on their own: an answer to the same topic is often legitimately repeated (items 10/30).
+    if flags['not_fully_answered']: return 'check'
+    if flags['scope_change']: return 'check'
+    return 'ok_to_close'
+
+
+PICTURE = '[Picture pasted into the RFI, read by OCR] '
+
+
+def answer_texts(item):
+    """Question and answer as a reader of the PDF sees them: typed text plus OCR of any pasted picture."""
+    q, a = item.get('question', ''), item.get('response', '')
+    if item.get('question_picture_text'): q = f"{q}\n{PICTURE}{item['question_picture_text']}".strip()
+    if item.get('response_picture_text'): a = f"{a}\n{PICTURE}{item['response_picture_text']}".strip()
+    return q, a
+
+
+def copied_answers(items, min_words=6):
+    """Code, across the whole log: the same answer sentence given to two different questions (copy-paste)."""
+    seen, out = {}, {}
+    for it in items:
+        for sent in re.split(r'(?<=[.!?])\s+', it.get('response', '')):
+            norm = agents._norm(re.sub(r'^EOR Response[:.]\s*', '', sent, flags=re.I))
+            if len(norm.split()) < min_words: continue
+            if norm in seen and seen[norm] != it['no'] and agents._norm(it.get('question', '')) != '':
+                out.setdefault(it['no'], set()).add(seen[norm]); out.setdefault(seen[norm], set()).add(it['no'])
+            seen.setdefault(norm, it['no'])
+    return {k: sorted(v) for k, v in out.items()}
+
+
+def answer_check_code(item, copied_with=()):
+    """No-AI baseline: question marks and list markers for several questions; keywords for answers that point
+    elsewhere, defer or change scope. Transparent, but it cannot tell whether an answer really answers."""
+    q, a = item.get('question', ''), answer_texts(item)[1]   # question-side counts on the typed question only:
+    n_q = max(q.count('?'), len(MULTI_MARKERS.findall(q)))     # a pasted report page is context, not questions
+    flags = {'no_date': not item.get('date'), 'multiple_questions': n_q >= 2,
+             'refers_to_missing': bool(MISSING_REF.search(q)),
+             'not_fully_answered': not a.strip() or bool(DEFER_OR_POINT.search(a)),
+             'scope_change': bool(SCOPE_WORDS.search(a)), 'copied_answer': bool(copied_with)}
+    return {'source': 'code', 'flags': flags, 'recommendation': _answer_rec(flags),
+            'reasons': [FLAG_TEXT[k] for k, v in flags.items() if v]}
+
+
+def answer_check(item, cfg=None, copied_with=()):
+    """AI lists what was asked and whether each part was answered, with quotes; a guard drops any quote that is not
+    in the text (a dropped quote makes the item "check"); code adds the date check."""
+    cfg = cfg or agents.settings()
+    q, a = answer_texts(item)
+    out, meta = agents._ai(cfg, 'answer_check.txt', {'rfi_question': q, 'answer': a}, ANSWER_SCHEMA)
+    guard, parts = [], []
+    for x in out.get('questions') or []:
+        st = x.get('status') if x.get('status') in ANSWER_STATUSES else 'not_answered'
+        asks, quote = str(x.get('asks', '')).strip(), str(x.get('answer_quote', '')).strip()
+        if asks and not _quoted(asks, q):
+            guard.append(f'Dropped a question the AI listed ("{asks[:60]}"): not in the question text.'); continue
+        if st != 'answered' and quote and not _quoted(quote, a):
+            guard.append(f'Dropped the answer quote for "{asks[:40]}": not in the answer.'); quote = ''
+        parts.append({'asks': asks, 'status': st, 'answer_quote': quote})
+    def claim(key, text):
+        c = out.get(key) or {}
+        if not c.get('value'): return False, ''
+        if _quoted(str(c.get('quote', '')), text): return True, str(c['quote']).strip()
+        guard.append(f'Dropped the "{key}" claim: its quote is not in the text.'); return False, ''
+    scope, scope_q = claim('scope_change', a)
+    missing, missing_q = claim('refers_to_missing', q)
+    flags = {'no_date': not item.get('date'), 'multiple_questions': len(parts) >= 2, 'refers_to_missing': missing,
+             'not_fully_answered': (not a.strip()) or any(p['status'] != 'answered' for p in parts) or not parts,
+             'scope_change': scope, 'copied_answer': bool(copied_with)}
+    rec = _answer_rec(flags)
+    if guard and rec == 'ok_to_close':
+        rec = 'check'
+    reasons = [FLAG_TEXT[k] for k, v in flags.items() if v]
+    if copied_with: reasons.append('Same answer text as item(s) ' + ', '.join(map(str, copied_with)) + '.')
+    reasons += [f'"{p["asks"][:80]}": {p["status"].replace("_", " ")}' + (f' ("{p["answer_quote"][:80]}")' if p['answer_quote'] else '')
+                for p in parts if p['status'] != 'answered']
+    if scope_q: reasons.append(f'Scope change: "{scope_q[:100]}"')
+    if missing_q: reasons.append(f'Points to: "{missing_q[:100]}"')
+    return {'source': 'AI + code', 'flags': flags, 'recommendation': rec, 'questions': parts, 'reasons': reasons,
+            'guard': guard, 'ai_reason': str(out.get('reason', ''))[:500], 'meta': meta}

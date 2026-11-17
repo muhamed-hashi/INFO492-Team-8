@@ -54,6 +54,28 @@ Limits: the problems in both synthetic sets were planted by the team, so they sh
 situations apart, not how often they happen; the noise rules are ours, not a sample of real writing (that is what
 the stakeholder examples are for); "issued in the drawing list" is a necessary check, not proof the change was drawn.
 
+### Second real set: did the answer actually answer? (GWA log, 44 items)
+
+Our stakeholder's main complaint is back-and-forth. Close-out above asks "was the promised drawing issued?"; on
+the GWA log we ask the question before it: **did the answer actually answer, or will this RFI come back?** The
+**answer check** lists every separate thing a question asks (AI, with a quote from the question for each) and
+whether the answer answered it, only partly, only pointed elsewhere, deferred it, or did not address it (with a
+quote from the answer); it also says whether the answer changes scope (quote required). The guard drops any quote
+that is not in the text, and any drop turns "ok to close" into "check". Code adds: no date, the same answer sentence
+given to two different questions. Recommendation: *check* if anything is not fully answered or the scope changed,
+else *ok to close*; intake flags (no date, several questions, copied answer) are shown but do not stop closing.
+
+Right answer: our stakeholder's own problem list for this document, written by reading the PDF, without our tool.
+We report, per category: his items, found, missed, and flagged items **not on his list** (not automatically false
+alarms: his list names the worst cases, and his date list ends in "etc."). And for the recommendation: of the items
+where he found an answer problem, how many each method stopped; how many it stopped that he did not list.
+
+Run: `python3 scripts/run_gwa_eval.py` (2 AI runs, about 88 Gemini calls) or `--code-only`; `--rescore` re-scores
+the saved log. Output: `results/gwa/`. Data and the not-blind caveat: [DATA_PROVENANCE.md](DATA_PROVENANCE.md#second-real-log-gwa-response-to-rfi-no-1-real-with-our-stakeholders-problem-list).
+
+Limits: 44 items from one document; only some of his issue types are things an answer check can see; the check
+was built after seeing his list; OCR of pasted pictures is imperfect.
+
 # Demo #3 evaluation
 
 ## What it tests about the thesis

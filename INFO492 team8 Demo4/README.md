@@ -71,6 +71,15 @@ before four fixes) is in [`results/demo4_run1_clean_set/NOTES.md`](results/demo4
 real RFIs it found two answers (A3-RFI53, A3-RFI54) that say "All sheets have been revised and included in this
 addendum" while M-301, M-600 and M-801 are not among the 159 drawings attached to Addendum 3.
 
+**Second real set** (added after our stakeholder sent it): a public RFI log, Guam Waterworks Authority
+"Response to RFI No. 1" (44 bidder questions and answers, July 2026), with **his own problem list** for it as the
+answer key. Here the new **answer check** asks whether each answer actually answered every question, or whether the
+RFI will come back (deferred, only "refer to past plans", scope deleted). Of the 13 items where he found an
+answer problem, the agent stops 10–11 (misses: a "future upgrade" answer and a copied answer), but it also stops
+30–33 of 44 items, 4 of them items he found fine; runs agree on 38 of 42. A keyword rule stops 11 of 13 with fewer
+extra stops, but its keywords were written after reading this document. Reading and limits (not a blind test):
+[results/gwa/NOTES.md](results/gwa/NOTES.md).
+
 Two synthetic sets (real answers with planted problems, tidy and messy wording) remain as **stress tests only**,
 run with `--synthetic` and reported separately. On the messy set the code-only baseline stops 7 of 25 planted
 problems, which is why we do not rely on keyword rules.
@@ -175,7 +184,8 @@ python3 scripts/run_demo4_eval.py          # Demo #4: real log, 2 AI runs (~220 
 python3 scripts/make_review_sheet.py       # Demo #4: sheet of stopped RFIs for the stakeholder review (needs openpyxl)
 python3 scripts/run_demo4_eval.py --rescore   # Demo #4: score the saved run against the review, no AI calls
 python3 scripts/run_demo3_eval.py          # Demo #3 drafting (unchanged)
-python3 -m unittest discover tests         # 33 tests, no network needed
+python3 scripts/run_gwa_eval.py            # Demo #4: second real log (GWA), answer check, 2 AI runs (~88 calls); --code-only needs none
+python3 -m unittest discover tests         # 40 tests, no network needed
 ```
 
 ### Demo #3 evaluation (unchanged)
@@ -207,22 +217,24 @@ decisions are saved to `runtime/study.csv` and shown in the control panel (downl
 
 | Path | What |
 |---|---|
-| `closeout.py` | **Demo #4** close-out: drawing-list lookup, near matches, code-only baseline, the close-out agent and its guard |
+| `closeout.py` | **Demo #4** close-out: drawing-list lookup, near matches, code-only baseline, the close-out agent and its guard; the **answer check** (did the answer answer every question?) |
 | `app.py` | Local web server, sign-in, RFI life cycle, close-out, control panel, study, export |
 | `protocol.py` | Roles, permissions, agent limits, message envelope, hash-chained audit log |
 | `agents.py` | The four Demo #3 agents; sheet lookup, revision check, date parsing, the anti-invention guard |
 | `core.py` | Gemini call and the Demo #2 reference review, reused unchanged |
-| `prompts/` | `closeout_agent.txt` (Demo #4), `draft_agent.txt`, `check_agent.txt`, `reference_review.txt` (from Demo #2) |
-| `data/` | Real Dett data (`source_rfis.csv`, `drawing_index.json`, `revisions.json`, **`addendum_drawing_lists.json`**), synthetic **`closeout_cases.json`** (tidy) and **`closeout_cases_messy.json`**, **`kevin/`** (stakeholder examples: templates, privacy rules), **`dett_labels/`** (stakeholder review of stopped RFIs), simulated `rough_rfis.json`, labels in `rough_answer_key.json`, demo `users.json` |
-| `scripts/` | **`extract_drawing_lists.py`, `make_review_sheet.py`, `import_kevin.py`, `run_demo4_eval.py`, `make_closeout_cases.py`, `make_messy_cases.py`**, `generate_rough_rfis.py`, `build_revisions.py`, `run_demo3_eval.py`, `watch_worker.py` |
+| `prompts/` | `closeout_agent.txt`, `answer_check.txt` (Demo #4), `draft_agent.txt`, `check_agent.txt`, `reference_review.txt` (from Demo #2) |
+| `data/` | Real Dett data (`source_rfis.csv`, `drawing_index.json`, `revisions.json`, **`addendum_drawing_lists.json`**), synthetic **`closeout_cases.json`** (tidy) and **`closeout_cases_messy.json`**, **`kevin/`** (stakeholder examples: templates, privacy rules), **`dett_labels/`** (stakeholder review of stopped RFIs), **`gwa/`** (second real log and our stakeholder's problem list), simulated `rough_rfis.json`, labels in `rough_answer_key.json`, demo `users.json` |
+| `scripts/` | **`parse_gwa.py`, `run_gwa_eval.py`, `extract_drawing_lists.py`, `make_review_sheet.py`, `import_kevin.py`, `run_demo4_eval.py`, `make_closeout_cases.py`, `make_messy_cases.py`**, `generate_rough_rfis.py`, `build_revisions.py`, `run_demo3_eval.py`, `watch_worker.py` |
 | `static/` | Front end and the study page |
 | `results/demo4/` | Demo #4 evaluation output (code-only until the labels and AI run are in) |
+| `results/gwa/` | Answer check on the GWA log against our stakeholder's problem list |
 | `results/demo4_run1_clean_set/` | First Demo #4 run (tidy set only, before the fixes), kept for comparison |
 | `results/demo3/` | Demo #3 evaluation output (copied from the Demo #3 folder) |
 | `tests/` | Unit and end-to-end tests with a fake AI |
 
 Dependencies: Python 3.10+ standard library; Google Gemini API (`gemini-3.5-flash-lite` by default);
-`pdftotext` (poppler) only to re-extract the drawing lists from the addendum PDFs.
+`pdftotext` (poppler) only to re-extract the drawing lists from the addendum PDFs; `pdfplumber`, `pytesseract`
+(tesseract) only to re-parse the GWA PDF.
 Your key stays in your home folder (`~/.team8_rfi_gemini.json`), never in this folder. `runtime/` holds local
 state and is not uploaded.
 

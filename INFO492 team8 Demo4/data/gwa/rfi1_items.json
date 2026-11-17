@@ -1,0 +1,398 @@
+[
+ {
+  "no": 1,
+  "date": "6/26/26",
+  "question": "The bid documents provided for this bid project include the Procurement Report and Specifications; however, a complete and coordinated set of drawings clearly defining the full scope of work has not been furnished. The Procurement Report indicates that some systems are not included in existing record drawings and may require future design, resulting in portions of the scope being conceptual in nature. May we request the complete drawing set, including single-line diagrams, interconnection diagrams, and equipment layouts, clearly defining the limits and extent of work for bidding purposes? This will allow bidders to develop more accurate quantities and provide a more consistent basis for bidding.",
+  "response": "EOR Response: Bidders shall rely on Bid form, report, and updated plan and as- builts. As-builts to be provided to registered suppliers only.",
+  "page": 1,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 2,
+  "date": "6/29/26",
+  "question": "Para 3.1.c of “HWWTP Procurement Report Final” state “Existing disconnect switch support is in fair condition due to corrosion”. Confirm whether disconnect switches are in fair condition or not in fair condition.",
+  "response": "EOR Response: Existing disconnect switch is still in fair condition but KTR to remove corrosion at the surface.",
+  "page": 1,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 3,
+  "date": "",
+  "question": "Provide a drawing showing alignment, size and length of permanent piping going from pump discharge to Scum Well including sectional details.",
+  "response": "EOR Response: Replacement of piping in kind is part of contract. Contractor to refer to past plans provided and photo log",
+  "page": 1,
+  "question_picture_text": "Recommendation a. Mechanical (New SCADA Design): iv. Replace existing pumps with new pumps, sized to match existing. b. Instrumentation and Controls (New SCADA Design): 2025 HWWTP Site Assessment Page 8 of 72",
+  "response_picture_text": ""
+ },
+ {
+  "no": 4,
+  "date": "6/29/26",
+  "question": "Provide copy of new drawing as noted in the para d above.",
+  "response": "EOR Response: This is not a scoped item for this IFB.",
+  "page": 2,
+  "question_picture_text": "nt ee Tee re ere eee ee ee TE iret BRP eee eee 4. Drawings: CAT ML ate ca eager, New drawings will be produced as part of the detailed design. ¢. Specification Section: Future Design ‘Onsite Pump Station (Operations Building) A single sump pump is located ina manhole west of the Operations Building. The manhole receives flow from the Operations Building bathrooms and pumps to the influent channel. The pump has an integral float switch that is used to start and stop the pump. There are no controls of Monitoring. Il. Assessment a. Mechanical: i. The existing pump is operational but should be replaced. ii, The existing pump is showing leakage, and the check valve is corroded (Figure 4), 2023 HWWTP Site Assessment Page 9 of 72",
+  "response_picture_text": ""
+ },
+ {
+  "no": 5,
+  "date": "",
+  "question": "Document “HWWTP Procurement Report Final” refer to SCADA work at numerous locations. Confirm SCADA work of any kind, wiring for SCADA work, programming for SCADA work are not part of this contract.",
+  "response": "EOR Response: No work is to be done as part of this IFB on areas under New SCADA Design.",
+  "page": 2,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 6,
+  "date": "",
+  "question": "See above snip of work related to Influent Mag Meter. There is no bid item for work related to Influent Mag Meter. Confirm whether this work is part of the contract or not.",
+  "response": "EOR Response: Influent Mag Meter is under (New SCADA Design) it is not a part of the IFB.",
+  "page": 2,
+  "question_picture_text": "3.2. Headworks Influent Mag Meter (FIT-1) The 24” influent magnetic flow meter is installed on the 36” raw sewage influent piping, The magnetic flow meter has 24”x 36” reducers on each side, The existing meter is a MagFlux Flow Sensor 7200. The meter is installed in a vault below grade. The flow meter display unit is mounted on the wall, east of the flow meter near the stairs to the influent screen. The flow meter communicates with PLC-OZ located in the Ozonation Room. | BR ERNE NN EERE eee Ty EO ee? eee 2. Recommendation (New SCADA Design) a. Mechanical: i. Paint the existing piping in the flow meter vault to match existing. b. Instrumentation and Controls: i. Replace the existing flow meter display unit. Provide a weatherproof enclosure rated for exterior installation with a clear display window. ii, Remove the communication and controls from PLC-OZ and relocate to the new Master programmable logic controller (PLC). All signals from the flow meter and display unit will be hardwired. iii, Recalibrate the existing flow meter. iv. The SCADA system will display current influent flow and also include a totalizer function. ce. Electrical: i. Existing conduits for the flowmeter can be reused and needs to be refurbished. The wiring needs to be replaced when the new flowmeter is installed. ii. Replace all corroded, damaged and missing conduit supports. 2025 HWWTP Site Assessment Page 13 of 72",
+  "response_picture_text": ""
+ },
+ {
+  "no": 7,
+  "date": "6/29/26",
+  "question": "See the snip above. Recommendation called out for future design. Confirm whether providing “screening cover” is part of this contract or not.",
+  "response": "EOR Response: Confirmed screening cover is not part of IFB.",
+  "page": 3,
+  "question_picture_text": "Screening Cover EOR Re 1. Assessment Cover Is a. The existing steel screenings cover is in poor condition. Sever deteri steel covering was observed 2. a. 3. Supply two (2) new X CYD removal bins, see specification 116000 Rolling",
+  "response_picture_text": ""
+ },
+ {
+  "no": 8,
+  "date": "",
+  "question": "Confirm item b.ii referring to Figure 8 or Figure 11.",
+  "response": "EOR Response: Item b.ii is referring to Figure 11.",
+  "page": 3,
+  "question_picture_text": "b. Instrumentation and Controls: EOR Re i. The rapid mix vendor panel is installed in the field, adjacent to the Fi gure | mix tank. The control panel is not in use and not operational. ii, The VFD is located in the cabinet in the Ozonation Room VFD cabi (Figure 8). iii. No communication is currently in place. NUD. Figure 11: VFD Cabinet",
+  "response_picture_text": ""
+ },
+ {
+  "no": 9,
+  "date": "",
+  "question": "Confirm no work to be performed under this contract for Aeriation Blowers.",
+  "response": "EOR Response: Aeration blowers are not part of this IFB.",
+  "page": 3,
+  "question_picture_text": "Aeration Blowers There are currently three aeration blowers installed at the facility. Two blowers are located in the Chemical Room and one blower outside on the concrete deck over the solids pump gallery. The blowers installed in the Chemical Room are used to send air for mixing to the rapid mix tank downstream of the influent screening. These blowers also provide air for mixing and agitation at the coagulant mixing tank where supersacks are introduced. The blower installed over the solids pump gallery is used to provide aeration for the Clarifier feed channel and improve influent velocity to prevent settling of solids. | 2. Recommendation (New SCADA Design) a. Mechanical: i. No changes are planned to the equipment for any of the aeration blowers. b. Instrumentation and Controls: i, The existing blowers will be connected back to the Master PLC to monito1 running and overload status. No controls will be added, only monitoring. c. Electrical: i. Existing disconnect switches require minor repairs to remove corrosion. ii. Clean and lubricate disconnect switch mechanisms. ii. The conduits for aeration blower in the solids area require repair or replacement. d. Drawings: i. There are no existing drawings of the aeration blowers, since they were added by plant operations staff. Any drawings required for the design package will be created as necessary. ¢. Specifications are not required for the procurement package (no changes).",
+  "response_picture_text": ""
+ },
+ {
+  "no": 10,
+  "date": "6/29/26",
+  "question": "Confirm no work to be performed under this contract for Parshall Flume as no bid item listed in RFP.",
+  "response": "EOR Response: Parshall flume works or new meter are not part of this IFB.",
+  "page": 4,
+  "question_picture_text": "EOR F The Parshall Flume is installed on the diversion channel used to bypass the influent floy GW IT and step screen. The flume is installed in a concrete channel with level instruments to i raw sewage flow. The flume sends communications back to the Master PLC in the Op Building. Parshall Flume (Tag No. FE110) | 2. Recommendation (Procurement with new Design) a. Mechanical b, Instrumentation and Controls i. The existing level instruments are not working and require replacement. ii, The existing venturi will be abandoned and no longer used. iii, Communications for the new area velocity meter will be relocated to the new Master PLC in the Operations Building. c. Electrical: i. Existing conduits can be reused for the level transmitter and needs to be refurbished. Replace all corroded components and provide new conduit supports. d. Drawings — The original design for the Parshall Flume is shown on the civil and electrical drawings (C-1, C-7, and E-7). e. See Specification Section 407169 Open Channel Flow Meters. 13.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 11,
+  "date": "",
+  "question": "Confirm no work to be performed under this contract for Influent Sampler as no bid item listed in RFP.",
+  "response": "EOR Response: Confirmed this is not part of IFB.",
+  "page": 4,
+  "question_picture_text": "Influent Sampler The influent sampler takes samples for water quality analysis on the influent raw sewage. The influent sampler is a standalone piece of equipment, furnished with a control panel that can be locally configured for sample frequency and volume, The existing influent sampler is not connected to SCADA. | 2. Recommendation a. Mechanical (New SCADA Design) i. Replace the influent sampler with new, current technology to improve the overall life expectancy and interface capabilities. ii. Sampler location will be moved to accommodate new influent box b. Instrumentation and Controls (New SCADA Design) i. The influent sampler should be connected to the new Master PLC in the Operations Building for controls and monitoring. c. Electrical: New location will require power d. Drawings — The influent sampler is not shown in the existing drawings. The new influent sampler will be shown in the design upgrade drawings.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 12,
+  "date": "6/30/26",
+  "question": "Please consider changing the warranty language for the Step Screen and WAP to 12 months from initial startup or 18 months from delivery, whichever comes first.",
+  "response": "EOR Response: Warranty language shall remain as provided.",
+  "page": 4,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 13,
+  "date": "",
+  "question": "Specification 113300 section 2.3-B.1 has language from the HUBER SSF specification. Specification 113300 section 2.3-B.2 has language from the HUBER SSV specification. Please note that the lamella from these two screens is not interchangeable. Furthermore, the SSV cannot be installed at the specified installation angles found within the bidding documents. Therefore, HUBER shall propose the SSF. Is this acceptable?",
+  "response": "EOR Response: Existing screen is Franklin Miller. Intent is to replace equipment and avoid site rework.",
+  "page": 4,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 14,
+  "date": "",
+  "question": "Please note that specification 113300 section 2.3-A and 2.3-A.2 lists two different installation angles. One specifies 50 degrees while the other specifies 40 degrees. Which installation angle should the manufacturer design for?",
+  "response": "EOR Response: Existing screen is set at 50 degrees.",
+  "page": 4,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 15,
+  "date": "",
+  "question": "What material is the material of construction of the existing Step Screen and Wash Press?What does the screen look like within the channel around operational water levels? Is there any major corrosion around the screen elements and screen frame?",
+  "response": "EOR Response: Please refer to Addendum No. 2, Procurement Report Addendum A.",
+  "page": 4,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 16,
+  "date": "6/30/26",
+  "question": "Specification 113300 section 2.1-A.2 specifies AISI 316L as the material of construction (MOC) for the screen. Specification 113310 section 2.1-A.4 specifies AISI 304L as the MOC for the WAP. Due to the plant proximity to the ocean and resulting levels of chlorides, HUBER recommends both the screen and WAP be manufactured in AISI 316L This would ensure the best protection possible against corrosion in this highly corrosive installation area.",
+  "response": "EOR Response: Follow provided specification.",
+  "page": 5,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 17,
+  "date": "",
+  "question": "Is it acceptable for the Local Controls Station (LCS) to be the manufacturer’s standard?Specification 113300 section 2.4-I.5 specifies a NEMA 4X LCS which is NOT explosion proof and is unqualified for C1D1 AND C1D2 areas without complex adders which unnecessarily increases cost and complicates operational strategies. HUBER recommends the use of NEMA 7 Cast Aluminum panels for LCS panels in classified environments. Please confirm whether this approach is acceptable.",
+  "response": "EOR Response: Existing controller is NEMA 4X. Intent is to replace equipment and to avoid site rework.",
+  "page": 5,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 18,
+  "date": "",
+  "question": "Specification 113300 section 2.3-A states the channel invert elevation as 13ft. However, plan sheet C-8 lists the channel floor elevation as 13.25ft. Which elevation is the correct elevation for the Step Screen channel floor?",
+  "response": "EOR Response: Floor elevation at step screen is 13.35 ft.",
+  "page": 5,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 19,
+  "date": "",
+  "question": "HUBER requires the specified water levels to be changed. Specification 113300 section 2.3 lists a maximum upstream water level of 24” and a downstream water level of 12”. Please note that HUBER requires a downstream water level of 20” which would require a maximum upstream water level of 30”. Please confirm whether changing the water levels to reflect this is acceptable. If this change cannot be made, please confirm whether it is acceptable for HUBER to provide their own weir to install with the screen.",
+  "response": "EOR Response: Update to water level is acceptable. Downstream level can be controlled with a sluice gate",
+  "page": 5,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 20,
+  "date": "",
+  "question": "Please note that HUBER now requires a soft starter for the Step Screen drive regardless of the screen’s weight.",
+  "response": "EOR Response: Intent is to replace in kind with no major revision to site power or piping. At this stage a soft starter cannot be accommodated unless bidder can fit into supplied equipment. A soft starter can be considered as part of a future upgrade",
+  "page": 5,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 21,
+  "date": "",
+  "question": "Specification 113300 section 2.3-I.2 states the main control panels to be polycarbonate enclosures. Please note that HUBER shall supply NEMA 4X 304L stainless steel enclosures.",
+  "response": "EOR Response: NEMA 4X 304L Stainless steel is acceptable",
+  "page": 5,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 22,
+  "date": "6/30/26",
+  "question": "As per the Pre-Bid Conference Information and Invitation for Bid states that the deadline for submitting questions/clarification must be submitted on or before 07/06/26. However, Document 00200 - Instruction to Bidders, paragraph 7.01 “Questions received less than seven days prior to the date for opening of Bids may not be answered.” Please confirm which should govern.",
+  "response": "As stated in Addendum No. 1, “all questions or clarifications must be submitted by email to engbids@guamwaterworks.org or by utilizing Messages in the Portal on or before 7/13/2026.”",
+  "page": 6,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 23,
+  "date": "",
+  "question": "Please confirm whether this project is being delivered under a Design-Build contract.",
+  "response": "EOR Response: This may be considered a Design-Bid-Build. Specifically an equipment procurement and installation project.",
+  "page": 6,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 24,
+  "date": "",
+  "question": "Please confirm whether GWA will provide the drawings required for the Building Permit submittal.",
+  "response": "EOR Response: If needed GWA will provide.",
+  "page": 6,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 25,
+  "date": "",
+  "question": "Please provide the funding source for this project.",
+  "response": "The funding source will be available after determination of a fair and reasonable bid has been submitted.",
+  "page": 6,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 26,
+  "date": "",
+  "question": "Please provide the Government's budget for this project.",
+  "response": "The Government Estimate will be revealed during the bid opening along with the contractor submitted bids.",
+  "page": 6,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 27,
+  "date": "",
+  "question": "Onsite Pump Station (Dewatering): i. Does sanding off corrosion only at the surface? Rust hasn’t reached current-carrying parts? ii. Provide electrical wire size, length and type. iii. Would this be brackets/unistrut/fasteners, or does include the enclosure mounting hardware itself? Is it stainless steel, aluminum or others?",
+  "response": "EOR Response: i. Yes, this may be assumed. KTR to proceed that corrosion is only at surface and has not reached current-carrying parts. ii. Match existing wires and type. Length to be as required. iii. Replace existing disconnect switch mounting system. Apply two coats of enamel paint. it",
+  "page": 6,
+  "question_picture_text": "c. Electrical: i. Existing disconnect switch for the dewatering building sump pump can be reused, but it needs to be refurbished by sanding off the corrosion. ii. The wiring needs to be replaced when the new pump is installed but the conduits can still be reused. iii. Existing support for the disconnect switch needs to be refurbished and all corroded components needs to be replaced. iv. Existing conduits for the motor started can be cleaned and reused. v. Clean and lubricate existing disconnect mechanism.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 28,
+  "date": "",
+  "question": "Influent Mag Meter (FIT-1): i. Provide electrical wire size, length and type. ii. Is it stainless steel, aluminum or others? iii. Provide hazardous area classification drawing to properly identify where to relocate the display unit.",
+  "response": "EOR Response: i. FIO, there will be no replacement for the existing wires. Reconnect the new equipment to the existing power supply and ensure that it is functioning properly. ii. It is not a metal enclosure. As per procurement report, provide a weatherproof enclosure rated for exterior installation with a clear display window. iii. Scope of work to relocate the flowmeter display unit is deleted.",
+  "page": 6,
+  "question_picture_text": "c. Electrical: i. Existing conduits for the flowmeter can be reused and needs to be refurbished. The wiring needs to be replaced when the new flowmeter is installed. ii. Replace all corroded, damaged and missing conduit supports. | iii. Locate new flow meter display unit outside of the classified areas|ii. It is by nearby influent channel and screening equipment . procur",
+  "response_picture_text": ""
+ },
+ {
+  "no": 29,
+  "date": "6/30/26",
+  "question": "Aeration Blowers: i . Does sanding off corrosion only at the surface? Rust hasn’t reached current-carrying parts? ii. Provide size, length and type of conduit. iii. Is the wire not required to be replaced?",
+  "response": "EOR Response: i. KTR to proceed that corrosion is only at the surface and has not reached current-carrying parts. ii. KTR to confirm the existing size and length of the conduit. It is a PVC coated conduit. iii. Replace wires from disconnect switch to the aeration blower equipment.",
+  "page": 7,
+  "question_picture_text": "c. Electrical: i. Existing disconnect switches require minor repairs to remove corrosion. ii. Clean and lubricate disconnect switch mechanisms. iii. The conduits for aeration blower in the solids area require repair or replacement.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 30,
+  "date": "",
+  "question": "Parshall Flume (Tag No. FE110): Provide size, length and type of conduit.",
+  "response": "EOR Response: Parshall flume works or new meter are not part of this IFB.",
+  "page": 7,
+  "question_picture_text": "c. Electrical: new m i. Existing conduits can be reused for the level transmitter and nee refurbished. Replace all corroded components and provide new supports.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 31,
+  "date": "",
+  "question": "Aeration Blowers: i. Provide rating and type of disconnect switch. ii. Provide size, length and type of conduit.",
+  "response": "EOR Response: i. It is an existing 3P30A, 480V, NEMA 4X, 316 stainless steel unit. Please note that the SOW only requires repair/Refurbishment. ii. Match existing size and type. Length to be as required.",
+  "page": 7,
+  "question_picture_text": "c. Electrical: i, Existing disconnect switches require minor repairs to remove corrosion. ii. Clean and lubricate disconnect switch mechanisms. iii. The conduits for aeration blower in the solids area require repair or replacement.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 32,
+  "date": "",
+  "question": "Influent Sampler: i. Provide size, length and type of wire and conduit. ii. Provide location of the power supply.",
+  "response": "EOR Response: i. and ii. Delete this scope of work.",
+  "page": 7,
+  "question_picture_text": "c. Electrical: New location will require power",
+  "response_picture_text": ""
+ },
+ {
+  "no": 33,
+  "date": "",
+  "question": "Flocculation Mixer 1, 2, 3, and 4 (FCM-1, FCM -2, FCM-3, and FCM-4): i. Provide rating and type of disconnect switch. ii. Provide size, length and type of wire and conduit.",
+  "response": "EOR Response. i. Delete this scope of work. ii. Replace wires from the disconnect switch to the flocculation mixers.",
+  "page": 7,
+  "question_picture_text": "c. Electrical: i. The existing exterior disconnect switches for the flocculation mixer unit can be reused. All corroded and damaged components will be replaced. The associated conduits can also be reused. ii. Clean and lubricate switch mechanisms. iii. Provide new wirings needed for the new flocculation mixers. iv. Replace all missing, damaged, and corroded for disconnect and conduit supports.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 34,
+  "date": "",
+  "question": "Primary Clarifier Cross Collectors -1, 2 and 3 (Tag No. PCCC-1, PCCC-2, and PCCC-3): i. Provide size, length and type of conduit. ii. Would this be brackets/unistrut/fasteners, or does it include the enclosure mounting hardware itself? Is it stainless steel, aluminum or others?",
+  "response": "EOR Response: i. Reuse existing PVC coated conduits and replace existing flexible conduits. Replace existing wiring from disconnect switches to primary clarifier cross collectors. ii. Replace existing disconnect switch mounting system. Apply two coats of enamel paint.",
+  "page": 7,
+  "question_picture_text": "c. Electrical: i. Existing disconnect switches can be reused, but it needs to be refurbished by sanding off the corrosion and replacing all corroded, damaged and missing components but not limited to conduits, conduits support, and wirings. ii. Clean and lubricate disconnect mechanisms. iii. Existing support for the disconnect switches needs to be replaced and its associated components.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 35,
+  "date": "",
+  "question": "Primary Clarifier Scum Pumps 1 and 2 (Tag No. PCSP-1 and PSCP-2): i. Provide size, length and type of wire and conduit.",
+  "response": "EOR Response: Reuse existing PVC coated conduits and replace existing flexible conduits. Replace existing wiring from disconnect switches to primary clarifier scum pumps.",
+  "page": 7,
+  "question_picture_text": "c. Electrical (New SCADA Design): i. Replace all exterior conduits for the pumps, including but not limited to supports, junction boxes, and wirings. And replace all exterior junction boxes with stainless steel.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 36,
+  "date": "6/30/26",
+  "question": "Effluent Sampler: i. Provide what type and rating of the receptacle. ii. Provide size, length and type of wire and conduit.",
+  "response": "EOR Response: Provide 120V, 20A, GFCI rated, weather resistant and weatherproof cover in use receptable and reuse existing wiring.",
+  "page": 8,
+  "question_picture_text": "c. Electrical: i. Replace receptacle for the effluent sampler including but not limited to conduit, receptacle, cover, junction box and wirings.",
+  "response_picture_text": ""
+ },
+ {
+  "no": 37,
+  "date": "",
+  "question": "Primary Sludge Transfer Pumps 1, 2, 3, and 4 (PCTP-1, 2, 3, and 4) and Primary Sludge Grinders 1, 2, 3, and 4 (PCTG-1, 2, 3, and 4): Please see the excerpt of spec section 116000 above. It called out for bins meeting GWA vehicles. Provide details of GWA vehicles.",
+  "response": "",
+  "page": 8,
+  "question_picture_text": "PART 2 - PRODUCTS 2.1 Roll Off Containers A. Stainless steel body, frame and inner skin with epoxy coating, 15 cubic yard roll off container with approximate dimensions of 16ft L X 8ft W X 4fi H. B. _ Fixed front legs, with durable heavy duty rear roller wheels. Finish underseal/underside with corrosion protection, rust inhibiting undercoat. Heavy-duty snatch hook compatible with Roll off truck specified herein. Bins meeting this specification shall also be compatible with existing GWA vehicles used for similar purpose. EQUIPMENT 116000 - 1",
+  "response_picture_text": "CONFORMITY OF THE 0 U.S.A. FEDERAL MOTOR VENICLE SAFETY WHICH HAVE BEEN PREVIOUSLY FULLY CERTIFIED BY THE INCOMPLETE VEHICLE MANUFACTURER On BY THE INTERMEDIATE VEHICLE MANUFACTURER, HAS NOT BEEN AFFECTED BY THE FINAL- STAGE MANUFACTURE, THE VEHICLE HAS BEEN COMPLETED IN ACCORDANCE WiTH PRIOR MANUFACTURER’"
+ },
+ {
+  "no": 38,
+  "date": "",
+  "question": "Please provide as-built drawings of Digester Tank.",
+  "response": "EOR Response: As-builts to be provided to registered suppliers.",
+  "page": 8,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 39,
+  "date": "",
+  "question": "Please provide the location of Sludge Drying Beds.",
+  "response": "EOR Response: Contractor may use one of the four drying beds at the Northern District WWTP.",
+  "page": 8,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 40,
+  "date": "6/30/26",
+  "question": "Please provide the location of Sludge Holding Area.",
+  "response": "EOR Response: Contractor may use one of the four drying beds at the Northern District WWTP. Please refer to Addendum No. 2, updated specification 022100.",
+  "page": 9,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 41,
+  "date": "",
+  "question": "We would like to confirm that we have received and successfully downloaded the complete bid package. Could you please confirm that these constitute the full set of RFP documents?",
+  "response": "The full set of IFB Documents consists of the following: IFB-06-ENG-2026 Bid Package, HWWTP Procurement Specifications Final, HWWTP Procurement Report Final, Addendum No. 1, Addendum No. 2, and Response to RFI No. 1.",
+  "page": 9,
+  "question_picture_text": "i@) Addendum No. 1 IFB-06-ENG-2026 ia HWWTP Procurement Report Final la) HWWTP Procurement Specificaions Final i IFB-06-ENG-2026 Bid Package",
+  "response_picture_text": ""
+ },
+ {
+  "no": 42,
+  "date": "7/1/26",
+  "question": "Refer to Bid Form Item 8.4 Digester Tank Clean with 600,000 Gallon of Sludge and Specification Section 022100 Digester Sludge Removal and Disposal. 1) How many Digesters are this for 600,000 Gallon? 2) It is indicated in the specification that contractors assume the materials in the digesters are hardened. Is the 600,000 Gallon purely solids? Are there liquids in there too? 3) Sludge usually settles at the bottom and liquid on top. Of the 600,000 Gallon what percentages will the contractor consider for the liquid and what for solid? 4) If as-built of the digester tanks is not available, for bid uniformity will GWA provide a sketch of what the digester tanks look like? A sketch showing locations and sizes of openings will greatly help. Contractors need reasonable access to clean the tanks. Sludge Sampling and Testing are required to determine if the sludge can be disposed of in the landfill. What happens if the sludge cannot be disposed in the landfill, in this case Layon Landfill?",
+  "response": "EOR Response: 1) This is all inclusive. Bid item will be treated as a unit rate. Should volume increase contractor will be paid at this unit rate. Only the volume removed will be paid. Level measurements will be taken by contractor and reviewed by GWA prior to removal. Please refer to Addendum No. 2, updated specification 022100. 2) A portion of this is assumed to be liquid. Only the volume removed will be paid. Level measurements will be taken by contractor and reviewed by GWA prior to removal. Please refer to Addendum No. 2, updated specification 022100. 3) The exact percentage is not known. Contractor should assume the entire volume is hard and will require additional effort to remove. Sludge haulers on Guam are aware of this site and material. 4) As-builts provided. Please refer to Addendum No. 2. 5) Based on current and past operations it is presumed that the material may be disposed of at the landfill. If this is not correct then a change order will be negotiated.",
+  "page": 9,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 43,
+  "date": "7/2/26",
+  "question": "The bid documents made available to Bidders do not include the Project drawings (civil, mechanical, electrical, and P&ID sheets) referenced throughout the Specifications and cited by sheet number (e.g., C- 1, M-8, E-7, etc.) in the Site Assessment materials. Without the drawings, Bidders cannot verify existing conditions, equipment locations, or scope boundaries necessary to develop responsive Base Bid pricing. Requests: 1. Please confirm whether a Project drawing set (current design/construction drawings) has been issued or will be issued as part of this IFB, separate from the 2013 Agana WWTP Primary Treatment Upgrades drawings referenced as background material in the site assessment. 1. If drawings have not yet been issued, will GWA extend the Bid due date by at least four (4) weeks from the date the drawings are released? Will GWA correspondingly extend the RFI deadline (currently 07/13/26 per Addendum No. 1), contingent upon and measured from the date the drawings are released?",
+  "response": "EOR Response: The procurement report has been updated to reflect works that are part of IFB and works that have be removed (stricken from report). Intent of this IFB is to procure and replace equipment in kind and to minimize need for site reworks associated with the installation of replacement equipment. Only past drawing sets have been provided. No new drawings will be provided. GWA will extend the bid due date until August 4, 2026, at 10:00 AM. RFI deadline will not be extended.",
+  "page": 10,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ },
+ {
+  "no": 44,
+  "date": "7/8/26",
+  "question": "The Procurement Report recommends replacement of the existing SCADA system. Recommendation Items (c) and (d), further state that new drawings and specifications will be provided as part of the new design package for all required modifications. However, the corresponding SCADA design package, including the new drawings and specifications defining the required modifications, has not been included in the bid documents. Please provide the new drawings and specifications for the SCADA system.",
+  "response": "EOR Response: Replacement of the SCADA system is not included in this IFB.",
+  "page": 10,
+  "question_picture_text": "",
+  "response_picture_text": ""
+ }
+]

@@ -26,8 +26,31 @@ LISTS = closeout.DrawingLists(LISTS_DATA)
 _previous = agents.gemini_json
 
 
+def fake_answer_check(user):
+    """Stands in for Gemini on the answer-check prompt, steered by marker words in the test text."""
+    raw = {'modelVersion': 'fake-model', 'usageMetadata': {'totalTokenCount': 1}}
+    q, a = user['rfi_question'], user['answer']
+    no = {'value': False, 'quote': ''}
+    if 'TESTINVENT' in q:
+        return ({'questions': [{'asks': 'a question nobody asked', 'status': 'answered', 'answer_quote': ''}],
+                 'scope_change': {'value': True, 'quote': 'words that are not in the answer'},
+                 'refers_to_missing': no, 'reason': 'test'}, raw)
+    if 'TESTDEFER' in q:
+        return ({'questions': [{'asks': 'Please provide the budget', 'status': 'deferred',
+                                'answer_quote': 'will be announced at bid opening'}],
+                 'scope_change': no, 'refers_to_missing': no, 'reason': 'test'}, raw)
+    if 'TESTSCOPE' in q:
+        return ({'questions': [{'asks': 'Provide size of wire', 'status': 'answered', 'answer_quote': ''}],
+                 'scope_change': {'value': True, 'quote': 'Delete this scope of work'},
+                 'refers_to_missing': no, 'reason': 'test'}, raw)
+    return ({'questions': [{'asks': q[:30], 'status': 'answered', 'answer_quote': ''}],
+             'scope_change': no, 'refers_to_missing': no, 'reason': 'test'}, raw)
+
+
 def fake_gemini(cfg, prompt, user, schema):
     """Stands in for Gemini on the close-out prompt; other prompts go to the Demo #3 fake if it is loaded."""
+    if 'another round of questions' in prompt:
+        return fake_answer_check(user)
     if 'close out RFIs' not in prompt:
         return _previous(cfg, prompt, user, schema)
     raw = {'modelVersion': 'fake-model', 'usageMetadata': {'totalTokenCount': 1}}
@@ -238,6 +261,54 @@ class CloseoutFlow(unittest.TestCase):
         panel = pm('/api/panel')[1]
         self.assertEqual((panel['closeout']['closed'], panel['closeout']['overrides']), (1, 1))
         self.assertTrue(panel['audit']['ok'])
+
+
+class AnswerCheck(unittest.TestCase):
+    """Second real data set (data/gwa): did the answer actually answer?"""
+    def item(self, q, a, date='6/30/26'):
+        return {'no': 1, 'date': date, 'question': q, 'response': a}
+
+    def test_answered_can_close(self):
+        out = closeout.answer_check(self.item('Confirm the screen is 316L.', 'EOR Response: Yes, 316L.'))
+        self.assertEqual(out['recommendation'], 'ok_to_close')
+
+    def test_deferred_answer_is_not_closed(self):
+        out = closeout.answer_check(self.item('TESTDEFER Please provide the budget.', 'The budget will be announced at bid opening.'))
+        self.assertEqual(out['recommendation'], 'check')
+        self.assertTrue(out['flags']['not_fully_answered'])
+
+    def test_scope_change_needs_a_quote(self):
+        out = closeout.answer_check(self.item('TESTSCOPE Provide size of wire and conduit.', 'EOR Response: Delete this scope of work.'))
+        self.assertTrue(out['flags']['scope_change'])
+        self.assertEqual(out['recommendation'], 'check')
+
+    def test_guard_drops_invented_quotes_and_never_closes(self):
+        out = closeout.answer_check(self.item('TESTINVENT Provide the pump model.', 'EOR Response: Pump P-1.', date=''))
+        self.assertFalse(out['flags']['scope_change'])
+        self.assertEqual(len(out['guard']), 2)
+        self.assertEqual(out['recommendation'], 'check')
+        self.assertTrue(out['flags']['no_date'])
+
+    def test_picture_text_is_part_of_the_question(self):
+        q, _ = closeout.answer_texts({'question': 'See above.', 'response': 'x', 'question_picture_text': 'Section 3.1'})
+        self.assertIn('read by OCR', q); self.assertIn('Section 3.1', q)
+
+    def test_copied_answer_found_across_items(self):
+        items = [{'no': 1, 'question': 'Where is the drying bed?', 'response': 'EOR Response: Contractor may use one of the four beds at the plant.'},
+                 {'no': 2, 'question': 'Where is the holding area?', 'response': 'EOR Response: Contractor may use one of the four beds at the plant. See spec.'},
+                 {'no': 3, 'question': 'Other?', 'response': 'EOR Response: No.'}]
+        self.assertEqual(closeout.copied_answers(items), {1: [2], 2: [1]})
+
+    def test_gwa_data_and_answer_key(self):
+        items = json.loads((ROOT / 'data' / 'gwa' / 'rfi1_items.json').read_text())
+        self.assertEqual([i['no'] for i in items], list(range(1, 45)))
+        sys.path.insert(0, str(ROOT / 'scripts'))
+        import run_gwa_eval
+        self.assertEqual(run_gwa_eval.item_numbers('#39–#40'), [39, 40])
+        key, listed, _ = run_gwa_eval.answer_key()
+        self.assertEqual(len(listed), 37)
+        self.assertEqual(sorted(set(range(1, 45)) - listed), [12, 21, 24, 30, 31, 34, 41])
+        self.assertIn('multiple_questions', key[42]); self.assertIn('scope_change', key[32])
 
 
 if __name__ == '__main__':

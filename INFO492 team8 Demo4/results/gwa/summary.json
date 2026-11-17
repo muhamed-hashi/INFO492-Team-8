@@ -1,0 +1,833 @@
+{
+  "run_at": "2026-11-17T20:14:30+00:00",
+  "model": "gemini-3.5-flash-lite",
+  "runs": 2,
+  "rescored_at": "2026-11-17T20:17:09+00:00",
+  "items": 44,
+  "items_he_listed": 37,
+  "items_he_did_not_list": [
+    12,
+    21,
+    24,
+    30,
+    31,
+    34,
+    41
+  ],
+  "methods": {
+    "code": {
+      "failed_calls": 0,
+      "categories": {
+        "no_date": {
+          "his_items": [
+            3,
+            4,
+            5,
+            8,
+            13,
+            14,
+            15,
+            17,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            37,
+            38,
+            39
+          ],
+          "found": [
+            3,
+            5,
+            8,
+            13,
+            14,
+            15,
+            17,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            37,
+            38,
+            39
+          ],
+          "missed": [
+            4,
+            29
+          ],
+          "flagged_not_on_his_list": [
+            6,
+            9,
+            11,
+            18,
+            19,
+            20,
+            21,
+            23,
+            24,
+            25,
+            26,
+            41
+          ]
+        },
+        "multiple_questions": {
+          "his_items": [
+            15,
+            17,
+            27,
+            42
+          ],
+          "found": [
+            15,
+            27,
+            42
+          ],
+          "missed": [
+            17
+          ],
+          "flagged_not_on_his_list": [
+            28,
+            29,
+            31,
+            32,
+            33,
+            34,
+            36,
+            43
+          ]
+        },
+        "refers_to_missing": {
+          "his_items": [
+            4
+          ],
+          "found": [
+            4
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            6,
+            7,
+            37
+          ]
+        },
+        "not_fully_answered": {
+          "his_items": [
+            3,
+            15,
+            16,
+            20,
+            25,
+            26,
+            37,
+            39,
+            40,
+            42
+          ],
+          "found": [
+            3,
+            15,
+            16,
+            20,
+            25,
+            26,
+            40,
+            42
+          ],
+          "missed": [
+            37,
+            39
+          ],
+          "flagged_not_on_his_list": [
+            43
+          ]
+        },
+        "scope_change": {
+          "his_items": [
+            19,
+            32,
+            33
+          ],
+          "found": [
+            19,
+            32,
+            33
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            2,
+            21,
+            28,
+            42,
+            43
+          ]
+        },
+        "copied_answer": {
+          "his_items": [
+            39,
+            40
+          ],
+          "found": [
+            39,
+            40
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            10,
+            27,
+            30,
+            34,
+            35
+          ]
+        }
+      },
+      "recommendation": {
+        "counts": {
+          "ok_to_close": 29,
+          "check": 15
+        },
+        "his_answer_problems": [
+          3,
+          15,
+          16,
+          19,
+          20,
+          25,
+          26,
+          32,
+          33,
+          37,
+          39,
+          40,
+          42
+        ],
+        "stopped_of_those": [
+          3,
+          15,
+          16,
+          19,
+          20,
+          25,
+          26,
+          32,
+          33,
+          40,
+          42
+        ],
+        "closed_of_those": [
+          37,
+          39
+        ],
+        "stopped_not_on_his_answer_list": [
+          2,
+          21,
+          28,
+          43
+        ],
+        "stopped_of_items_he_did_not_list": [
+          21
+        ],
+        "stopped_on_items_with_any_problem_he_listed": 14,
+        "stopped_on_items_he_found_fine": 1
+      }
+    },
+    "agent_run1": {
+      "failed_calls": 0,
+      "categories": {
+        "no_date": {
+          "his_items": [
+            3,
+            4,
+            5,
+            8,
+            13,
+            14,
+            15,
+            17,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            37,
+            38,
+            39
+          ],
+          "found": [
+            3,
+            5,
+            8,
+            13,
+            14,
+            15,
+            17,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            37,
+            38,
+            39
+          ],
+          "missed": [
+            4,
+            29
+          ],
+          "flagged_not_on_his_list": [
+            6,
+            9,
+            11,
+            18,
+            19,
+            20,
+            21,
+            23,
+            24,
+            25,
+            26,
+            41
+          ]
+        },
+        "multiple_questions": {
+          "his_items": [
+            15,
+            17,
+            27,
+            42
+          ],
+          "found": [
+            15,
+            27,
+            42
+          ],
+          "missed": [
+            17
+          ],
+          "flagged_not_on_his_list": [
+            28,
+            29,
+            31,
+            32,
+            33,
+            34,
+            36,
+            43
+          ]
+        },
+        "refers_to_missing": {
+          "his_items": [
+            4
+          ],
+          "found": [
+            4
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            6,
+            7,
+            8,
+            10,
+            11,
+            27,
+            28,
+            29,
+            30,
+            32,
+            33,
+            34,
+            36,
+            37,
+            41
+          ]
+        },
+        "not_fully_answered": {
+          "his_items": [
+            3,
+            15,
+            16,
+            20,
+            25,
+            26,
+            37,
+            39,
+            40,
+            42
+          ],
+          "found": [
+            3,
+            15,
+            25,
+            26,
+            37,
+            40
+          ],
+          "missed": [
+            16,
+            20,
+            39,
+            42
+          ],
+          "flagged_not_on_his_list": [
+            1,
+            4,
+            13,
+            14,
+            17,
+            18,
+            22,
+            23,
+            27,
+            28,
+            29,
+            33,
+            34,
+            35,
+            38,
+            41,
+            44
+          ]
+        },
+        "scope_change": {
+          "his_items": [
+            19,
+            32,
+            33
+          ],
+          "found": [
+            19,
+            32,
+            33
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            2,
+            4,
+            6,
+            7,
+            18,
+            21,
+            22,
+            28,
+            29,
+            30,
+            35,
+            36,
+            43,
+            44
+          ]
+        },
+        "copied_answer": {
+          "his_items": [
+            39,
+            40
+          ],
+          "found": [
+            39,
+            40
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            10,
+            27,
+            30,
+            34,
+            35
+          ]
+        }
+      },
+      "recommendation": {
+        "counts": {
+          "check": 33,
+          "ok_to_close": 11
+        },
+        "his_answer_problems": [
+          3,
+          15,
+          16,
+          19,
+          20,
+          25,
+          26,
+          32,
+          33,
+          37,
+          39,
+          40,
+          42
+        ],
+        "stopped_of_those": [
+          3,
+          15,
+          19,
+          25,
+          26,
+          32,
+          33,
+          37,
+          40,
+          42
+        ],
+        "closed_of_those": [
+          16,
+          20,
+          39
+        ],
+        "stopped_not_on_his_answer_list": [
+          1,
+          2,
+          4,
+          6,
+          7,
+          13,
+          14,
+          17,
+          18,
+          21,
+          22,
+          23,
+          27,
+          28,
+          29,
+          30,
+          34,
+          35,
+          36,
+          38,
+          41,
+          43,
+          44
+        ],
+        "stopped_of_items_he_did_not_list": [
+          21,
+          30,
+          34,
+          41
+        ],
+        "stopped_on_items_with_any_problem_he_listed": 29,
+        "stopped_on_items_he_found_fine": 4
+      }
+    },
+    "agent_run2": {
+      "failed_calls": 2,
+      "categories": {
+        "no_date": {
+          "his_items": [
+            3,
+            4,
+            5,
+            8,
+            13,
+            14,
+            15,
+            17,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            37,
+            38,
+            39
+          ],
+          "found": [
+            3,
+            5,
+            8,
+            13,
+            14,
+            15,
+            17,
+            27,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            37,
+            38,
+            39
+          ],
+          "missed": [
+            4,
+            29
+          ],
+          "flagged_not_on_his_list": [
+            6,
+            9,
+            11,
+            18,
+            19,
+            20,
+            21,
+            23,
+            24,
+            25,
+            26,
+            41
+          ]
+        },
+        "multiple_questions": {
+          "his_items": [
+            15,
+            17,
+            27,
+            42
+          ],
+          "found": [
+            15,
+            27,
+            42
+          ],
+          "missed": [
+            17
+          ],
+          "flagged_not_on_his_list": [
+            28,
+            29,
+            31,
+            32,
+            33,
+            34,
+            36,
+            43
+          ]
+        },
+        "refers_to_missing": {
+          "his_items": [
+            4
+          ],
+          "found": [
+            4
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            27,
+            28,
+            29,
+            30,
+            33,
+            35,
+            36,
+            37,
+            41
+          ]
+        },
+        "not_fully_answered": {
+          "his_items": [
+            3,
+            15,
+            16,
+            20,
+            25,
+            26,
+            37,
+            39,
+            40,
+            42
+          ],
+          "found": [
+            3,
+            15,
+            16,
+            25,
+            26,
+            37,
+            40
+          ],
+          "missed": [
+            20,
+            39,
+            42
+          ],
+          "flagged_not_on_his_list": [
+            1,
+            4,
+            13,
+            14,
+            17,
+            18,
+            22,
+            23,
+            27,
+            28,
+            29,
+            30,
+            33,
+            34,
+            35,
+            38,
+            41,
+            43
+          ]
+        },
+        "scope_change": {
+          "his_items": [
+            19,
+            32,
+            33
+          ],
+          "found": [
+            19,
+            32,
+            33
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            4,
+            7,
+            18,
+            21,
+            22,
+            27,
+            28,
+            29,
+            30,
+            34,
+            35,
+            40
+          ]
+        },
+        "copied_answer": {
+          "his_items": [
+            39,
+            40
+          ],
+          "found": [
+            39,
+            40
+          ],
+          "missed": [],
+          "flagged_not_on_his_list": [
+            27,
+            30,
+            34,
+            35
+          ]
+        }
+      },
+      "recommendation": {
+        "counts": {
+          "check": 30,
+          "ok_to_close": 12
+        },
+        "his_answer_problems": [
+          3,
+          15,
+          16,
+          19,
+          20,
+          25,
+          26,
+          32,
+          33,
+          37,
+          39,
+          40,
+          42
+        ],
+        "stopped_of_those": [
+          3,
+          15,
+          16,
+          19,
+          25,
+          26,
+          32,
+          33,
+          37,
+          40,
+          42
+        ],
+        "closed_of_those": [
+          20,
+          39
+        ],
+        "stopped_not_on_his_answer_list": [
+          1,
+          4,
+          7,
+          13,
+          14,
+          17,
+          18,
+          21,
+          22,
+          23,
+          27,
+          28,
+          29,
+          30,
+          34,
+          35,
+          38,
+          41,
+          43
+        ],
+        "stopped_of_items_he_did_not_list": [
+          21,
+          30,
+          34,
+          41
+        ],
+        "stopped_on_items_with_any_problem_he_listed": 26,
+        "stopped_on_items_he_found_fine": 4
+      }
+    }
+  },
+  "run_agreement": {
+    "items_both_returned": 42,
+    "same_recommendation": 38,
+    "same_flags": 29
+  },
+  "his_issue_types_outside_the_check": {
+    "Missing drawings": 1,
+    "Unclear scope": 8,
+    "Unclear wording": 1,
+    "Duplicate question": 3,
+    "Incorrect drawing reference": 1,
+    "Typo": 3,
+    "Spec copied": 1,
+    "mixed up": 1,
+    "Self-contradictory spec": 2,
+    "Vendor suggestion bundled in": 1,
+    "Three-way data conflict": 1,
+    "Conflicting process information": 1,
+    "Basic information missing": 1,
+    "Broken wording": 1,
+    "Duplicate": 1,
+    "Formatting error": 1,
+    "Inconsistent tagging": 1,
+    "Misplaced content": 1,
+    "Restricted drawings": 1,
+    "Missing drawings (core issue)": 1
+  }
+}
