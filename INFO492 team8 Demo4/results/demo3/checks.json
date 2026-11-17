@@ -1,0 +1,4284 @@
+[
+ {
+  "case_id": "F01",
+  "input": {
+   "case_id": "F01",
+   "is_simulated": true,
+   "drawing_set": 1,
+   "message": "no fixture type shown for the gym office 173A on E301, fixture schedule E-801 doesnt say either. what fixture do we put in there",
+   "sheets_as_written": "E301, E-801",
+   "source": {
+    "id": "Dett-A2-RFI12",
+    "seed": "S01",
+    "title": "Fixture type for Gym Office 173A"
+   },
+   "site_notes": {
+    "location": "Annex Level 1, Gym Office 173A",
+    "needed_by": "2023-10-13",
+    "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+    "trade": "Electrical",
+    "references": "E-301, E-801"
+   }
+  },
+  "key": {
+   "case_id": "F01",
+   "missing": [
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [
+    "superseded"
+   ],
+   "note": "Location is stated. E-301 was revised in Addenda 2 and 3, after the Addendum 1 set the foreman is using.",
+   "correct_references": "E-301, E-801"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "no fixture type shown for the gym office",
+    "question": "no fixture type shown for the gym office 173A on E301, fixture schedule E-801 doesnt say either. what fixture do we put in there",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "references": {
+     "text": "E-301, E-801",
+     "lookup": [
+      {
+       "sheet": "E-301",
+       "status": "revised_since_your_set",
+       "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+       "revised_in": [
+        2,
+        3
+       ],
+       "message": "E-301 was revised in Addendum 2, 3, after the drawing set you are using (Addendum 1). Please confirm against the current revision."
+      },
+      {
+       "sheet": "E-801",
+       "status": "current",
+       "title": "ELECTRICAL SCHEDULES",
+       "revised_in": [],
+       "message": "E-801 is in the current drawing index (ELECTRICAL SCHEDULES)."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "references",
+      "ask": "Which drawing sheet(s) show this? Check the numbers against the current drawing set."
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 2,
+    "caught": 1,
+    "uncaught": [
+     "impact"
+    ],
+    "false_asks": [],
+    "ref_issue": true,
+    "ref_caught": true,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": true
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1135,
+     "title": "Missing fixture type for gym office 173A on E301",
+     "question": "What fixture do we put in gym office 173A, as no fixture type is shown on E301 and fixture schedule E-801 does not specify it?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "Gym office 173A",
+      "source": "message",
+      "quote": "gym office 173A"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "E-301, E-801",
+      "lookup": [
+       {
+        "sheet": "E-301",
+        "status": "revised_since_your_set",
+        "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+        "revised_in": [
+         2,
+         3
+        ],
+        "message": "E-301 was revised in Addendum 2, 3, after the drawing set you are using (Addendum 1). Please confirm against the current revision."
+       },
+       {
+        "sheet": "E-801",
+        "status": "current",
+        "title": "ELECTRICAL SCHEDULES",
+        "revised_in": [],
+        "message": "E-801 is in the current drawing index (ELECTRICAL SCHEDULES)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "Do you have a required response date for this RFI?"
+      },
+      {
+       "field": "impact",
+       "ask": "Will this delay the schedule or impact installation work if not answered soon?"
+      },
+      {
+       "field": "references",
+       "ask": "Sheet E301 was revised after your set (revised in Addendum 2 and 3). Should we verify the details against the latest Addendum 2 or 3 revision?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rewrote into a professional question format",
+       "why": "To match standard RFI phrasing while keeping the exact wording and references from the message."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Missing fixture type for gym office 173A on E301",
+     "question": "What fixture do we put in gym office 173A, as no fixture type is shown on E301 and fixture schedule E-801 does not specify it?",
+     "trade": "Electrical",
+     "location": "Gym office 173A",
+     "needed_by": "2023-10-13",
+     "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+     "references": "E-301, E-801"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-301",
+       "status": "current",
+       "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+       "revised_in": [],
+       "message": "E-301 is in the current drawing index (FIRST FLOOR LIGHTING PLAN SERVICE WING)."
+      },
+      {
+       "sheet": "E-801",
+       "status": "current",
+       "title": "ELECTRICAL SCHEDULES",
+       "revised_in": [],
+       "message": "E-801 is in the current drawing index (ELECTRICAL SCHEDULES)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks about missing fixture types and information on drawings and schedules."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The subcontractor is asking for a missing fixture type, which is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 771,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location is specified as Gym office 173A, which is specific enough to find on site."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states that ceiling rough-in starts the week of Oct 16 and fixtures have a 3-week lead time."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1109,
+     "title": "Missing Fixture Type for Gym Office 173A",
+     "question": "No fixture type is shown for gym office 173A on E301, and fixture schedule E-801 does not list it either. What fixture should we install there?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "Gym Office 173A",
+      "source": "message",
+      "quote": "gym office 173A"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "E-301, E-801",
+      "lookup": [
+       {
+        "sheet": "E-301",
+        "status": "revised_since_your_set",
+        "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+        "revised_in": [
+         2,
+         3
+        ],
+        "message": "E-301 was revised in Addendum 2, 3, after the drawing set you are using (Addendum 1). Please confirm against the current revision."
+       },
+       {
+        "sheet": "E-801",
+        "status": "current",
+        "title": "ELECTRICAL SCHEDULES",
+        "revised_in": [],
+        "message": "E-801 is in the current drawing index (ELECTRICAL SCHEDULES)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "When do you need the answer to avoid delays?"
+      },
+      {
+       "field": "impact",
+       "ask": "Will work be stopped or delayed if this fixture type is missing?"
+      },
+      {
+       "field": "references",
+       "ask": "Sheet E-301 was revised after your drawing set. Do you want to check the revised sheet for updates?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rewrote into a formal question",
+       "why": "To match professional RFI standards while retaining all original facts."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Missing Fixture Type for Gym Office 173A",
+     "question": "No fixture type is shown for gym office 173A on E301, and fixture schedule E-801 does not list it either. What fixture should we install there?",
+     "trade": "Electrical",
+     "location": "Gym Office 173A",
+     "needed_by": "2023-10-13",
+     "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+     "references": "E-301, E-801"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-301",
+       "status": "current",
+       "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+       "revised_in": [],
+       "message": "E-301 is in the current drawing index (FIRST FLOOR LIGHTING PLAN SERVICE WING)."
+      },
+      {
+       "sheet": "E-801",
+       "status": "current",
+       "title": "ELECTRICAL SCHEDULES",
+       "revised_in": [],
+       "message": "E-801 is in the current drawing index (ELECTRICAL SCHEDULES)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "It asks about a missing fixture type and details not shown on drawings or schedules."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "It asks for a missing fixture type clarification, not an extra cost or scope change."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 813,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The RFI provides a specific room name and number, Gym Office 173A."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "It states that ceiling rough-in starts the week of Oct 16 and fixtures have a 3-week lead time."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ },
+ {
+  "case_id": "F02",
+  "input": {
+   "case_id": "F02",
+   "is_simulated": true,
+   "drawing_set": 3,
+   "message": "E-700 shows (4) 2\" conduits from IDF to MDF but E-500 calls for (5). how many do we run?? need this asap",
+   "sheets_as_written": "E-700, E-500",
+   "source": {
+    "id": "Dett-A3-RFI10",
+    "seed": "S02",
+    "title": "Number of 2\" conduits MDF to IDF"
+   },
+   "site_notes": {
+    "location": "Level 1, conduit route between the MDF room and the IDF room",
+    "needed_by": "2023-11-03",
+    "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+    "trade": "Electrical",
+    "references": "E-700, E-500"
+   }
+  },
+  "key": {
+   "case_id": "F02",
+   "missing": [
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [],
+   "note": "\"asap\" is not a date. Location (MDF to IDF route) is stated.",
+   "correct_references": "E-700, E-500"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "E-700 shows (4) 2\" conduits from IDF to",
+    "question": "E-700 shows (4) 2\" conduits from IDF to MDF but E-500 calls for (5). how many do we run?? need this asap",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "",
+     "source": "missing"
+    },
+    "references": {
+     "text": "E-700, E-500",
+     "lookup": [
+      {
+       "sheet": "E-700",
+       "status": "current",
+       "title": "ELECTRICAL DETAILS",
+       "revised_in": [],
+       "message": "E-700 is in the current drawing index (ELECTRICAL DETAILS)."
+      },
+      {
+       "sheet": "E-500",
+       "status": "current",
+       "title": "PARTIAL PLANS",
+       "revised_in": [],
+       "message": "E-500 is in the current drawing index (PARTIAL PLANS)."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "impact",
+      "ask": "What happens to the work, schedule or cost if the answer comes late?"
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 2,
+    "caught": 2,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": false,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1034,
+     "title": "Conduit Count Discrepancy Between E-700 and E-500",
+     "question": "Sheet E-700 shows (4) 2\" conduits from IDF to MDF, but sheet E-500 calls for (5). How many conduits should we run?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "IDF to MDF",
+      "source": "message",
+      "quote": "IDF to MDF"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "E-700, E-500",
+      "lookup": [
+       {
+        "sheet": "E-700",
+        "status": "current",
+        "title": "ELECTRICAL DETAILS",
+        "revised_in": [],
+        "message": "E-700 is in the current drawing index (ELECTRICAL DETAILS)."
+       },
+       {
+        "sheet": "E-500",
+        "status": "current",
+        "title": "PARTIAL PLANS",
+        "revised_in": [],
+        "message": "E-500 is in the current drawing index (PARTIAL PLANS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "What is the specific needed by date, since 'asap' was provided?"
+      },
+      {
+       "field": "impact",
+       "ask": "What happens to the work, schedule or cost if the answer comes late?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Converted informal message into a structured RFI question format",
+       "why": "To make the discrepancy between sheet E-700 and E-500 clear to the general contractor."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Conduit Count Discrepancy Between E-700 and E-500",
+     "question": "Sheet E-700 shows (4) 2\" conduits from IDF to MDF, but sheet E-500 calls for (5). How many conduits should we run?",
+     "trade": "Electrical",
+     "location": "IDF to MDF",
+     "needed_by": "2023-11-03",
+     "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+     "references": "E-700, E-500"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-700",
+       "status": "current",
+       "title": "ELECTRICAL DETAILS",
+       "revised_in": [],
+       "message": "E-700 is in the current drawing index (ELECTRICAL DETAILS)."
+      },
+      {
+       "sheet": "E-500",
+       "status": "current",
+       "title": "PARTIAL PLANS",
+       "revised_in": [],
+       "message": "E-500 is in the current drawing index (PARTIAL PLANS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "Asks to resolve a conflict between drawings E-700 and E-500."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "It is asking to clarify a conflict between two existing drawings rather than requesting new scope."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 748,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "IDF to MDF is not a specific room number, gridline, or unique location."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "States conduit installation is on hold and a late answer delays low-voltage cabling."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: IDF to MDF is not a specific room number, gridline, or unique location."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1056,
+     "title": "Conduit Count Discrepancy Between E-700 and E-500",
+     "question": "Sheet E-700 shows (4) 2\" conduits from IDF to MDF, but sheet E-500 calls for (5) 2\" conduits. How many do we run?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "IDF to MDF",
+      "source": "message",
+      "quote": "from IDF to MDF"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "E-700, E-500",
+      "lookup": [
+       {
+        "sheet": "E-700",
+        "status": "current",
+        "title": "ELECTRICAL DETAILS",
+        "revised_in": [],
+        "message": "E-700 is in the current drawing index (ELECTRICAL DETAILS)."
+       },
+       {
+        "sheet": "E-500",
+        "status": "current",
+        "title": "PARTIAL PLANS",
+        "revised_in": [],
+        "message": "E-500 is in the current drawing index (PARTIAL PLANS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "What specific date is this information needed by?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on schedule or work if this question is answered late?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Clarified the conduit size in the question text",
+       "why": "To match the dimension stated in the message for both sheets."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Conduit Count Discrepancy Between E-700 and E-500",
+     "question": "Sheet E-700 shows (4) 2\" conduits from IDF to MDF, but sheet E-500 calls for (5) 2\" conduits. How many do we run?",
+     "trade": "Electrical",
+     "location": "IDF to MDF",
+     "needed_by": "2023-11-03",
+     "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+     "references": "E-700, E-500"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-700",
+       "status": "current",
+       "title": "ELECTRICAL DETAILS",
+       "revised_in": [],
+       "message": "E-700 is in the current drawing index (ELECTRICAL DETAILS)."
+      },
+      {
+       "sheet": "E-500",
+       "status": "current",
+       "title": "PARTIAL PLANS",
+       "revised_in": [],
+       "message": "E-500 is in the current drawing index (PARTIAL PLANS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "Asks to resolve a conflict between two different drawings."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asks which of two conflicting drawings to follow."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 736,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "IDF to MDF is too vague as it does not specify a building or specific room identifiers."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "States conduit installation is on hold and late answer delays low-voltage cabling."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: IDF to MDF is too vague as it does not specify a building or specific room identifiers."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   }
+  ]
+ },
+ {
+  "case_id": "F03",
+  "input": {
+   "case_id": "F03",
+   "is_simulated": true,
+   "drawing_set": 2,
+   "message": "2nd floor bathroom - finish schedule says terrazzo but ID-015 shows VCT. which one",
+   "sheets_as_written": "ID-015",
+   "source": {
+    "id": "Dett-A2-RFI5",
+    "seed": "S03",
+    "title": "Floor finish conflict, terrazzo vs VCT"
+   },
+   "site_notes": {
+    "location": "Classroom wing Level 2, Room 221 Accessible All-Gender Toilet Room",
+    "needed_by": "2023-11-10",
+    "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+    "trade": "Flooring",
+    "references": "A-502, ID-015"
+   }
+  },
+  "key": {
+   "case_id": "F03",
+   "missing": [
+    "location",
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [
+    "partial"
+   ],
+   "note": "Several toilet rooms on Level 2; the room is not identified. The finish schedule sheet (A-502) is not cited.",
+   "correct_references": "A-502, ID-015"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "2nd floor bathroom - finish schedule says terrazzo",
+    "question": "2nd floor bathroom - finish schedule says terrazzo but ID-015 shows VCT. which one",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "references": {
+     "text": "ID-015",
+     "lookup": [
+      {
+       "sheet": "ID-015",
+       "status": "current",
+       "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+       "revised_in": [],
+       "message": "ID-015 is in the current drawing index (CLRM WING - FLOOR & WALL FINISH PLANS)."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 3,
+    "caught": 1,
+    "uncaught": [
+     "impact",
+     "location"
+    ],
+    "false_asks": [],
+    "ref_issue": true,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": true
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1026,
+     "title": "Flooring Material Discrepancy for 2nd Floor Bathroom",
+     "question": "The finish schedule specifies terrazzo for the 2nd floor bathroom, but ID-015 shows VCT. Which flooring material should be installed?",
+     "trade": "Flooring",
+     "guard_blocked": [],
+     "location": {
+      "value": "2nd floor bathroom",
+      "source": "message",
+      "quote": "2nd floor bathroom"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "ID-015",
+      "lookup": [
+       {
+        "sheet": "ID-015",
+        "status": "current",
+        "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+        "revised_in": [],
+        "message": "ID-015 is in the current drawing index (CLRM WING - FLOOR & WALL FINISH PLANS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "What date is a response needed by?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on schedule or work if the answer is late?"
+      },
+      {
+       "field": "references",
+       "ask": "What is the sheet number or reference for the finish schedule mentioned?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Structured the question",
+       "why": "To clearly present the conflict between the finish schedule and drawing ID-015 for professional review."
+      }
+     ]
+    },
+    "score": {
+     "missing": 3,
+     "caught": 2,
+     "uncaught": [
+      "location"
+     ],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": true
+    },
+    "final": {
+     "title": "Flooring Material Discrepancy for 2nd Floor Bathroom",
+     "question": "The finish schedule specifies terrazzo for the 2nd floor bathroom, but ID-015 shows VCT. Which flooring material should be installed?",
+     "trade": "Flooring",
+     "location": "2nd floor bathroom",
+     "needed_by": "2023-11-10",
+     "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+     "references": "A-502, ID-015"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      },
+      {
+       "sheet": "ID-015",
+       "status": "current",
+       "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+       "revised_in": [],
+       "message": "ID-015 is in the current drawing index (CLRM WING - FLOOR & WALL FINISH PLANS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks to resolve a conflict between the finish schedule and drawing ID-015."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The subcontractor is asking for clarification between two conflicting documents, which is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 776,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location specifies a named room and level: 2nd floor bathroom."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states that floor preparation and finish ordering are on hold due to different substrate requirements."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1035,
+     "title": "2nd Floor Bathroom Finish Discrepancy",
+     "question": "The finish schedule specifies terrazzo, whereas ID-015 shows VCT for the 2nd floor bathroom. Which finish should be installed?",
+     "trade": "Flooring",
+     "guard_blocked": [],
+     "location": {
+      "value": "2nd floor bathroom",
+      "source": "message",
+      "quote": "2nd floor bathroom"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "ID-015",
+      "lookup": [
+       {
+        "sheet": "ID-015",
+        "status": "current",
+        "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+        "revised_in": [],
+        "message": "ID-015 is in the current drawing index (CLRM WING - FLOOR & WALL FINISH PLANS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need the answer to avoid delays?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on the schedule or cost if the answer is delayed?"
+      },
+      {
+       "field": "references",
+       "ask": "Can you provide the specific sheet number for the finish schedule?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rewrote message into a clear RFI question format",
+       "why": "To make the conflict between the finish schedule and sheet ID-015 professional and concise for the GC."
+      }
+     ]
+    },
+    "score": {
+     "missing": 3,
+     "caught": 2,
+     "uncaught": [
+      "location"
+     ],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": true
+    },
+    "final": {
+     "title": "2nd Floor Bathroom Finish Discrepancy",
+     "question": "The finish schedule specifies terrazzo, whereas ID-015 shows VCT for the 2nd floor bathroom. Which finish should be installed?",
+     "trade": "Flooring",
+     "location": "2nd floor bathroom",
+     "needed_by": "2023-11-10",
+     "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+     "references": "A-502, ID-015"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      },
+      {
+       "sheet": "ID-015",
+       "status": "current",
+       "title": "CLRM WING - FLOOR & WALL FINISH PLANS",
+       "revised_in": [],
+       "message": "ID-015 is in the current drawing index (CLRM WING - FLOOR & WALL FINISH PLANS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks to resolve a conflict between the finish schedule and drawing ID-015 regarding design intent."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The RFI asks to clarify a conflict between two contract documents rather than proposing new scope or extra cost."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 734,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location is specified as the 2nd floor bathroom."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states that floor preparation and finish ordering are on hold and terrazzo requires different substrate preparation than VCT."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ },
+ {
+  "case_id": "F04",
+  "input": {
+   "case_id": "F04",
+   "is_simulated": true,
+   "drawing_set": 3,
+   "message": "Annex caissons: S-001 says 4,500 psi concrete, caisson schedule on S-301 says 4,000 psi. Which strength is right? Mix design and first pours (9/25) are on hold, need the answer by 9/20.",
+   "sheets_as_written": "S-001, S-301",
+   "source": {
+    "id": "Dett-A3-RFI48",
+    "seed": "S04",
+    "title": "Caisson concrete strength"
+   },
+   "site_notes": {
+    "location": "Annex foundations, all caissons shown on S-101",
+    "needed_by": "2023-09-20",
+    "impact": "The concrete mix design submittal and the first caisson pours (scheduled 2023-09-25) are on hold.",
+    "trade": "Concrete / foundations",
+    "references": "S-001, S-301, S-101"
+   }
+  },
+  "key": {
+   "case_id": "F04",
+   "missing": [],
+   "ref_issues": [],
+   "note": "Complete control case: location, date and impact are all stated.",
+   "correct_references": "S-001, S-301, S-101"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "Annex caissons: S-001 says 4,500 psi concrete, caisson",
+    "question": "Annex caissons: S-001 says 4,500 psi concrete, caisson schedule on S-301 says 4,000 psi. Which strength is right? Mix design and first pours (9/25) are on hold, need the answer by 9/20.",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "2023-09-25",
+     "source": "message"
+    },
+    "impact": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "references": {
+     "text": "S-001, S-301",
+     "lookup": [
+      {
+       "sheet": "S-001",
+       "status": "current",
+       "title": "STRUCTURAL GENERAL NOTES",
+       "revised_in": [],
+       "message": "S-001 is in the current drawing index (STRUCTURAL GENERAL NOTES)."
+      },
+      {
+       "sheet": "S-301",
+       "status": "current",
+       "title": "DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS",
+       "revised_in": [],
+       "message": "S-301 is in the current drawing index (DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS)."
+      }
+     ]
+    },
+    "questions_for_sub": [],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 0,
+    "caught": 0,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": false,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1041,
+     "title": "Caisson Concrete Strength Discrepancy Between S-001 and S-301",
+     "question": "On S-001 it states 4,500 psi concrete, while the caisson schedule on S-301 states 4,000 psi. Which strength is correct?",
+     "trade": "Structural",
+     "guard_blocked": [],
+     "location": {
+      "value": "Annex caissons",
+      "source": "message",
+      "quote": "Annex caissons"
+     },
+     "needed_by": {
+      "value": "2023-09-20",
+      "source": "message",
+      "quote": "9/20"
+     },
+     "impact": {
+      "value": "Mix design and first pours are on hold until September 25",
+      "source": "message",
+      "quote": "Mix design and first pours (9/25) are on hold"
+     },
+     "references": {
+      "text": "S-001, S-301",
+      "lookup": [
+       {
+        "sheet": "S-001",
+        "status": "current",
+        "title": "STRUCTURAL GENERAL NOTES",
+        "revised_in": [],
+        "message": "S-001 is in the current drawing index (STRUCTURAL GENERAL NOTES)."
+       },
+       {
+        "sheet": "S-301",
+        "status": "current",
+        "title": "DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS",
+        "revised_in": [],
+        "message": "S-301 is in the current drawing index (DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS)."
+       }
+      ]
+     },
+     "questions_for_sub": [],
+     "changes": [
+      {
+       "what": "Converted the rough comparison into a clear technical question.",
+       "why": "To make the discrepancy between sheet S-001 and S-301 clear to the GC."
+      },
+      {
+       "what": "Extracted the location, needed date, and schedule impact.",
+       "why": "To populate the required RFI metadata fields accurately."
+      }
+     ]
+    },
+    "score": {
+     "missing": 0,
+     "caught": 0,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Caisson Concrete Strength Discrepancy Between S-001 and S-301",
+     "question": "On S-001 it states 4,500 psi concrete, while the caisson schedule on S-301 states 4,000 psi. Which strength is correct?",
+     "trade": "Structural",
+     "location": "Annex caissons",
+     "needed_by": "2023-09-20",
+     "impact": "Mix design and first pours are on hold until September 25",
+     "references": "S-001, S-301"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "S-001",
+       "status": "current",
+       "title": "STRUCTURAL GENERAL NOTES",
+       "revised_in": [],
+       "message": "S-001 is in the current drawing index (STRUCTURAL GENERAL NOTES)."
+      },
+      {
+       "sheet": "S-301",
+       "status": "current",
+       "title": "DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS",
+       "revised_in": [],
+       "message": "S-301 is in the current drawing index (DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The RFI asks to resolve a conflict between two structural drawings regarding concrete strength."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asking which of two conflicting drawings to follow is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 776,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "Annex caissons is a general area and could mean several different caissons on site."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "Mix design and first pours are on hold until September 25."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: Annex caissons is a general area and could mean several different caissons on site."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1006,
+     "title": "Caisson Concrete Strength Discrepancy Between S-001 and S-301",
+     "question": "Sheet S-001 specifies 4,500 psi concrete for Annex caissons, while the caisson schedule on S-301 specifies 4,000 psi. Which concrete strength should be used?",
+     "trade": "Concrete",
+     "guard_blocked": [],
+     "location": {
+      "value": "Annex caissons",
+      "source": "message",
+      "quote": "Annex caissons"
+     },
+     "needed_by": {
+      "value": "2023-09-20",
+      "source": "message",
+      "quote": "by 9/20"
+     },
+     "impact": {
+      "value": "Mix design and first pours on 9/25 are on hold",
+      "source": "message",
+      "quote": "Mix design and first pours (9/25) are on hold"
+     },
+     "references": {
+      "text": "S-001, S-301",
+      "lookup": [
+       {
+        "sheet": "S-001",
+        "status": "current",
+        "title": "STRUCTURAL GENERAL NOTES",
+        "revised_in": [],
+        "message": "S-001 is in the current drawing index (STRUCTURAL GENERAL NOTES)."
+       },
+       {
+        "sheet": "S-301",
+        "status": "current",
+        "title": "DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS",
+        "revised_in": [],
+        "message": "S-301 is in the current drawing index (DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS)."
+       }
+      ]
+     },
+     "questions_for_sub": [],
+     "changes": [
+      {
+       "what": "Structured the comparison between sheets into a direct question",
+       "why": "To make the discrepancy clear to the GC"
+      }
+     ]
+    },
+    "score": {
+     "missing": 0,
+     "caught": 0,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Caisson Concrete Strength Discrepancy Between S-001 and S-301",
+     "question": "Sheet S-001 specifies 4,500 psi concrete for Annex caissons, while the caisson schedule on S-301 specifies 4,000 psi. Which concrete strength should be used?",
+     "trade": "Concrete",
+     "location": "Annex caissons",
+     "needed_by": "2023-09-20",
+     "impact": "Mix design and first pours on 9/25 are on hold",
+     "references": "S-001, S-301"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "S-001",
+       "status": "current",
+       "title": "STRUCTURAL GENERAL NOTES",
+       "revised_in": [],
+       "message": "S-001 is in the current drawing index (STRUCTURAL GENERAL NOTES)."
+      },
+      {
+       "sheet": "S-301",
+       "status": "current",
+       "title": "DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS",
+       "revised_in": [],
+       "message": "S-301 is in the current drawing index (DEEP FOUNDATION SCHEDULES, SECTIONS AND DETAILS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "It asks to resolve a conflict between drawings S-001 and S-301 regarding concrete strength."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "It asks to clarify a conflict between two existing contract documents."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 741,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "Annex caissons is a general area that could mean several locations."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "Mix design and first pours on 9/25 are on hold."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: Annex caissons is a general area that could mean several locations."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   }
+  ]
+ },
+ {
+  "case_id": "F05",
+  "input": {
+   "case_id": "F05",
+   "is_simulated": true,
+   "drawing_set": 2,
+   "message": "lockers scale 15in wide on A-102 but spec 10 51 13 says 12in. single or double tier? and what base goes under them",
+   "sheets_as_written": "A-102",
+   "source": {
+    "id": "Dett-A3-RFI6",
+    "seed": "S05",
+    "title": "Locker width, tier and base"
+   },
+   "site_notes": {
+    "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+    "needed_by": "2023-12-01",
+    "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+    "trade": "Specialties (lockers)",
+    "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+   }
+  },
+  "key": {
+   "case_id": "F05",
+   "missing": [
+    "location",
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [
+    "nonexistent"
+   ],
+   "note": "There is no A-102; the floor plans are A-102B, A-103B and A-104B. Which corridors is not stated.",
+   "correct_references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "lockers scale 15in wide on A-102 but spec",
+    "question": "lockers scale 15in wide on A-102 but spec 10 51 13 says 12in. single or double tier? and what base goes under them",
+    "trade": "",
+    "location": {
+     "value": "",
+     "source": "missing"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "",
+     "source": "missing"
+    },
+    "references": {
+     "text": "A-102",
+     "lookup": [
+      {
+       "sheet": "A-102",
+       "status": "not_in_index",
+       "title": "",
+       "revised_in": [],
+       "message": "A-102 is not in the current drawing index. Please confirm the sheet number."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "location",
+      "ask": "Where exactly is this? Give the building/wing, level and room number or gridline."
+     },
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "impact",
+      "ask": "What happens to the work, schedule or cost if the answer comes late?"
+     },
+     {
+      "field": "references",
+      "ask": "Which drawing sheet(s) show this? Check the numbers against the current drawing set."
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 3,
+    "caught": 3,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": true,
+    "ref_caught": true,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 965,
+     "title": "Locker width discrepancy between drawings and specification",
+     "question": "1. Sheet A-102 shows lockers at 15in wide, but specification 10 51 13 states 12in. Are the lockers single or double tier? 2. What base goes under them?",
+     "trade": "Interior Specialties",
+     "guard_blocked": [],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "A-102",
+      "lookup": [
+       {
+        "sheet": "A-102",
+        "status": "not_in_index",
+        "title": "",
+        "revised_in": [],
+        "message": "A-102 is not in the current drawing index. Please confirm the sheet number."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "references",
+       "ask": "Sheet A-102 is not in the drawing index. Can you verify the correct sheet reference?"
+      },
+      {
+       "field": "location",
+       "ask": "What is the specific location or room for these lockers on site?"
+      },
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need the answer before work is held up?"
+      },
+      {
+       "field": "impact",
+       "ask": "What happens to the work, schedule or cost if the answer comes late?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Structured the message into a numbered list",
+       "why": "To make the multiple questions clear and professional for the GC."
+      },
+      {
+       "what": "Added question for references",
+       "why": "Code lookup shows sheet A-102 is not in the index."
+      }
+     ]
+    },
+    "score": {
+     "missing": 3,
+     "caught": 3,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Locker width discrepancy between drawings and specification",
+     "question": "1. Sheet A-102 shows lockers at 15in wide, but specification 10 51 13 states 12in. Are the lockers single or double tier? 2. What base goes under them?",
+     "trade": "Interior Specialties",
+     "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+     "needed_by": "2023-12-01",
+     "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+     "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-102B",
+       "status": "current",
+       "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 1",
+       "revised_in": [],
+       "message": "A-102B is in the current drawing index (CLRM WING FLOOR PLAN & RCP - LEVEL 1)."
+      },
+      {
+       "sheet": "A-103B",
+       "status": "current",
+       "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 2",
+       "revised_in": [],
+       "message": "A-103B is in the current drawing index (CLRM WING FLOOR PLAN & RCP - LEVEL 2)."
+      },
+      {
+       "sheet": "A-104B",
+       "status": "current",
+       "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 3",
+       "revised_in": [],
+       "message": "A-104B is in the current drawing index (CLRM WING FLOOR PLAN & RCP - LEVEL 3)."
+      },
+      {
+       "sheet": "A-102",
+       "status": "not_in_index",
+       "title": "",
+       "revised_in": [],
+       "message": "A-102 is not in the current drawing index. Please confirm the sheet number."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks to resolve a discrepancy between drawings and specifications regarding locker dimensions and tier count."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asking to resolve a discrepancy between drawings and specifications is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 805,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location specifies classroom wing corridors on levels 1 through 3 and lists specific drawing sheets."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact notes a 6 to 8 week lead time and that the locker order cannot be released until confirmed."
+      }
+     },
+     "separate_questions": 2,
+     "findings": [
+      {
+       "field": "references",
+       "blocking": true,
+       "source": "code",
+       "message": "A-102 is not in the current drawing index. Please confirm the sheet number."
+      },
+      {
+       "field": "references",
+       "blocking": false,
+       "source": "AI",
+       "message": "Sheet A-102 is referenced in the question but was not recognized in the drawing index lookup."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1118,
+     "title": "Locker width discrepancy and mounting details",
+     "question": "1. Lockers scale 15in wide on A-102 but spec 10 51 13 says 12in. Are they single or double tier? 2. What base goes under them?",
+     "trade": "Interior Specialties",
+     "guard_blocked": [],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "A-102",
+      "lookup": [
+       {
+        "sheet": "A-102",
+        "status": "not_in_index",
+        "title": "",
+        "revised_in": [],
+        "message": "A-102 is not in the current drawing index. Please confirm the sheet number."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "references",
+       "ask": "Sheet A-102 is not in the project drawing index. Can you verify the correct drawing reference for the lockers?"
+      },
+      {
+       "field": "location",
+       "ask": "What is the specific room or area where these lockers are located?"
+      },
+      {
+       "field": "needed_by",
+       "ask": "When do you need a response to this RFI by?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the schedule or cost impact if this answer is delayed?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Structured the message into a numbered list",
+       "why": "To clearly separate the dimensional and tier questions for the GC."
+      },
+      {
+       "what": "Professionalized tone",
+       "why": "To conform to standard RFI communication practices."
+      }
+     ]
+    },
+    "score": {
+     "missing": 3,
+     "caught": 3,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Locker width discrepancy and mounting details",
+     "question": "1. Lockers scale 15in wide on A-102 but spec 10 51 13 says 12in. Are they single or double tier? 2. What base goes under them?",
+     "trade": "Interior Specialties",
+     "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+     "needed_by": "2023-12-01",
+     "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+     "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-102B",
+       "status": "current",
+       "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 1",
+       "revised_in": [],
+       "message": "A-102B is in the current drawing index (CLRM WING FLOOR PLAN & RCP - LEVEL 1)."
+      },
+      {
+       "sheet": "A-103B",
+       "status": "current",
+       "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 2",
+       "revised_in": [],
+       "message": "A-103B is in the current drawing index (CLRM WING FLOOR PLAN & RCP - LEVEL 2)."
+      },
+      {
+       "sheet": "A-104B",
+       "status": "current",
+       "title": "CLRM WING FLOOR PLAN & RCP - LEVEL 3",
+       "revised_in": [],
+       "message": "A-104B is in the current drawing index (CLRM WING FLOOR PLAN & RCP - LEVEL 3)."
+      },
+      {
+       "sheet": "A-102",
+       "status": "not_in_index",
+       "title": "",
+       "revised_in": [],
+       "message": "A-102 is not in the current drawing index. Please confirm the sheet number."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "It asks about conflicting drawing scales and specifications and design details like tier and base."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "It is asking for clarification on conflicting drawings and specifications."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 793,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location specifies classroom wing corridors, levels 1 through 3 and references specific drawing sheets."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "It states that the locker order with a 6-8 week lead time cannot be released."
+      }
+     },
+     "separate_questions": 2,
+     "findings": [
+      {
+       "field": "references",
+       "blocking": true,
+       "source": "code",
+       "message": "A-102 is not in the current drawing index. Please confirm the sheet number."
+      },
+      {
+       "field": "references",
+       "blocking": false,
+       "source": "AI",
+       "message": "Sheet A-102 is referenced in the question text but was not recognized in the drawing index."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   }
+  ]
+ },
+ {
+  "case_id": "F06",
+  "input": {
+   "case_id": "F06",
+   "is_simulated": true,
+   "drawing_set": 2,
+   "message": "Hallway 101 has keynotes A.18 and A.19 - A.18 and 6/A-703 show solid surface top, A.19 says plastic laminate. which countertop? same thing in rooms 105 and 107",
+   "sheets_as_written": "6/A-703",
+   "source": {
+    "id": "Dett-A5-RFI3",
+    "seed": "S06",
+    "title": "Countertop material conflict at Hallway 101"
+   },
+   "site_notes": {
+    "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+    "needed_by": "2024-01-12",
+    "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+    "trade": "Casework",
+    "references": "A-210, A-703"
+   }
+  },
+  "key": {
+   "case_id": "F06",
+   "missing": [
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [
+    "partial"
+   ],
+   "note": "The plan sheet with the keynotes (A-210) is not cited.",
+   "correct_references": "A-210, A-703"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "Hallway 101 has keynotes A.18 and A.19 -",
+    "question": "Hallway 101 has keynotes A.18 and A.19 - A.18 and 6/A-703 show solid surface top, A.19 says plastic laminate. which countertop? same thing in rooms 105 and 107",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "",
+     "source": "missing"
+    },
+    "references": {
+     "text": "A-703",
+     "lookup": [
+      {
+       "sheet": "A-703",
+       "status": "current",
+       "title": "INTERIOR DETAILS",
+       "revised_in": [],
+       "message": "A-703 is in the current drawing index (INTERIOR DETAILS)."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "impact",
+      "ask": "What happens to the work, schedule or cost if the answer comes late?"
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 2,
+    "caught": 2,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": true,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": true
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1066,
+     "title": "Countertop material conflict for keynotes A.18 and A.19",
+     "question": "Hallway 101 has keynotes A.18 and A.19. Keynote A.18 and detail 6/A-703 show a solid surface top, while keynote A.19 says plastic laminate. Which countertop material should be used? The same issue occurs in rooms 105 and 107.",
+     "trade": "Millwork",
+     "guard_blocked": [
+      {
+       "field": "location",
+       "ai_value": "Hallway 101, rooms 105 and 107",
+       "reason": "not supported by the words of the message"
+      }
+     ],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "A-703",
+      "lookup": [
+       {
+        "sheet": "A-703",
+        "status": "current",
+        "title": "INTERIOR DETAILS",
+        "revised_in": [],
+        "message": "A-703 is in the current drawing index (INTERIOR DETAILS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "Do you have a specific date when this answer is needed by?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on schedule or work if this answer is delayed?"
+      },
+      {
+       "field": "location",
+       "ask": "Where exactly is this? Give the building/wing, level and room number or gridline."
+      }
+     ],
+     "changes": [
+      {
+       "what": "Converted the informal message into a clear RFI question format",
+       "why": "To make the inquiry professional and easy for the GC to understand."
+      },
+      {
+       "what": "Structured the location to include Hallway 101, 105, and 107",
+       "why": "To accurately capture all mentioned areas from the site message."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [
+      "location"
+     ],
+     "ref_issue": true,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 1,
+     "needs_return_after": true
+    },
+    "final": {
+     "title": "Countertop material conflict for keynotes A.18 and A.19",
+     "question": "Hallway 101 has keynotes A.18 and A.19. Keynote A.18 and detail 6/A-703 show a solid surface top, while keynote A.19 says plastic laminate. Which countertop material should be used? The same issue occurs in rooms 105 and 107.",
+     "trade": "Millwork",
+     "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+     "needed_by": "2024-01-12",
+     "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+     "references": "6/A-703"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-703",
+       "status": "current",
+       "title": "INTERIOR DETAILS",
+       "revised_in": [],
+       "message": "A-703 is in the current drawing index (INTERIOR DETAILS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks to resolve a conflict between drawings and specifications regarding countertop materials."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The RFI asks to resolve a conflict between two existing contract indications."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 798,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "Specific locations are given including Classroom wing Level 1, Hallway 101, and Rooms 105 and 107."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "Impact states casework shop drawings cannot be finalized and countertop fabrication takes 4 weeks."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1044,
+     "title": "Countertop material conflict in Hallway 101, rooms 105 and 107",
+     "question": "Keynotes A.18 and A.19 are both in Hallway 101, rooms 105, and 107. Keynotes A.18 and 6/A-703 show a solid surface top, while keynote A.19 indicates plastic laminate. Which countertop material should be installed?",
+     "trade": "Finishes",
+     "guard_blocked": [
+      {
+       "field": "location",
+       "ai_value": "Hallway 101, rooms 105 and 107",
+       "reason": "not supported by the words of the message"
+      }
+     ],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "A-703",
+      "lookup": [
+       {
+        "sheet": "A-703",
+        "status": "current",
+        "title": "INTERIOR DETAILS",
+        "revised_in": [],
+        "message": "A-703 is in the current drawing index (INTERIOR DETAILS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "Do you have a specific date when this answer is needed by?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on schedule or work if this answer is delayed?"
+      },
+      {
+       "field": "location",
+       "ask": "Where exactly is this? Give the building/wing, level and room number or gridline."
+      }
+     ],
+     "changes": [
+      {
+       "what": "Structured the question to clearly state the conflict between keynotes A.18 and A.19 across the mentioned rooms.",
+       "why": "To make the RFI easy for the GC and architect to review and answer."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [
+      "location"
+     ],
+     "ref_issue": true,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 1,
+     "needs_return_after": true
+    },
+    "final": {
+     "title": "Countertop material conflict in Hallway 101, rooms 105 and 107",
+     "question": "Keynotes A.18 and A.19 are both in Hallway 101, rooms 105, and 107. Keynotes A.18 and 6/A-703 show a solid surface top, while keynote A.19 indicates plastic laminate. Which countertop material should be installed?",
+     "trade": "Finishes",
+     "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+     "needed_by": "2024-01-12",
+     "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+     "references": "6/A-703"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-703",
+       "status": "current",
+       "title": "INTERIOR DETAILS",
+       "revised_in": [],
+       "message": "A-703 is in the current drawing index (INTERIOR DETAILS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks to resolve a conflict between keynotes and drawings regarding material selection."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The RFI asks to resolve conflicting drawings and specifications, which is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 804,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location specifies Classroom wing Level 1, Hallway 101, and Rooms 105 and 107."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states that casework shop drawings cannot be finalized and fabrication takes 4 weeks."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ },
+ {
+  "case_id": "F07",
+  "input": {
+   "case_id": "F07",
+   "is_simulated": true,
+   "drawing_set": 1,
+   "message": "feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) looks way too small for the 40hp pump on FP-2O0. confirm feeder size, fire pump test is on the critical path",
+   "sheets_as_written": "E-600, FP-2O0",
+   "source": {
+    "id": "Dett-A3-RFI24",
+    "seed": "S07",
+    "title": "Fire pump feeder size"
+   },
+   "site_notes": {
+    "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+    "needed_by": "2023-10-27",
+    "impact": "The fire pump feeder and conduit cannot be ordered or installed; fire pump acceptance testing is on the critical path to occupancy.",
+    "trade": "Electrical",
+    "references": "E-600, FP-200"
+   }
+  },
+  "key": {
+   "case_id": "F07",
+   "missing": [
+    "location",
+    "needed_by"
+   ],
+   "ref_issues": [
+    "typo",
+    "superseded"
+   ],
+   "note": "Letter O typed for zero in FP-200. E-600 was revised in Addenda 2 and 3. Impact is stated.",
+   "correct_references": "E-600, FP-200"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "feeder S4-8 to the fire pump on E-600",
+    "question": "feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) looks way too small for the 40hp pump on FP-2O0. confirm feeder size, fire pump test is on the critical path",
+    "trade": "",
+    "location": {
+     "value": "",
+     "source": "missing"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "references": {
+     "text": "E-600",
+     "lookup": [
+      {
+       "sheet": "E-600",
+       "status": "revised_since_your_set",
+       "title": "ELECTRICAL ONE LINE DIAGRAM",
+       "revised_in": [
+        2,
+        3
+       ],
+       "message": "E-600 was revised in Addendum 2, 3, after the drawing set you are using (Addendum 1). Please confirm against the current revision."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "location",
+      "ask": "Where exactly is this? Give the building/wing, level and room number or gridline."
+     },
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "references",
+      "ask": "Which drawing sheet(s) show this? Check the numbers against the current drawing set."
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 2,
+    "caught": 2,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": true,
+    "ref_caught": true,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1048,
+     "title": "Fire Pump Feeder Size Clarification",
+     "question": "Feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) appears too small for the 40hp pump on FP-2O0. Please confirm the correct feeder size.",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "fire pump test is on the critical path",
+      "source": "message",
+      "quote": "fire pump test is on the critical path"
+     },
+     "references": {
+      "text": "E-600",
+      "lookup": [
+       {
+        "sheet": "E-600",
+        "status": "revised_since_your_set",
+        "title": "ELECTRICAL ONE LINE DIAGRAM",
+        "revised_in": [
+         2,
+         3
+        ],
+        "message": "E-600 was revised in Addendum 2, 3, after the drawing set you are using (Addendum 1). Please confirm against the current revision."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "references",
+       "ask": "Sheet E-600 was revised in Addenda 2 and 3 after your current drawing set; do you want to base this RFI on the latest sheet version?"
+      },
+      {
+       "field": "references",
+       "ask": "Sheet FP-2O0 was not found in the drawing index or addenda; please verify the correct sheet number."
+      },
+      {
+       "field": "location",
+       "ask": "Where exactly is this? Give the building/wing, level and room number or gridline."
+      },
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need the answer before work is held up?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rephrased the rough statement into a professional RFI question.",
+       "why": "To present the technical concern clearly to the general contractor."
+      },
+      {
+       "what": "Extracted impact statement.",
+       "why": "To accurately capture schedule urgency mentioned in the message."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Fire Pump Feeder Size Clarification",
+     "question": "Feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) appears too small for the 40hp pump on FP-2O0. Please confirm the correct feeder size.",
+     "trade": "Electrical",
+     "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+     "needed_by": "2023-10-27",
+     "impact": "fire pump test is on the critical path",
+     "references": "E-600, FP-200"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-600",
+       "status": "current",
+       "title": "ELECTRICAL ONE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "E-600 is in the current drawing index (ELECTRICAL ONE LINE DIAGRAM)."
+      },
+      {
+       "sheet": "FP-200",
+       "status": "current",
+       "title": "FIRE PROTECTION DETAILS AND SCHEDULE",
+       "revised_in": [],
+       "message": "FP-200 is in the current drawing index (FIRE PROTECTION DETAILS AND SCHEDULE)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks about conflicting drawings and feeder size, which relates to design intent."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The question asks for clarification on a potentially conflicting drawing and correct size rather than requesting extra scope."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 735,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location specifies Service wing Level 1, Pump Room."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states the fire pump test is on the critical path."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1036,
+     "title": "Fire Pump Feeder Size Confirmation",
+     "question": "Feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) appears too small for the 40hp pump on FP-2O0. Can you please confirm the correct feeder size?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "fire pump test is on the critical path",
+      "source": "message",
+      "quote": "fire pump test is on the critical path"
+     },
+     "references": {
+      "text": "E-600",
+      "lookup": [
+       {
+        "sheet": "E-600",
+        "status": "revised_since_your_set",
+        "title": "ELECTRICAL ONE LINE DIAGRAM",
+        "revised_in": [
+         2,
+         3
+        ],
+        "message": "E-600 was revised in Addendum 2, 3, after the drawing set you are using (Addendum 1). Please confirm against the current revision."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "references",
+       "ask": "Sheet E-600 was revised in Addenda 2 and 3 after your drawing set (Addendum 1). Do you want to check the latest revision for this feeder sizing?"
+      },
+      {
+       "field": "location",
+       "ask": "Where on site is this fire pump located?"
+      },
+      {
+       "field": "needed_by",
+       "ask": "What specific date is this answer needed by?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Reformatted the informal message into a clear RFI question structure.",
+       "why": "To make the question professional and suitable for the general contractor."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Fire Pump Feeder Size Confirmation",
+     "question": "Feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) appears too small for the 40hp pump on FP-2O0. Can you please confirm the correct feeder size?",
+     "trade": "Electrical",
+     "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+     "needed_by": "2023-10-27",
+     "impact": "fire pump test is on the critical path",
+     "references": "E-600, FP-200"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-600",
+       "status": "current",
+       "title": "ELECTRICAL ONE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "E-600 is in the current drawing index (ELECTRICAL ONE LINE DIAGRAM)."
+      },
+      {
+       "sheet": "FP-200",
+       "status": "current",
+       "title": "FIRE PROTECTION DETAILS AND SCHEDULE",
+       "revised_in": [],
+       "message": "FP-200 is in the current drawing index (FIRE PROTECTION DETAILS AND SCHEDULE)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question concerns electrical feeder sizing and design intent shown on drawings."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "It is asking for clarification on a conflicting or possibly incorrect feeder size rather than requesting new scope."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 778,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location is specified as Service wing Level 1, Pump Room."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "It states the fire pump test is on the critical path."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ },
+ {
+  "case_id": "F08",
+  "input": {
+   "case_id": "F08",
+   "is_simulated": true,
+   "drawing_set": 6,
+   "message": "PV feed from roof array to main elec room: E-600 says 3-1/2\" conduit, PV-600 shows 2-1/2\". which size. need it before the roofers start",
+   "sheets_as_written": "E-600, PV-600",
+   "source": {
+    "id": "Dett-A6-RFI2",
+    "seed": "S08",
+    "title": "PV feed conduit size"
+   },
+   "site_notes": {
+    "location": "PV feed from the roof array to the main electrical room",
+    "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+    "impact": "Roof penetrations and the conduit run for the PV feed are on hold until the size is confirmed.",
+    "trade": "Electrical (PV)",
+    "references": "E-600, PV-600"
+   }
+  },
+  "key": {
+   "case_id": "F08",
+   "missing": [
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [],
+   "note": "\"before the roofers start\" is not a date. Location is stated.",
+   "correct_references": "E-600, PV-600"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "PV feed from roof array to main elec",
+    "question": "PV feed from roof array to main elec room: E-600 says 3-1/2\" conduit, PV-600 shows 2-1/2\". which size. need it before the roofers start",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "",
+     "source": "missing"
+    },
+    "references": {
+     "text": "E-600, PV-600",
+     "lookup": [
+      {
+       "sheet": "E-600",
+       "status": "current",
+       "title": "ELECTRICAL ONE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "E-600 is in the current drawing index (ELECTRICAL ONE LINE DIAGRAM)."
+      },
+      {
+       "sheet": "PV-600",
+       "status": "current",
+       "title": "SINGLE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "PV-600 is in the current drawing index (SINGLE LINE DIAGRAM)."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "impact",
+      "ask": "What happens to the work, schedule or cost if the answer comes late?"
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 2,
+    "caught": 2,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": false,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1065,
+     "title": "Conduit size conflict between E-600 and PV-600",
+     "question": "Regarding the PV feed from the roof array to the main elec room, sheet E-600 says 3-1/2\" conduit while sheet PV-600 shows 2-1/2\". Which size is correct?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "From roof array to main electrical room",
+      "source": "message",
+      "quote": "roof array to main elec room"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "Work must be resolved before the roofers start",
+      "source": "message",
+      "quote": "before the roofers start"
+     },
+     "references": {
+      "text": "E-600, PV-600",
+      "lookup": [
+       {
+        "sheet": "E-600",
+        "status": "current",
+        "title": "ELECTRICAL ONE LINE DIAGRAM",
+        "revised_in": [],
+        "message": "E-600 is in the current drawing index (ELECTRICAL ONE LINE DIAGRAM)."
+       },
+       {
+        "sheet": "PV-600",
+        "status": "current",
+        "title": "SINGLE LINE DIAGRAM",
+        "revised_in": [],
+        "message": "PV-600 is in the current drawing index (SINGLE LINE DIAGRAM)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "What specific date do you need the answer by before the roofers start?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rewrote the informal message into a formal question",
+       "why": "To present the drawing discrepancy clearly to the GC."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 1,
+     "uncaught": [
+      "impact"
+     ],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": true
+    },
+    "final": {
+     "title": "Conduit size conflict between E-600 and PV-600",
+     "question": "Regarding the PV feed from the roof array to the main elec room, sheet E-600 says 3-1/2\" conduit while sheet PV-600 shows 2-1/2\". Which size is correct?",
+     "trade": "Electrical",
+     "location": "From roof array to main electrical room",
+     "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+     "impact": "Work must be resolved before the roofers start",
+     "references": "E-600, PV-600"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-600",
+       "status": "current",
+       "title": "ELECTRICAL ONE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "E-600 is in the current drawing index (ELECTRICAL ONE LINE DIAGRAM)."
+      },
+      {
+       "sheet": "PV-600",
+       "status": "current",
+       "title": "SINGLE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "PV-600 is in the current drawing index (SINGLE LINE DIAGRAM)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks to resolve a discrepancy between two drawings regarding conduit size."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The subcontractor is asking to clarify a conflict between two existing contract drawings."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 759,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "The location is given generally as from the roof array to the main electrical room, which covers a large run rather than a specific single room, gridline, or named element."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states the work must be resolved before the roofers start."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: The location is given generally as from the roof array to the main electrical room, which covers a large run rather than a specific single room, gridline, or named element."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1114,
+     "title": "Clarification on PV feed conduit size between E-600 and PV-600",
+     "question": "Regarding the PV feed from the roof array to the main electrical room, sheet E-600 specifies a 3-1/2\" conduit while sheet PV-600 shows a 2-1/2\" conduit. Which size is correct?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "From roof array to main electrical room",
+      "source": "message",
+      "quote": "roof array to main elec room"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "Required before roofers start",
+      "source": "message",
+      "quote": "before the roofers start"
+     },
+     "references": {
+      "text": "E-600, PV-600",
+      "lookup": [
+       {
+        "sheet": "E-600",
+        "status": "current",
+        "title": "ELECTRICAL ONE LINE DIAGRAM",
+        "revised_in": [],
+        "message": "E-600 is in the current drawing index (ELECTRICAL ONE LINE DIAGRAM)."
+       },
+       {
+        "sheet": "PV-600",
+        "status": "current",
+        "title": "SINGLE LINE DIAGRAM",
+        "revised_in": [],
+        "message": "PV-600 is in the current drawing index (SINGLE LINE DIAGRAM)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "What specific date do you need the answer by before the roofers start?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rewrote into a formal question",
+       "why": "To make the discrepancy between sheet E-600 and PV-600 clear for the GC."
+      },
+      {
+       "what": "Extracted location and impact",
+       "why": "To populate the structured RFI fields accurately based on the message."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 1,
+     "uncaught": [
+      "impact"
+     ],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": true
+    },
+    "final": {
+     "title": "Clarification on PV feed conduit size between E-600 and PV-600",
+     "question": "Regarding the PV feed from the roof array to the main electrical room, sheet E-600 specifies a 3-1/2\" conduit while sheet PV-600 shows a 2-1/2\" conduit. Which size is correct?",
+     "trade": "Electrical",
+     "location": "From roof array to main electrical room",
+     "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+     "impact": "Required before roofers start",
+     "references": "E-600, PV-600"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-600",
+       "status": "current",
+       "title": "ELECTRICAL ONE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "E-600 is in the current drawing index (ELECTRICAL ONE LINE DIAGRAM)."
+      },
+      {
+       "sheet": "PV-600",
+       "status": "current",
+       "title": "SINGLE LINE DIAGRAM",
+       "revised_in": [],
+       "message": "PV-600 is in the current drawing index (SINGLE LINE DIAGRAM)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks to resolve a conflict between two design sheets (E-600 and PV-600) regarding conduit sizing."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The RFI asks to clarify a discrepancy between two conflicting drawings, which is a normal clarification and not a request for extra cost or scope."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 841,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "The location is described generally as 'From roof array to main electrical room' which does not identify a specific room number, gridline, or precise physical path."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states the answer is required before roofers start on 2024-02-05."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: The location is described generally as 'From roof array to main electrical room' which does not identify a specific room number, gridline, or precise physical path."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ },
+ {
+  "case_id": "F09",
+  "input": {
+   "case_id": "F09",
+   "is_simulated": true,
+   "drawing_set": 3,
+   "message": "keynote AE.18 on A-401/A-402 points to detail 3/A-433 but there is no detail 3 on that sheet. which detail do we use? cant price or schedule the masonry repair at those spots",
+   "sheets_as_written": "A-401, A-402, A-433",
+   "source": {
+    "id": "Dett-A3-RFI43",
+    "seed": "S09",
+    "title": "Missing detail for keynote AE.18"
+   },
+   "site_notes": {
+    "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+    "needed_by": "2023-10-06",
+    "impact": "Masonry repair at AE.18 locations cannot be priced or scheduled until the detail is identified.",
+    "trade": "Masonry",
+    "references": "A-401, A-402, A-433"
+   }
+  },
+  "key": {
+   "case_id": "F09",
+   "missing": [
+    "location",
+    "needed_by"
+   ],
+   "ref_issues": [],
+   "note": "Which elevations is not stated. Impact is stated.",
+   "correct_references": "A-401, A-402, A-433"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "keynote AE.18 on A-401/A-402 points to detail 3/A-433",
+    "question": "keynote AE.18 on A-401/A-402 points to detail 3/A-433 but there is no detail 3 on that sheet. which detail do we use? cant price or schedule the masonry repair at those spots",
+    "trade": "",
+    "location": {
+     "value": "",
+     "source": "missing"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "references": {
+     "text": "A-401, A-402, A-433",
+     "lookup": [
+      {
+       "sheet": "A-401",
+       "status": "current",
+       "title": "CLRM WING BUILDING ELEVATIONS - SOUTH",
+       "revised_in": [],
+       "message": "A-401 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - SOUTH)."
+      },
+      {
+       "sheet": "A-402",
+       "status": "current",
+       "title": "CLRM WING BUILDING ELEVATIONS - NORTH",
+       "revised_in": [],
+       "message": "A-402 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - NORTH)."
+      },
+      {
+       "sheet": "A-433",
+       "status": "current",
+       "title": "EXTERIOR DETAILS",
+       "revised_in": [],
+       "message": "A-433 is in the current drawing index (EXTERIOR DETAILS)."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "location",
+      "ask": "Where exactly is this? Give the building/wing, level and room number or gridline."
+     },
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 2,
+    "caught": 2,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": false,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1191,
+     "title": "Missing Detail 3 on Sheet A-433 for Masonry Repair",
+     "question": "Keynote AE.18 on sheets A-401 and A-402 points to detail 3/A-433, but there is no detail 3 on that sheet. Which detail should we use?",
+     "trade": "Masonry",
+     "guard_blocked": [],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "Unable to price or schedule the masonry repair at those locations",
+      "source": "message",
+      "quote": "cant price or schedule the masonry repair at those spots"
+     },
+     "references": {
+      "text": "A-401, A-402, A-433",
+      "lookup": [
+       {
+        "sheet": "A-401",
+        "status": "current",
+        "title": "CLRM WING BUILDING ELEVATIONS - SOUTH",
+        "revised_in": [],
+        "message": "A-401 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - SOUTH)."
+       },
+       {
+        "sheet": "A-402",
+        "status": "current",
+        "title": "CLRM WING BUILDING ELEVATIONS - NORTH",
+        "revised_in": [],
+        "message": "A-402 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - NORTH)."
+       },
+       {
+        "sheet": "A-433",
+        "status": "current",
+        "title": "EXTERIOR DETAILS",
+        "revised_in": [],
+        "message": "A-433 is in the current drawing index (EXTERIOR DETAILS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "location",
+       "ask": "Can you specify the exact building, level, or gridlines where this masonry repair is located?"
+      },
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need the response to avoid impacting the schedule?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rewrote question for professional clarity",
+       "why": "To present the issue regarding the missing detail and conflicting keynote clearly to the GC."
+      },
+      {
+       "what": "Structured the impact field",
+       "why": "To accurately capture the pricing and scheduling delay mentioned in the raw message."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Missing Detail 3 on Sheet A-433 for Masonry Repair",
+     "question": "Keynote AE.18 on sheets A-401 and A-402 points to detail 3/A-433, but there is no detail 3 on that sheet. Which detail should we use?",
+     "trade": "Masonry",
+     "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+     "needed_by": "2023-10-06",
+     "impact": "Unable to price or schedule the masonry repair at those locations",
+     "references": "A-401, A-402, A-433"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-401",
+       "status": "current",
+       "title": "CLRM WING BUILDING ELEVATIONS - SOUTH",
+       "revised_in": [],
+       "message": "A-401 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - SOUTH)."
+      },
+      {
+       "sheet": "A-402",
+       "status": "current",
+       "title": "CLRM WING BUILDING ELEVATIONS - NORTH",
+       "revised_in": [],
+       "message": "A-402 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - NORTH)."
+      },
+      {
+       "sheet": "A-433",
+       "status": "current",
+       "title": "EXTERIOR DETAILS",
+       "revised_in": [],
+       "message": "A-433 is in the current drawing index (EXTERIOR DETAILS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks about a missing detail on a drawing sheet which requires design team clarification."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The subcontractor is asking for a missing detail on existing drawings, which is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 762,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location specifies classroom wing exterior, south and north elevations, at locations tagged AE.18."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states inability to price or schedule the masonry repair at those locations."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1062,
+     "title": "Missing Detail 3 on Sheet A-433 for Masonry Repair",
+     "question": "Keynote AE.18 on A-401 and A-402 points to detail 3/A-433, but there is no detail 3 on that sheet. Which detail should be used for the masonry repair?",
+     "trade": "Masonry",
+     "guard_blocked": [],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "Cannot price or schedule the masonry repair at those spots.",
+      "source": "message",
+      "quote": "cant price or schedule the masonry repair at those spots"
+     },
+     "references": {
+      "text": "A-401, A-402, A-433",
+      "lookup": [
+       {
+        "sheet": "A-401",
+        "status": "current",
+        "title": "CLRM WING BUILDING ELEVATIONS - SOUTH",
+        "revised_in": [],
+        "message": "A-401 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - SOUTH)."
+       },
+       {
+        "sheet": "A-402",
+        "status": "current",
+        "title": "CLRM WING BUILDING ELEVATIONS - NORTH",
+        "revised_in": [],
+        "message": "A-402 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - NORTH)."
+       },
+       {
+        "sheet": "A-433",
+        "status": "current",
+        "title": "EXTERIOR DETAILS",
+        "revised_in": [],
+        "message": "A-433 is in the current drawing index (EXTERIOR DETAILS)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "location",
+       "ask": "Where on site are these masonry repairs located?"
+      },
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need the answer before work is held up?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rephrased the question into professional English",
+       "why": "To present a clear and formal inquiry to the general contractor."
+      },
+      {
+       "what": "Extracted impact statement",
+       "why": "To capture the schedule and pricing delay accurately based on the message."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Missing Detail 3 on Sheet A-433 for Masonry Repair",
+     "question": "Keynote AE.18 on A-401 and A-402 points to detail 3/A-433, but there is no detail 3 on that sheet. Which detail should be used for the masonry repair?",
+     "trade": "Masonry",
+     "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+     "needed_by": "2023-10-06",
+     "impact": "Cannot price or schedule the masonry repair at those spots.",
+     "references": "A-401, A-402, A-433"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-401",
+       "status": "current",
+       "title": "CLRM WING BUILDING ELEVATIONS - SOUTH",
+       "revised_in": [],
+       "message": "A-401 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - SOUTH)."
+      },
+      {
+       "sheet": "A-402",
+       "status": "current",
+       "title": "CLRM WING BUILDING ELEVATIONS - NORTH",
+       "revised_in": [],
+       "message": "A-402 is in the current drawing index (CLRM WING BUILDING ELEVATIONS - NORTH)."
+      },
+      {
+       "sheet": "A-433",
+       "status": "current",
+       "title": "EXTERIOR DETAILS",
+       "revised_in": [],
+       "message": "A-433 is in the current drawing index (EXTERIOR DETAILS)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks for a missing detail and design clarification."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asking for a missing detail is a normal clarification, not requesting extra work or scope."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 756,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "Locations are specified as Classroom wing exterior, south and north elevations, at locations tagged AE.18."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "Impact states cannot price or schedule the masonry repair at those spots."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ },
+ {
+  "case_id": "F10",
+  "input": {
+   "case_id": "F10",
+   "is_simulated": true,
+   "drawing_set": 3,
+   "message": "toilet room cove lights are tagged C8 now, C8 is the pole light. should be C7 like before right? see drawings",
+   "sheets_as_written": "see drawings",
+   "source": {
+    "id": "Dett-A3-RFI63",
+    "seed": "S10",
+    "title": "Cove fixture type in large toilet rooms"
+   },
+   "site_notes": {
+    "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+    "needed_by": "2023-12-15",
+    "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+    "trade": "Electrical",
+    "references": "E-301, E-801"
+   }
+  },
+  "key": {
+   "case_id": "F10",
+   "missing": [
+    "location",
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [
+    "missing"
+   ],
+   "note": "No sheet number. Which toilet rooms is not stated.",
+   "correct_references": "E-301, E-801"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "toilet room cove lights are tagged C8 now,",
+    "question": "toilet room cove lights are tagged C8 now, C8 is the pole light. should be C7 like before right? see drawings",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "",
+     "source": "missing"
+    },
+    "references": {
+     "text": "see drawings",
+     "lookup": []
+    },
+    "questions_for_sub": [
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "impact",
+      "ask": "What happens to the work, schedule or cost if the answer comes late?"
+     },
+     {
+      "field": "references",
+      "ask": "Which drawing sheet(s) show this? Check the numbers against the current drawing set."
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 3,
+    "caught": 2,
+    "uncaught": [
+     "location"
+    ],
+    "false_asks": [],
+    "ref_issue": true,
+    "ref_caught": true,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": true
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 990,
+     "title": "Fixture tag conflict for toilet room cove lights",
+     "question": "Toilet room cove lights are tagged C8 now, but C8 is the pole light. Should they be C7 like before?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "see drawings",
+      "lookup": []
+     },
+     "questions_for_sub": [
+      {
+       "field": "location",
+       "ask": "Which specific toilet room or rooms are affected by the cove light fixture tag issue?"
+      },
+      {
+       "field": "references",
+       "ask": "Which specific drawing sheet numbers show the toilet room cove lights and pole lights?"
+      },
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need the answer before work is held up?"
+      },
+      {
+       "field": "impact",
+       "ask": "What happens to the work, schedule or cost if the answer comes late?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Reworded message into a professional question",
+       "why": "To clearly present the fixture tag conflict to the general contractor."
+      },
+      {
+       "what": "Left location, needed_by, and impact empty",
+       "why": "The message does not specify a precise room location, deadline date, or schedule/cost impact."
+      }
+     ]
+    },
+    "score": {
+     "missing": 3,
+     "caught": 3,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Fixture tag conflict for toilet room cove lights",
+     "question": "Toilet room cove lights are tagged C8 now, but C8 is the pole light. Should they be C7 like before?",
+     "trade": "Electrical",
+     "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+     "needed_by": "2023-12-15",
+     "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+     "references": "E-301, E-801"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-301",
+       "status": "current",
+       "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+       "revised_in": [],
+       "message": "E-301 is in the current drawing index (FIRST FLOOR LIGHTING PLAN SERVICE WING)."
+      },
+      {
+       "sheet": "E-801",
+       "status": "current",
+       "title": "ELECTRICAL SCHEDULES",
+       "revised_in": [],
+       "message": "E-801 is in the current drawing index (ELECTRICAL SCHEDULES)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks for clarification on conflicting fixture tags and design intent."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "The RFI asks to clarify a conflicting fixture tag, which is a normal clarification and not a request for extra cost or scope."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 782,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The location gives the Annex Level 1 and specifies the two large toilet rooms including Restroom 177."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states that the lighting fixture order for the annex toilet rooms is placed on hold."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1021,
+     "title": "Clarification on fixture tag for toilet room cove lights",
+     "question": "Toilet room cove lights are tagged C8 now, but C8 is the pole light. Should this be C7 like before?",
+     "trade": "Electrical",
+     "guard_blocked": [],
+     "location": {
+      "value": "Toilet Room",
+      "source": "message",
+      "quote": "toilet room"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "see drawings",
+      "lookup": []
+     },
+     "questions_for_sub": [
+      {
+       "field": "references",
+       "ask": "Which specific drawing sheet shows the toilet room cove lights and fixture tags?"
+      },
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need an answer to avoid delaying work?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on schedule or installation if this fixture tag is not clarified soon?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Rewrote message into a clear professional question",
+       "why": "To match standard RFI format and tone."
+      },
+      {
+       "what": "Extracted 'toilet room' as location",
+       "why": "The message specifies the room where the cove lights are located."
+      }
+     ]
+    },
+    "score": {
+     "missing": 3,
+     "caught": 2,
+     "uncaught": [
+      "location"
+     ],
+     "false_asks": [],
+     "ref_issue": true,
+     "ref_caught": true,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": true
+    },
+    "final": {
+     "title": "Clarification on fixture tag for toilet room cove lights",
+     "question": "Toilet room cove lights are tagged C8 now, but C8 is the pole light. Should this be C7 like before?",
+     "trade": "Electrical",
+     "location": "Toilet Room",
+     "needed_by": "2023-12-15",
+     "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+     "references": "E-301, E-801"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "E-301",
+       "status": "current",
+       "title": "FIRST FLOOR LIGHTING PLAN SERVICE WING",
+       "revised_in": [],
+       "message": "E-301 is in the current drawing index (FIRST FLOOR LIGHTING PLAN SERVICE WING)."
+      },
+      {
+       "sheet": "E-801",
+       "status": "current",
+       "title": "ELECTRICAL SCHEDULES",
+       "revised_in": [],
+       "message": "E-801 is in the current drawing index (ELECTRICAL SCHEDULES)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks about a fixture tag discrepancy on the drawings."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "It is asking to clarify a conflicting fixture tag, not requesting extra scope or cost."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 697,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "Toilet Room is too generic and could mean several rooms."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The lighting fixture order for the annex toilet rooms is on hold."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: Toilet Room is too generic and could mean several rooms."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ },
+ {
+  "case_id": "F11",
+  "input": {
+   "case_id": "F11",
+   "is_simulated": true,
+   "drawing_set": 3,
+   "message": "Is RT-1 the same as RT-11 on the A-502 finish schedule? Resilient flooring order for the classroom wing is waiting on this, need an answer by 11/17.",
+   "sheets_as_written": "A-502",
+   "source": {
+    "id": "Dett-A3-RFI38",
+    "seed": "S11",
+    "title": "RT-1 vs RT-11 flooring"
+   },
+   "site_notes": {
+    "location": "Rooms scheduled for RT-1 or RT-11 on the A-502 finish schedule",
+    "needed_by": "2023-11-17",
+    "impact": "Resilient flooring order for the classroom wing is waiting on this answer.",
+    "trade": "Flooring",
+    "references": "A-502, A-503"
+   }
+  },
+  "key": {
+   "case_id": "F11",
+   "missing": [],
+   "ref_issues": [],
+   "note": "Complete control case: short but specific; the rooms are those scheduled for RT-1/RT-11.",
+   "correct_references": "A-502, A-503"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "Is RT-1 the same as RT-11 on the",
+    "question": "Is RT-1 the same as RT-11 on the A-502 finish schedule? Resilient flooring order for the classroom wing is waiting on this, need an answer by 11/17.",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "2023-11-17",
+     "source": "message"
+    },
+    "impact": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "references": {
+     "text": "A-502",
+     "lookup": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      }
+     ]
+    },
+    "questions_for_sub": [],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 0,
+    "caught": 0,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": false,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 937,
+     "title": "Clarification on RT-1 vs RT-11 on Finish Schedule",
+     "question": "Is RT-1 the same as RT-11 on the A-502 finish schedule?",
+     "trade": "Flooring",
+     "guard_blocked": [],
+     "location": {
+      "value": "classroom wing",
+      "source": "message",
+      "quote": "classroom wing"
+     },
+     "needed_by": {
+      "value": "2023-11-17",
+      "source": "message",
+      "quote": "11/17"
+     },
+     "impact": {
+      "value": "Resilient flooring order for the classroom wing is waiting on this",
+      "source": "message",
+      "quote": "Resilient flooring order for the classroom wing is waiting on this"
+     },
+     "references": {
+      "text": "A-502",
+      "lookup": [
+       {
+        "sheet": "A-502",
+        "status": "current",
+        "title": "FINISH NOTES AND SCHEDULE",
+        "revised_in": [],
+        "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "references",
+       "ask": "Are there any additional finish schedule sheets or details that should be referenced for RT-1 and RT-11?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Converted informal message into a clear RFI format",
+       "why": "To make the question professional and ready for the GC."
+      }
+     ]
+    },
+    "score": {
+     "missing": 0,
+     "caught": 0,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": true,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Clarification on RT-1 vs RT-11 on Finish Schedule",
+     "question": "Is RT-1 the same as RT-11 on the A-502 finish schedule?",
+     "trade": "Flooring",
+     "location": "classroom wing",
+     "needed_by": "2023-11-17",
+     "impact": "Resilient flooring order for the classroom wing is waiting on this",
+     "references": "A-502, A-503"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      },
+      {
+       "sheet": "A-503",
+       "status": "current",
+       "title": "FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE",
+       "revised_in": [],
+       "message": "A-503 is in the current drawing index (FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks about conflicts or interpretation of the finish schedule in the drawings."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asking to clarify a discrepancy between finish schedule tags is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 695,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "Classroom wing is too broad and could mean several rooms."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "Resilient flooring order is waiting on the answer."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: Classroom wing is too broad and could mean several rooms."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 935,
+     "title": "Clarification on RT-1 and RT-11 Finish Schedule",
+     "question": "Is RT-1 the same as RT-11 on the A-502 finish schedule?",
+     "trade": "Flooring",
+     "guard_blocked": [],
+     "location": {
+      "value": "Classroom Wing",
+      "source": "message",
+      "quote": "classroom wing"
+     },
+     "needed_by": {
+      "value": "2023-11-17",
+      "source": "message",
+      "quote": "11/17"
+     },
+     "impact": {
+      "value": "Resilient flooring order for the classroom wing is waiting on this",
+      "source": "message",
+      "quote": "Resilient flooring order for the classroom wing is waiting on this"
+     },
+     "references": {
+      "text": "A-502",
+      "lookup": [
+       {
+        "sheet": "A-502",
+        "status": "current",
+        "title": "FINISH NOTES AND SCHEDULE",
+        "revised_in": [],
+        "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "references",
+       "ask": "Please confirm the drawing sheet number for the finish schedule if different from A-502."
+      }
+     ],
+     "changes": [
+      {
+       "what": "Converted informal message into a clear RFI question format",
+       "why": "To make the request professional and actionable for the general contractor."
+      }
+     ]
+    },
+    "score": {
+     "missing": 0,
+     "caught": 0,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": true,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Clarification on RT-1 and RT-11 Finish Schedule",
+     "question": "Is RT-1 the same as RT-11 on the A-502 finish schedule?",
+     "trade": "Flooring",
+     "location": "Classroom Wing",
+     "needed_by": "2023-11-17",
+     "impact": "Resilient flooring order for the classroom wing is waiting on this",
+     "references": "A-502, A-503"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      },
+      {
+       "sheet": "A-503",
+       "status": "current",
+       "title": "FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE",
+       "revised_in": [],
+       "message": "A-503 is in the current drawing index (FINISH LEGEND, PLUMBING, SPECIALTY EQP SCHEDULE)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "Asks for clarification on design documents and finish schedules."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asking for clarification between conflicting or confusing finish schedule designations is a normal clarification."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 698,
+     "judgements": {
+      "location": {
+       "value": "no",
+       "reason": "Classroom Wing is too general and could mean several rooms or areas."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "States resilient flooring order for the classroom wing is waiting on the answer."
+      }
+     },
+     "separate_questions": 1,
+     "findings": [
+      {
+       "field": "location",
+       "blocking": true,
+       "source": "AI",
+       "message": "Location may not be specific enough: Classroom Wing is too general and could mean several rooms or areas."
+      }
+     ],
+     "recommendation": "return_to_sub",
+     "needs_pm_cost_review": false
+    },
+    "false_return": true
+   }
+  ]
+ },
+ {
+  "case_id": "F12",
+  "input": {
+   "case_id": "F12",
+   "is_simulated": true,
+   "drawing_set": 1,
+   "message": "toilet rooms 140, 143, 160 - T-2 cove base goes over the existing T-1 wall tile? any patching needed? need the detail",
+   "sheets_as_written": "A-502",
+   "source": {
+    "id": "Dett-A5-RFI10",
+    "seed": "S12",
+    "title": "Cove base over existing wall tile"
+   },
+   "site_notes": {
+    "location": "Classroom wing Level 1, Toilet Rooms 140, 143 and 160",
+    "needed_by": "2023-12-20",
+    "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+    "trade": "Tile",
+    "references": "A-502, A-503"
+   }
+  },
+  "key": {
+   "case_id": "F12",
+   "missing": [
+    "needed_by",
+    "impact"
+   ],
+   "ref_issues": [],
+   "note": "Location is stated. A-502 has not been revised since Addendum 1.",
+   "correct_references": "A-502, A-503"
+  },
+  "code": {
+   "draft": {
+    "engine": "code",
+    "title": "toilet rooms 140, 143, 160 - T-2 cove",
+    "question": "toilet rooms 140, 143, 160 - T-2 cove base goes over the existing T-1 wall tile? any patching needed? need the detail",
+    "trade": "",
+    "location": {
+     "value": "(stated in the message)",
+     "source": "message"
+    },
+    "needed_by": {
+     "value": "",
+     "source": "missing"
+    },
+    "impact": {
+     "value": "",
+     "source": "missing"
+    },
+    "references": {
+     "text": "A-502",
+     "lookup": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      }
+     ]
+    },
+    "questions_for_sub": [
+     {
+      "field": "needed_by",
+      "ask": "By what date do you need the answer before work is held up?"
+     },
+     {
+      "field": "impact",
+      "ask": "What happens to the work, schedule or cost if the answer comes late?"
+     }
+    ],
+    "changes": [],
+    "guard_blocked": []
+   },
+   "score": {
+    "missing": 2,
+    "caught": 2,
+    "uncaught": [],
+    "false_asks": [],
+    "ref_issue": false,
+    "ref_caught": false,
+    "ref_false_alarm": false,
+    "guard_blocked": 0,
+    "needs_return_after": false
+   }
+  },
+  "agent_runs": [
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1081,
+     "title": "Clarification on T-2 cove base over T-1 wall tile",
+     "question": "In toilet rooms 140, 143, and 160, does T-2 cove base go over the existing T-1 wall tile, and is any patching needed? We need the detail.",
+     "trade": "Finishes",
+     "guard_blocked": [],
+     "location": {
+      "value": "Toilet Rooms 140, 143, 160",
+      "source": "message",
+      "quote": "toilet rooms 140, 143, 160"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "A-502",
+      "lookup": [
+       {
+        "sheet": "A-502",
+        "status": "current",
+        "title": "FINISH NOTES AND SCHEDULE",
+        "revised_in": [],
+        "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "By what date do you need the answer?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on the schedule or work if the answer is late?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Structured the informal message into a clear question format",
+       "why": "To make it professional and easy for the GC to answer."
+      },
+      {
+       "what": "Added room numbers to the location field",
+       "why": "Specific enough to count as a verified location."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Clarification on T-2 cove base over T-1 wall tile",
+     "question": "In toilet rooms 140, 143, and 160, does T-2 cove base go over the existing T-1 wall tile, and is any patching needed? We need the detail.",
+     "trade": "Finishes",
+     "location": "Toilet Rooms 140, 143, 160",
+     "needed_by": "2023-12-20",
+     "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+     "references": "A-502"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "Asks about design details for tile installation and patching."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asking for a missing detail and clarification on installation over existing tile."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 753,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "Specific toilet room numbers 140, 143, and 160 are provided."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "States tile work will be held starting January 8, 2024."
+      }
+     },
+     "separate_questions": 2,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   },
+   {
+    "draft": {
+     "engine": "code+ai",
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "6496c06042445971",
+     "tokens": 1057,
+     "title": "Cove Base Installation Over Wall Tile in Toilet Rooms",
+     "question": "In toilet rooms 140, 143, and 160, does T-2 cove base go over the existing T-1 wall tile? Is any patching needed, and can you provide the detail referenced on sheet A-502?",
+     "trade": "Tile",
+     "guard_blocked": [],
+     "location": {
+      "value": "Toilet rooms 140, 143, and 160",
+      "source": "message",
+      "quote": "toilet rooms 140, 143, 160"
+     },
+     "needed_by": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "impact": {
+      "value": "",
+      "source": "missing",
+      "quote": ""
+     },
+     "references": {
+      "text": "A-502",
+      "lookup": [
+       {
+        "sheet": "A-502",
+        "status": "current",
+        "title": "FINISH NOTES AND SCHEDULE",
+        "revised_in": [],
+        "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+       }
+      ]
+     },
+     "questions_for_sub": [
+      {
+       "field": "needed_by",
+       "ask": "What date do you need an answer by to avoid delaying the work?"
+      },
+      {
+       "field": "impact",
+       "ask": "What is the impact on schedule or cost if the answer is late?"
+      }
+     ],
+     "changes": [
+      {
+       "what": "Structured the informal notes into a clear question.",
+       "why": "To make it easier for the GC to understand all parts of the inquiry."
+      }
+     ]
+    },
+    "score": {
+     "missing": 2,
+     "caught": 2,
+     "uncaught": [],
+     "false_asks": [],
+     "ref_issue": false,
+     "ref_caught": false,
+     "ref_false_alarm": false,
+     "guard_blocked": 0,
+     "needs_return_after": false
+    },
+    "final": {
+     "title": "Cove Base Installation Over Wall Tile in Toilet Rooms",
+     "question": "In toilet rooms 140, 143, and 160, does T-2 cove base go over the existing T-1 wall tile? Is any patching needed, and can you provide the detail referenced on sheet A-502?",
+     "trade": "Tile",
+     "location": "Toilet rooms 140, 143, and 160",
+     "needed_by": "2023-12-20",
+     "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+     "references": "A-502"
+    },
+    "check": {
+     "engine": "code+ai",
+     "references": [
+      {
+       "sheet": "A-502",
+       "status": "current",
+       "title": "FINISH NOTES AND SCHEDULE",
+       "revised_in": [],
+       "message": "A-502 is in the current drawing index (FINISH NOTES AND SCHEDULE)."
+      }
+     ],
+     "route": {
+      "value": "design_team",
+      "reason": "The question asks about installation details, design intent, and references a design sheet A-502."
+     },
+     "cost_flag": {
+      "value": "no",
+      "reason": "Asking whether cove base goes over wall tile, if patching is needed, and requesting a referenced detail are normal clarifications."
+     },
+     "model": "gemini-3.5-flash-lite",
+     "prompt_sha256": "0a3989dd25f66b11",
+     "tokens": 842,
+     "judgements": {
+      "location": {
+       "value": "yes",
+       "reason": "The RFI specifies exact room numbers: 140, 143, and 160."
+      },
+      "impact": {
+       "value": "yes",
+       "reason": "The impact states tile work in these specific rooms will be held if an answer is not provided before the start date of 2024-01-08."
+      }
+     },
+     "separate_questions": 3,
+     "findings": [],
+     "recommendation": "forward_to_design",
+     "needs_pm_cost_review": false
+    },
+    "false_return": false
+   }
+  ]
+ }
+]

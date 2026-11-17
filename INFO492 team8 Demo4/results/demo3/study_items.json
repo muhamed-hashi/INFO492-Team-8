@@ -1,0 +1,185 @@
+{
+ "source": "results/demo3 run 2026-11-01T02:38:18+00:00",
+ "items": [
+  {
+   "case_id": "F01",
+   "raw": {
+    "message": "no fixture type shown for the gym office 173A on E301, fixture schedule E-801 doesnt say either. what fixture do we put in there",
+    "sheets": "E301, E-801"
+   },
+   "agent": {
+    "title": "Missing fixture type for gym office 173A on E301",
+    "question": "What fixture do we put in gym office 173A, as no fixture type is shown on E301 and fixture schedule E-801 does not specify it?",
+    "location": "Gym office 173A",
+    "needed_by": "2023-10-13",
+    "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+    "references": "E-301, E-801"
+   }
+  },
+  {
+   "case_id": "F02",
+   "raw": {
+    "message": "E-700 shows (4) 2\" conduits from IDF to MDF but E-500 calls for (5). how many do we run?? need this asap",
+    "sheets": "E-700, E-500"
+   },
+   "agent": {
+    "title": "Conduit Count Discrepancy Between E-700 and E-500",
+    "question": "Sheet E-700 shows (4) 2\" conduits from IDF to MDF, but sheet E-500 calls for (5). How many conduits should we run?",
+    "location": "IDF to MDF",
+    "needed_by": "2023-11-03",
+    "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+    "references": "E-700, E-500"
+   }
+  },
+  {
+   "case_id": "F03",
+   "raw": {
+    "message": "2nd floor bathroom - finish schedule says terrazzo but ID-015 shows VCT. which one",
+    "sheets": "ID-015"
+   },
+   "agent": {
+    "title": "Flooring Material Discrepancy for 2nd Floor Bathroom",
+    "question": "The finish schedule specifies terrazzo for the 2nd floor bathroom, but ID-015 shows VCT. Which flooring material should be installed?",
+    "location": "2nd floor bathroom",
+    "needed_by": "2023-11-10",
+    "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+    "references": "A-502, ID-015"
+   }
+  },
+  {
+   "case_id": "F04",
+   "raw": {
+    "message": "Annex caissons: S-001 says 4,500 psi concrete, caisson schedule on S-301 says 4,000 psi. Which strength is right? Mix design and first pours (9/25) are on hold, need the answer by 9/20.",
+    "sheets": "S-001, S-301"
+   },
+   "agent": {
+    "title": "Caisson Concrete Strength Discrepancy Between S-001 and S-301",
+    "question": "On S-001 it states 4,500 psi concrete, while the caisson schedule on S-301 states 4,000 psi. Which strength is correct?",
+    "location": "Annex caissons",
+    "needed_by": "2023-09-20",
+    "impact": "Mix design and first pours are on hold until September 25",
+    "references": "S-001, S-301"
+   }
+  },
+  {
+   "case_id": "F05",
+   "raw": {
+    "message": "lockers scale 15in wide on A-102 but spec 10 51 13 says 12in. single or double tier? and what base goes under them",
+    "sheets": "A-102"
+   },
+   "agent": {
+    "title": "Locker width discrepancy between drawings and specification",
+    "question": "1. Sheet A-102 shows lockers at 15in wide, but specification 10 51 13 states 12in. Are the lockers single or double tier? 2. What base goes under them?",
+    "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+    "needed_by": "2023-12-01",
+    "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+    "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+   }
+  },
+  {
+   "case_id": "F06",
+   "raw": {
+    "message": "Hallway 101 has keynotes A.18 and A.19 - A.18 and 6/A-703 show solid surface top, A.19 says plastic laminate. which countertop? same thing in rooms 105 and 107",
+    "sheets": "6/A-703"
+   },
+   "agent": {
+    "title": "Countertop material conflict for keynotes A.18 and A.19",
+    "question": "Hallway 101 has keynotes A.18 and A.19. Keynote A.18 and detail 6/A-703 show a solid surface top, while keynote A.19 says plastic laminate. Which countertop material should be used? The same issue occurs in rooms 105 and 107.",
+    "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+    "needed_by": "2024-01-12",
+    "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+    "references": "6/A-703"
+   }
+  },
+  {
+   "case_id": "F07",
+   "raw": {
+    "message": "feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) looks way too small for the 40hp pump on FP-2O0. confirm feeder size, fire pump test is on the critical path",
+    "sheets": "E-600, FP-2O0"
+   },
+   "agent": {
+    "title": "Fire Pump Feeder Size Clarification",
+    "question": "Feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) appears too small for the 40hp pump on FP-2O0. Please confirm the correct feeder size.",
+    "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+    "needed_by": "2023-10-27",
+    "impact": "fire pump test is on the critical path",
+    "references": "E-600, FP-200"
+   }
+  },
+  {
+   "case_id": "F08",
+   "raw": {
+    "message": "PV feed from roof array to main elec room: E-600 says 3-1/2\" conduit, PV-600 shows 2-1/2\". which size. need it before the roofers start",
+    "sheets": "E-600, PV-600"
+   },
+   "agent": {
+    "title": "Conduit size conflict between E-600 and PV-600",
+    "question": "Regarding the PV feed from the roof array to the main elec room, sheet E-600 says 3-1/2\" conduit while sheet PV-600 shows 2-1/2\". Which size is correct?",
+    "location": "From roof array to main electrical room",
+    "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+    "impact": "Work must be resolved before the roofers start",
+    "references": "E-600, PV-600"
+   }
+  },
+  {
+   "case_id": "F09",
+   "raw": {
+    "message": "keynote AE.18 on A-401/A-402 points to detail 3/A-433 but there is no detail 3 on that sheet. which detail do we use? cant price or schedule the masonry repair at those spots",
+    "sheets": "A-401, A-402, A-433"
+   },
+   "agent": {
+    "title": "Missing Detail 3 on Sheet A-433 for Masonry Repair",
+    "question": "Keynote AE.18 on sheets A-401 and A-402 points to detail 3/A-433, but there is no detail 3 on that sheet. Which detail should we use?",
+    "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+    "needed_by": "2023-10-06",
+    "impact": "Unable to price or schedule the masonry repair at those locations",
+    "references": "A-401, A-402, A-433"
+   }
+  },
+  {
+   "case_id": "F10",
+   "raw": {
+    "message": "toilet room cove lights are tagged C8 now, C8 is the pole light. should be C7 like before right? see drawings",
+    "sheets": "see drawings"
+   },
+   "agent": {
+    "title": "Fixture tag conflict for toilet room cove lights",
+    "question": "Toilet room cove lights are tagged C8 now, but C8 is the pole light. Should they be C7 like before?",
+    "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+    "needed_by": "2023-12-15",
+    "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+    "references": "E-301, E-801"
+   }
+  },
+  {
+   "case_id": "F11",
+   "raw": {
+    "message": "Is RT-1 the same as RT-11 on the A-502 finish schedule? Resilient flooring order for the classroom wing is waiting on this, need an answer by 11/17.",
+    "sheets": "A-502"
+   },
+   "agent": {
+    "title": "Clarification on RT-1 vs RT-11 on Finish Schedule",
+    "question": "Is RT-1 the same as RT-11 on the A-502 finish schedule?",
+    "location": "classroom wing",
+    "needed_by": "2023-11-17",
+    "impact": "Resilient flooring order for the classroom wing is waiting on this",
+    "references": "A-502, A-503"
+   }
+  },
+  {
+   "case_id": "F12",
+   "raw": {
+    "message": "toilet rooms 140, 143, 160 - T-2 cove base goes over the existing T-1 wall tile? any patching needed? need the detail",
+    "sheets": "A-502"
+   },
+   "agent": {
+    "title": "Clarification on T-2 cove base over T-1 wall tile",
+    "question": "In toilet rooms 140, 143, and 160, does T-2 cove base go over the existing T-1 wall tile, and is any patching needed? We need the detail.",
+    "location": "Toilet Rooms 140, 143, 160",
+    "needed_by": "2023-12-20",
+    "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+    "references": "A-502"
+   }
+  }
+ ]
+}

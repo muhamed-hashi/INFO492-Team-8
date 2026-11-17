@@ -1,0 +1,506 @@
+{
+ "note": "python3 scripts/make_messy_cases.py",
+ "seed": 4920,
+ "cases": [
+  {
+   "case_id": "M01",
+   "kind": "deferred+missing",
+   "source_id": "Dett-A5-RFI6",
+   "addendum": 5,
+   "question": "Please clarify if we are to use one or the other or both and what roof sections would get the 3 layers.",
+   "response": "updated a-421 to follow. rev'd a-422, A- 423, A-424 attached. 3. (REMAINDER OF PAGE INTENTIONALLY LEFT BLANK) see attached.",
+   "remove_from_list": [
+    [
+     3,
+     "A-422"
+    ]
+   ],
+   "expected": "keep_open",
+   "planted": "A-422 removed from the Addendum 3 list; A-421 deferred"
+  },
+  {
+   "case_id": "M02",
+   "kind": "deferred+missing",
+   "source_id": "Dett-A5-RFI3",
+   "addendum": 5,
+   "question": "Sheet A-210 detail 1. In Hallway 101 there are keynotes A.18 & A.19. There are no elevations, but from these keynotes and the detail associated with KN A.18 (6/A-703), this is a new base cabinet with a solid surface top, which contradicts KN A.19 which states to replace with a plastic laminate countertop. Please advise. Note: Same for Room 105, 107",
+   "response": "a-210 not rev'd yet, pending design team. rev'd a-221 attached. thx.",
+   "remove_from_list": [
+    [
+     5,
+     "A-221"
+    ]
+   ],
+   "expected": "keep_open",
+   "planted": "A-221 removed from the Addendum 5 list; A-210 deferred"
+  },
+  {
+   "case_id": "M03",
+   "kind": "deferred+missing",
+   "source_id": "Dett-A5-RFI7",
+   "addendum": 5,
+   "question": "In addendum #3 for PBC Robert Nathaniel Dett 3 pages contradict each other: In the top left corner of page P-100A, there is an unlisted bathroom that says; EXISTING, NO WORK (pointing at 4 locations where fixtures would be if they were detailed) AND on page P-201 it follows suit but calls out the fixtures & rooms (staff toilet 140 & 143) THEN On page P-202, in detail 2 (level 1 CLRM Wing – plumb plan B) it says “connect new plumb fixture to ex san” calling out for 2 new WC-1 & L-1s A schedule of all plumbing fixtures should be provided for most accurate plumbing quote. The addendums have changed scope so many times, someone is bound to miss something and cause problems come contract time.",
+   "response": "p-201 revision coming next round. rev'd p202 attached. pls coordinate w/ GC.",
+   "remove_from_list": [
+    [
+     5,
+     "P-202"
+    ]
+   ],
+   "expected": "keep_open",
+   "planted": "P-202 removed from the Addendum 5 list; P-201 deferred"
+  },
+  {
+   "case_id": "M04",
+   "kind": "deferred+missing",
+   "source_id": "Dett-A3-RFI3",
+   "addendum": 3,
+   "question": "Are the fixtures to be cleaned and re-lamped already LED or do we need to furnish and install retro-fit kits?",
+   "response": "existing fixtures are fluorescent tube lights. a retro fit kit is required for each fixture to be re-lamped. e-301 not rev'd yet, pending design team. rev'd e- 302, e-303, e304 attached. contractor to field verify.",
+   "remove_from_list": [
+    [
+     3,
+     "E-302"
+    ]
+   ],
+   "expected": "keep_open",
+   "planted": "E-302 removed from the Addendum 3 list; E-301 deferred"
+  },
+  {
+   "case_id": "M05",
+   "kind": "clean",
+   "source_id": "Dett-A3-RFI13",
+   "addendum": 3,
+   "question": "Drawing E-303 shows Type C12 2x4 fixtures typical (TYP) in the classrooms. The architectural drawings A222, A223, and A225 show narrow slot fixtures. Please clarify the fixture type in these rooms.",
+   "response": "Danceroom 213, Multi-purpose Room 202, and Computer Room 201 will all use Type C12 fixtures. Refer to rev'd Dwg E303 issued in Addendum No. 2. contractor to field verify.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M06",
+   "kind": "clean",
+   "source_id": "Dett-A3-RFI47",
+   "addendum": 3,
+   "question": "Page A-502, General Paint Note 4 – Patch Holes in walls and ceiling great than 1/4in in any direction. Skim coat wall in area of removed trim. Prep and Prime with flat, white latex primer prior to painting. Please provide either a quantity or allowance for this work.",
+   "response": "General note has been updated to reflect quantity on sht A- 502 which has been rev'd and is attached. contractor to field verify.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M07",
+   "kind": "clean",
+   "source_id": "Dett-A3-RFI58",
+   "addendum": 3,
+   "question": "On sheet A-223 (Multi-Purpose Room) the interior elevation details 13-16/A-702 are not representative of the interior elevations.",
+   "response": "sht a- 223 has been rev'd to reflect the actual conditions of the multi-purpose room and is attached. contractor to field verify.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M08",
+   "kind": "clean",
+   "source_id": "Dett-A3-RFI50",
+   "addendum": 3,
+   "question": "Drawing M-905: Does the VRF system have associated HW baseboards? If so where are they located?",
+   "response": "The lunch room has existing HW baseboards which are identified as (E) FTR on dwg M201 which has been rev'd and attached. see attached.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M09",
+   "kind": "clean",
+   "source_id": "Dett-A5-RFI8",
+   "addendum": 5,
+   "question": "Sheet A-301B of the drawings, elevations 1 & 3, show a keynote AX.42 pointing to joints between the solid surface wall panels. The keynote AX.42 description is “Provide acoustically-sealed full height operable partition closure panel, per manufacturer”. We are not sure how this keynote is applicable to the joints between certain solid surface wall panels. This keynote occurs throughout the elevation drawings. Please clarify what this note means and what manufacturer is being referenced for these joints.",
+   "response": "Dwg A-300, A- 301, a-301B, a-303A have been rev'd and are incl. in this add. per mtg.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M10",
+   "kind": "clean",
+   "source_id": "Dett-A5-RFI10",
+   "addendum": 5,
+   "question": "Per addendum #3 Sheet A-502, Toilet Rooms 140, 143, and 160 call for T-2 6” ceramic cove base finish and T-1 wall finishes existing to remain. Is the cove base to be installed over the existing tile and will there be any patch work associated with the existing wall tile? Please provide more detail on installation of cove base and abutment to floor tile.",
+   "response": "dwg a502 has been rev'd and is incl. in this add. pls coordinate w/ GC.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M11",
+   "kind": "clean",
+   "source_id": "Dett-A2-RFI11",
+   "addendum": 2,
+   "question": "Drawing E-301 shows fixtures on a 45 degree angle that are not specified. Please provide a fixture type.",
+   "response": "gymnasium 173 will use type c2 fixtures; pre-functional lobby and connecting corridor will use type c3 fixtures. light positions were updated. refer to rev. dwg e-301 issued in addendum no. 1. pls coordinate w/ GC.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M12",
+   "kind": "clean",
+   "source_id": "Dett-A3-RFI64",
+   "addendum": 3,
+   "question": "Drawing E301 shows 16 Type C13 fixtures in the pump room and several other rooms. The fixture schedule on Drawing E801 does not list a Type C13. Please provide a C13 spec.",
+   "response": "the light fixture schedule on dwg e-801 was rev. to indicate type c13. dwg e-801 has been revised and is in this addendum. pls coordinate w/ GC.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M13",
+   "kind": "clean",
+   "source_id": "Dett-A3-RFI27",
+   "addendum": 3,
+   "question": "Addendum 1 Drawing E600 shows new panel LP-1W fed from the existing Switchboard. Please provide a location for the existing Switchboard.",
+   "response": "the existing switchboard location is shown on rev'd sht e-010 incl. in this add. confirm w/ super on site.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M14",
+   "kind": "clean",
+   "source_id": "Dett-A3-RFI34",
+   "addendum": 3,
+   "question": "On sheet A-102B, A-103B and A-104B at the elevator lobbies there is keynote A.03 for “acoustical ceiling tile”, but on the Finish Schedule on sheet A-502 the ceiling finish is “Gypsum Ceiling”. Please advise.",
+   "response": "The Finish Schedule A502 has been revised and is in this addendum. per mtg.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "noise only"
+  },
+  {
+   "case_id": "M15",
+   "kind": "see_also",
+   "source_id": "Dett-A3-RFI40",
+   "addendum": 3,
+   "question": "Can you provide more information on the patch & repair of adjacent floor/wall finishes in the existing building?",
+   "response": "A general note addressing this issue has been added to G001 which has been revised and is attached. coord w/ P- 500. thx.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "reference to P-500 added"
+  },
+  {
+   "case_id": "M16",
+   "kind": "see_also",
+   "source_id": "Dett-A3-RFI14",
+   "addendum": 3,
+   "question": "Drawing E-303 shows 2 Type LP7C fixtures in Room 211. Should there be 2 rows of narrow slot fixtures in this room as shown on Drawing A224? If slot fixtures are required, please specify a fixture type.",
+   "response": "LP7C is removed from the project. Sensorial Room 211 has (2) type C6 fixtures in the center of the room and the slot linears on the West and East sides of the room will be C4A type fixtures. Refer to rev'd dwg E303 attached. cf. sht M-700. pls coordinate w/ GC.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "reference to M-700 added"
+  },
+  {
+   "case_id": "M17",
+   "kind": "see_also",
+   "source_id": "Dett-A3-RFI9",
+   "addendum": 3,
+   "question": "Drawing E-010 shows the existing FACP near the Boiler Room. Drawing E-201 does not show the FACP. Please clarify the location of the FACP. Drawing E-600 says the existing FACP is to remain. Please provide a Manufacturer and product number for the existing FACP.",
+   "response": "facp location has been identified on e-201 which has been rev'd and is attached. manufacturer is siemens model fhd2002-r3; batteries dated november 2020; installed by chicago fire protection (773-366-3477); last inspection valid until october 7, 2023 issued by state fire marshall. please refer to dwg e-201 revised and in this addendum. cf. sht ed-201. pls coordinate w/ GC.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "reference to ED-201 added"
+  },
+  {
+   "case_id": "M18",
+   "kind": "see_also",
+   "source_id": "Dett-A3-RFI67",
+   "addendum": 3,
+   "question": "There are cameras on the addendum 2 drawings that are not identified as types 9A – 9E (drawing E-201, column lines 6 – E2).",
+   "response": "Camera tags have been added to Dwg E- 201 which has been revised and is in this addendum. cf. sht MD201. pls coordinate w/ GC.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "reference to MD-201 added"
+  },
+  {
+   "case_id": "M19",
+   "kind": "see_also",
+   "source_id": "Dett-A2-RFI4",
+   "addendum": 2,
+   "question": "Drawing E-304 Keynote 1: Provide new lights in this area. Looks maybe these are to be re-lamped instead? If they are new, please provide the type of fixture in these areas.",
+   "response": "New lighting for classrooms are tagged C12. Refer to rev. sht E304 incl. in this add. ref PD203 for existing. contractor to field verify.",
+   "remove_from_list": [],
+   "expected": "ok_to_close",
+   "planted": "reference to PD-203 added"
+  },
+  {
+   "case_id": "M20",
+   "kind": "missing",
+   "source_id": "Dett-A2-RFI1",
+   "addendum": 2,
+   "question": "Drawing E-304, classrooms 305/303/301/306 and corridor 300 require new fixtures, but they are unmarked as well. Please clarify.",
+   "response": "Classroom fixtures are tagged C12 and Corridor 300 existing fixtures are to be re-lamped to LED. Refer to rev'd dwg E- 304 attached. contractor to field verify.",
+   "remove_from_list": [
+    [
+     2,
+     "E-304"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "E-304 removed from the Addendum 2 list"
+  },
+  {
+   "case_id": "M21",
+   "kind": "missing",
+   "source_id": "Dett-A2-RFI2",
+   "addendum": 2,
+   "question": "Drawing E-302 THESE AREAS NOTE NEW FIXTURES, BUT HAVE UNMARKED FIXTURE TYPES •Office #102C •Book St #100B •Entry 100A •Alcove #100D",
+   "response": "office 102c are tagged c12. the existing fixtures in rooms 100a, 100b, 100d are to be re-lamped to led. refer to revised dwg e- 302 in this addendum. see attached.",
+   "remove_from_list": [
+    [
+     2,
+     "E-302"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "E-302 removed from the Addendum 2 list"
+  },
+  {
+   "case_id": "M22",
+   "kind": "missing",
+   "source_id": "Dett-A2-RFI12",
+   "addendum": 2,
+   "question": "Drawing E-301 does not specify a fixture type in the Gym Office. Please specify a fixture.",
+   "response": "gym office 173a will use type c12 fixtures. refer to revised dwg e- 301 issued in addendum no. 1. confirm w/ super on site.",
+   "remove_from_list": [
+    [
+     1,
+     "E-301"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "E-301 removed from the Addendum 1 list"
+  },
+  {
+   "case_id": "M23",
+   "kind": "missing",
+   "source_id": "Dett-A3-RFI56",
+   "addendum": 3,
+   "question": "Who is providing the new Domestic Water and Electric submeters?",
+   "response": "the controls contractor is responsible for providing the new domestic water submeter. the electrical contractor is responsible for providing the electrical submeters. the scope for electrical submeters is indicated in detail 2 on sht e-702 rev'd and in this addendum. confirm w/ super on site.",
+   "remove_from_list": [
+    [
+     3,
+     "E-702"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "E-702 removed from the Addendum 3 list"
+  },
+  {
+   "case_id": "M24",
+   "kind": "missing",
+   "source_id": "Dett-A3-RFI61",
+   "addendum": 3,
+   "question": "Please confirm that all the bathrooms sinks will receive soap dispensers and all lavatories will receive tissue dispensers, where none are shown.",
+   "response": "dwg A503 has been rev. to include General notes that address these items and is in this addendum. per mtg.",
+   "remove_from_list": [
+    [
+     3,
+     "A-503"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "A-503 removed from the Addendum 3 list"
+  },
+  {
+   "case_id": "M25",
+   "kind": "deferred",
+   "source_id": "Dett-A3-RFI44",
+   "addendum": 3,
+   "question": "On page PD-202, there is a note that says, “contractor shall remove & replace all galv piping which is accessible, with type L copper pipe” a. Please confirm what the size of area that remove and replacement has to be. 5 SF, 10SF , 15SF???",
+   "response": "will send pd- 202 once updated. thx.",
+   "remove_from_list": [],
+   "expected": "keep_open",
+   "planted": "PD-202 deferred"
+  },
+  {
+   "case_id": "M26",
+   "kind": "deferred",
+   "source_id": "Dett-A3-RFI20",
+   "addendum": 3,
+   "question": "Drawing E-301 shows some Type LX3 and LX4 fixtures, and Drawing E303 shows 2 Type LP7C fixtures. These fixtures are not specified on Drawing E-801. Please provide a spec for these fixtures.",
+   "response": "Fixture Type LP7C has been removed from the project. E-801: changes pending, not attached. see attached.",
+   "remove_from_list": [],
+   "expected": "keep_open",
+   "planted": "E-801 deferred"
+  },
+  {
+   "case_id": "M27",
+   "kind": "deferred",
+   "source_id": "Dett-A2-RFI13",
+   "addendum": 2,
+   "question": "Drawing E302 shows Type C12 2x4 fixtures and C11 1x4 fixtures in Classroom 107, Rm 105, Rm 103, Rm 101, Rm 101A, Rm 101B, 101C,and Rm 101E. Drawing A221 and A210 show rows of narrow slot fixtures in these rooms. Please clarify the fixture types in these rooms.",
+   "response": "Hallway 101, Counselor 101A, Social 101B, Occupational/Speech Pathologist 101C, Care Room 101E, Teacher's Lounge 103, Multi-Purpose Room 105, and Classroom 107 will all use Type C12 fixtures; Teacher's Lounge Closet will use Type C13 fixtures. E-302 TBD - not in this pkg, will reissue. contractor to field verify.",
+   "remove_from_list": [],
+   "expected": "keep_open",
+   "planted": "E-302 deferred"
+  },
+  {
+   "case_id": "M28",
+   "kind": "deferred",
+   "source_id": "Dett-A1-RFI3",
+   "addendum": 1,
+   "question": "Fixture schedule is missing the following fixtures that were on the drawings: •LX3 •LX4 •LP7C",
+   "response": "E-801 will be reissued after award. pls coordinate w/ GC.",
+   "remove_from_list": [],
+   "expected": "keep_open",
+   "planted": "E-801 deferred"
+  },
+  {
+   "case_id": "M29",
+   "kind": "deferred",
+   "source_id": "Dett-A3-RFI65",
+   "addendum": 3,
+   "question": "Drawing E301 shows 4 Type LX4 fixtures. The fixture schedule on Drawing E801 does not list a Type LX4. Please provide a LX4 spec.",
+   "response": "e-801: changes pending, not attached. thx.",
+   "remove_from_list": [],
+   "expected": "keep_open",
+   "planted": "E-801 deferred"
+  },
+  {
+   "case_id": "M30",
+   "kind": "typo",
+   "source_id": "Dett-A3-RFI16",
+   "addendum": 3,
+   "question": "Drawing E-303 and E-304 says to provide new fixtures in the Corridor. Drawing A103B and A104B says to relamp the existing fixtures in the corridor. Please clarify.",
+   "response": "Light fixtures in Corridors on Sheet E- 033 and E- 304 Sheet are to be re-lamped. Refer to revised sht E- 033 and E304 revised and in this addendum. see attached.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "E-303 mistyped as E-033"
+  },
+  {
+   "case_id": "M31",
+   "kind": "typo",
+   "source_id": "Dett-A3-RFI35",
+   "addendum": 3,
+   "question": "The finish plan on A-502 shows significantly more painted ceiling areas than the reflected ceiling plans on A-102B through A-233. Please confirm if painted ceiling scope is to follow the plans or the finish schedule.",
+   "response": "The Finish Schedule A-052 has been rev'd and is in this addendum. confirm w/ super on site.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "A-502 mistyped as A-052"
+  },
+  {
+   "case_id": "M32",
+   "kind": "typo",
+   "source_id": "Dett-A3-RFI22",
+   "addendum": 3,
+   "question": "Sheets E-302,303 and 304 Are we to provide lighting control devices in the hatched areas only that show ceiling devices and new Fixtures?",
+   "response": "sht e032, e-303 and e304 have been rev. to reflect the correct scope and are attached. per mtg.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "E-302 mistyped as E-032"
+  },
+  {
+   "case_id": "M33",
+   "kind": "typo",
+   "source_id": "Dett-A2-RFI10",
+   "addendum": 2,
+   "question": "Drawing E-600 specifies the service feed as (4) 4\" conduits. The duct bank detail on Drawing E701 shows (10) 4\" conduits, which means there are 6 spares. Please clarify how many spare 4\" conduits are needed.",
+   "response": "Main Service feed requires four (4) 4-inch conduits. Fire Pump Service feed requires one (1) 4-inch conduit. There are no spares included in either service. Refer to revised Dwg e-600B and E- 701 issued in Addendum No. 1. confirm w/ super on site.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "E-600 mistyped as E-600B"
+  },
+  {
+   "case_id": "M34",
+   "kind": "typo",
+   "source_id": "Dett-A5-RFI2",
+   "addendum": 5,
+   "question": "Per the addendum, cameras have been added on the electrical drawings, E-202, E-203 & E-204 but no clarification of what type of cameras are in these new locations. Please clarify the type of new cameras..",
+   "response": "sht E-100, E- 202, E-203, E- 204 have been rev'd and are in this addendum. confirm w/ super on site.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "E-010 mistyped as E-100"
+  },
+  {
+   "case_id": "M35",
+   "kind": "missing+see_also",
+   "source_id": "Dett-A3-RFI15",
+   "addendum": 3,
+   "question": "Drawing E-303 shows Type C12 fixtures in Classroom 207. Drawing A103B says to relamp existing fixtures in this room. Please clarify.",
+   "response": "Fixtures in Classroom 207are to be re-lamped. Refer to Dwg E- 303 rev. and attached. also see fp-000. see attached.",
+   "remove_from_list": [
+    [
+     3,
+     "E-303"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "E-303 removed from the Addendum 3 list; reference to FP-000 added"
+  },
+  {
+   "case_id": "M36",
+   "kind": "missing+see_also",
+   "source_id": "Dett-A3-RFI38",
+   "addendum": 3,
+   "question": "Is RT-1 flooring the same as RT-11?",
+   "response": "RT-11 is static dissipative flooring per the Contract Documents. RT-1 is resilient flooring per Addendum No. 2. Please refer to Finish Legend A503 rev. and issued in Addendum No. 2. cf. sht pd-201. pls coordinate w/ GC.",
+   "remove_from_list": [
+    [
+     2,
+     "A-503"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "A-503 removed from the Addendum 2 list; reference to PD-201 added"
+  },
+  {
+   "case_id": "M37",
+   "kind": "missing+see_also",
+   "source_id": "Dett-A3-RFI43",
+   "addendum": 3,
+   "question": "Keynote AE.18 is referencing to 3/A433, detail doesn't exist, please advise.",
+   "response": "keynote ae.18 on sht a-401 and a-402 has been rev'd to refer to detail 2a/a- 446 and are attached. coord w/ m- 801. pls coordinate w/ GC.",
+   "remove_from_list": [
+    [
+     3,
+     "A-401"
+    ]
+   ],
+   "expected": "hold",
+   "planted": "A-401 removed from the Addendum 3 list; reference to M-801 added"
+  },
+  {
+   "case_id": "M38",
+   "kind": "typo+see_also",
+   "source_id": "Dett-A3-RFI1",
+   "addendum": 3,
+   "question": "Gym Storage a. Drawing A-101A calls for Keynote D.38 in Room 144/Gym Storage. D.38 is not defined in the Keynotes, please provide detail b. Drawing A-102A calls for Keynote D.39 in Classroom 106. D.39 is not defined in the Keynotes, please provide detail.",
+   "response": "d38 has been removed from dwg a-011a. d38 and d39 have been revised on sht a011a and is incl. in this add. cf. sht a- 704. per mtg.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "A-101A mistyped as A-011A; reference to A-704 added"
+  },
+  {
+   "case_id": "M39",
+   "kind": "typo+see_also",
+   "source_id": "Dett-A3-RFI12",
+   "addendum": 3,
+   "question": "Drawing E-302 says to relamp fixtures in the Lunchroom. Drawing Drawing A101D says to provide new fixtures. Please provide a fixture type for the Lunchroom if new fixtures are required.",
+   "response": "Provide light fixture type C12 at the lunch room. Dwg e-302B has been rev. and is attached. also see pd-204. thx.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "E-302 mistyped as E-302B; reference to PD-204 added"
+  },
+  {
+   "case_id": "M40",
+   "kind": "typo+see_also",
+   "source_id": "Dett-A3-RFI60",
+   "addendum": 3,
+   "question": "On Sheet A-308 detail 10, there is listed EQP #7C as a wall mounted mirror. Size to be 3’-0”x 5’- 0”. This mirror appears to be the same size in height as the EQP #19A mirrors. Please advise.",
+   "response": "Dwg A- 038 has been rev'd to identify EQP-7C as a 5'x8' wall mounted mirror on the Finish Legend and is in this addendum. also see c-100. per mtg.",
+   "remove_from_list": [],
+   "expected": "check",
+   "planted": "A-308 mistyped as A-038; reference to C-100 added"
+  }
+ ]
+}

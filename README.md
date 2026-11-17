@@ -1,6 +1,6 @@
 # INFO492-Team-8
 
-**Thesis:** Adding an AI review step to an existing subcontractor RFI form can reduce median GC first-review time by at least 25% compared with the same form completed without AI assistance, without increasing information errors.
+**Thesis** (updated after Demo 3; additions in bold): Adding an AI review step to an existing subcontractor RFI form can reduce median GC first-review time by at least 25% **and reduce follow-up rounds to the subcontractor**, compared with the same form completed without AI assistance, without increasing information errors **from submission through close-out**.
 
 **Website:** https://muhamed-hashi.github.io/INFO492-Team-8/ (served from `index.html` via GitHub Pages)
 
@@ -14,6 +14,7 @@
 | Demo 2: checking drawing references | [`team8-demo2/`](team8-demo2/) |
 | Demo 3: sub ↔ GC ↔ design-team RFI exchange | [`INFO492 team8 Demo3/`](INFO492%20team8%20Demo3/) |
 | Demo 3: rough RFI drafts (R01–R10) and stakeholder timed review test | [`demo3/`](demo3/) |
+| Demo 4 (Protect): RFI close-out | [`INFO492 team8 Demo4/`](INFO492%20team8%20Demo4/) |
 | Stakeholder interview transcripts | [`interviews/`](interviews/) |
 | LLM summary of class feedback on Demos 1–2 | [`class_feedback/`](class_feedback/) |
 | Team website | [`index.html`](index.html) |
@@ -60,6 +61,20 @@ A foreman's rough site message becomes a clearer RFI (draft agent, foreman appro
 | How to run | [`README.md`](INFO492%20team8%20Demo3/README.md) |
 | Rough drafts and timed review plan | [`demo3/docs/demo3_rough_drafts_and_timed_review.md`](demo3/docs/demo3_rough_drafts_and_timed_review.md), data in [`demo3/data/`](demo3/data/), generator [`demo3/scripts/make_rough_drafts.py`](demo3/scripts/make_rough_drafts.py) |
 | Stakeholder test results (2 GC reviewers) | [`demo3/Team 8 – Demo 3 Timed Review Test Results.pdf`](demo3/Team%208%20%E2%80%93%20Demo%203%20Timed%20Review%20Test%20Results.pdf) |
+
+## Demo 4 (Protect): RFI close-out
+
+Before the GC closes an RFI the architect has answered, the close-out agent checks that every drawing change the answer promised was actually issued: code looks each sheet up in the real drawing lists attached to Dett Addenda 1–6; the AI only reads what the answer committed to (revised vs only referred to, anything still to come), with a quote for every claim; the project manager decides (close, keep open for the IFC set, or ask the architect). Tests the "without increasing information errors ... through close-out" part of the thesis. After professor feedback that our data was too clean, Demo 4 adds a messy test set (field-style wording, two problems in some answers), reports the agent's errors before a person checks as well as what would reach the field, and has a privacy-checked intake for real examples from our stakeholder ([`data/kevin/`](INFO492%20team8%20Demo4/data/kevin/)).
+
+| | Location |
+|---|---|
+| Code | [`closeout.py`](INFO492%20team8%20Demo4/closeout.py), [`app.py`](INFO492%20team8%20Demo4/app.py), [`protocol.py`](INFO492%20team8%20Demo4/protocol.py), [`static/`](INFO492%20team8%20Demo4/static/), [`scripts/`](INFO492%20team8%20Demo4/scripts/), [`tests/`](INFO492%20team8%20Demo4/tests/) |
+| Data | [`data/addendum_drawing_lists.json`](INFO492%20team8%20Demo4/data/addendum_drawing_lists.json) (real, every drawing attached to each addendum), [`data/closeout_cases.json`](INFO492%20team8%20Demo4/data/closeout_cases.json) and [`data/closeout_cases_messy.json`](INFO492%20team8%20Demo4/data/closeout_cases_messy.json) (40 tidy + 40 messy synthetic variants of real answers with known right answers), the 108 real RFIs; sources in [`docs/DATA_PROVENANCE.md`](INFO492%20team8%20Demo4/docs/DATA_PROVENANCE.md#demo-4-additions) |
+| LLM prompts | [`prompts/closeout_agent.txt`](INFO492%20team8%20Demo4/prompts/closeout_agent.txt) (plus the Demo 3 prompts) |
+| Dependencies | [`requirements.txt`](INFO492%20team8%20Demo4/requirements.txt): Python 3.10+ standard library; Google Gemini API; `pdftotext` only to re-extract the drawing lists |
+| Protocol | [`docs/PROTOCOL.md`](INFO492%20team8%20Demo4/docs/PROTOCOL.md) |
+| Results | [`results/demo4/`](INFO492%20team8%20Demo4/results/demo4/) and [`NOTES.md`](INFO492%20team8%20Demo4/results/demo4/NOTES.md) |
+| How to run | [`README.md`](INFO492%20team8%20Demo4/README.md) |
 
 ## Stakeholder interviews
 

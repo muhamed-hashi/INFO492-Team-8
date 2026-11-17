@@ -1,0 +1,230 @@
+[
+  {
+    "case_id": "F01",
+    "is_simulated": true,
+    "drawing_set": 1,
+    "message": "no fixture type shown for the gym office 173A on E301, fixture schedule E-801 doesnt say either. what fixture do we put in there",
+    "sheets_as_written": "E301, E-801",
+    "source": {
+      "id": "Dett-A2-RFI12",
+      "seed": "S01",
+      "title": "Fixture type for Gym Office 173A"
+    },
+    "site_notes": {
+      "location": "Annex Level 1, Gym Office 173A",
+      "needed_by": "2023-10-13",
+      "impact": "Ceiling rough-in for Gym Office 173A starts the week of Oct 16; fixtures must be ordered before then (about 3-week lead time).",
+      "trade": "Electrical",
+      "references": "E-301, E-801"
+    }
+  },
+  {
+    "case_id": "F02",
+    "is_simulated": true,
+    "drawing_set": 3,
+    "message": "E-700 shows (4) 2\" conduits from IDF to MDF but E-500 calls for (5). how many do we run?? need this asap",
+    "sheets_as_written": "E-700, E-500",
+    "source": {
+      "id": "Dett-A3-RFI10",
+      "seed": "S02",
+      "title": "Number of 2\" conduits MDF to IDF"
+    },
+    "site_notes": {
+      "location": "Level 1, conduit route between the MDF room and the IDF room",
+      "needed_by": "2023-11-03",
+      "impact": "Conduit installation between the MDF and IDF rooms is on hold; a late answer delays the start of low-voltage cabling.",
+      "trade": "Electrical",
+      "references": "E-700, E-500"
+    }
+  },
+  {
+    "case_id": "F03",
+    "is_simulated": true,
+    "drawing_set": 2,
+    "message": "2nd floor bathroom - finish schedule says terrazzo but ID-015 shows VCT. which one",
+    "sheets_as_written": "ID-015",
+    "source": {
+      "id": "Dett-A2-RFI5",
+      "seed": "S03",
+      "title": "Floor finish conflict, terrazzo vs VCT"
+    },
+    "site_notes": {
+      "location": "Classroom wing Level 2, Room 221 Accessible All-Gender Toilet Room",
+      "needed_by": "2023-11-10",
+      "impact": "Floor preparation and finish ordering for this room are on hold; terrazzo needs different substrate preparation than VCT.",
+      "trade": "Flooring",
+      "references": "A-502, ID-015"
+    }
+  },
+  {
+    "case_id": "F04",
+    "is_simulated": true,
+    "drawing_set": 3,
+    "message": "Annex caissons: S-001 says 4,500 psi concrete, caisson schedule on S-301 says 4,000 psi. Which strength is right? Mix design and first pours (9/25) are on hold, need the answer by 9/20.",
+    "sheets_as_written": "S-001, S-301",
+    "source": {
+      "id": "Dett-A3-RFI48",
+      "seed": "S04",
+      "title": "Caisson concrete strength"
+    },
+    "site_notes": {
+      "location": "Annex foundations, all caissons shown on S-101",
+      "needed_by": "2023-09-20",
+      "impact": "The concrete mix design submittal and the first caisson pours (scheduled 2023-09-25) are on hold.",
+      "trade": "Concrete / foundations",
+      "references": "S-001, S-301, S-101"
+    }
+  },
+  {
+    "case_id": "F05",
+    "is_simulated": true,
+    "drawing_set": 2,
+    "message": "lockers scale 15in wide on A-102 but spec 10 51 13 says 12in. single or double tier? and what base goes under them",
+    "sheets_as_written": "A-102",
+    "source": {
+      "id": "Dett-A3-RFI6",
+      "seed": "S05",
+      "title": "Locker width, tier and base"
+    },
+    "site_notes": {
+      "location": "Classroom wing corridors, Levels 1-3 (lockers shown on A-102B, A-103B, A-104B)",
+      "needed_by": "2023-12-01",
+      "impact": "The locker order (6-8 week lead time) cannot be released until size, tier and base are confirmed.",
+      "trade": "Specialties (lockers)",
+      "references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+    }
+  },
+  {
+    "case_id": "F06",
+    "is_simulated": true,
+    "drawing_set": 2,
+    "message": "Hallway 101 has keynotes A.18 and A.19 - A.18 and 6/A-703 show solid surface top, A.19 says plastic laminate. which countertop? same thing in rooms 105 and 107",
+    "sheets_as_written": "6/A-703",
+    "source": {
+      "id": "Dett-A5-RFI3",
+      "seed": "S06",
+      "title": "Countertop material conflict at Hallway 101"
+    },
+    "site_notes": {
+      "location": "Classroom wing Level 1, Hallway 101; same condition in Rooms 105 and 107",
+      "needed_by": "2024-01-12",
+      "impact": "Casework shop drawings cannot be finalized; countertop fabrication takes about 4 weeks.",
+      "trade": "Casework",
+      "references": "A-210, A-703"
+    }
+  },
+  {
+    "case_id": "F07",
+    "is_simulated": true,
+    "drawing_set": 1,
+    "message": "feeder S4-8 to the fire pump on E-600 (1-1/4\" w/ 5 #8) looks way too small for the 40hp pump on FP-2O0. confirm feeder size, fire pump test is on the critical path",
+    "sheets_as_written": "E-600, FP-2O0",
+    "source": {
+      "id": "Dett-A3-RFI24",
+      "seed": "S07",
+      "title": "Fire pump feeder size"
+    },
+    "site_notes": {
+      "location": "Service wing Level 1, Pump Room (fire pump feeder)",
+      "needed_by": "2023-10-27",
+      "impact": "The fire pump feeder and conduit cannot be ordered or installed; fire pump acceptance testing is on the critical path to occupancy.",
+      "trade": "Electrical",
+      "references": "E-600, FP-200"
+    }
+  },
+  {
+    "case_id": "F08",
+    "is_simulated": true,
+    "drawing_set": 6,
+    "message": "PV feed from roof array to main elec room: E-600 says 3-1/2\" conduit, PV-600 shows 2-1/2\". which size. need it before the roofers start",
+    "sheets_as_written": "E-600, PV-600",
+    "source": {
+      "id": "Dett-A6-RFI2",
+      "seed": "S08",
+      "title": "PV feed conduit size"
+    },
+    "site_notes": {
+      "location": "PV feed from the roof array to the main electrical room",
+      "needed_by": "Before roof membrane installation, scheduled 2024-02-05",
+      "impact": "Roof penetrations and the conduit run for the PV feed are on hold until the size is confirmed.",
+      "trade": "Electrical (PV)",
+      "references": "E-600, PV-600"
+    }
+  },
+  {
+    "case_id": "F09",
+    "is_simulated": true,
+    "drawing_set": 3,
+    "message": "keynote AE.18 on A-401/A-402 points to detail 3/A-433 but there is no detail 3 on that sheet. which detail do we use? cant price or schedule the masonry repair at those spots",
+    "sheets_as_written": "A-401, A-402, A-433",
+    "source": {
+      "id": "Dett-A3-RFI43",
+      "seed": "S09",
+      "title": "Missing detail for keynote AE.18"
+    },
+    "site_notes": {
+      "location": "Classroom wing exterior, south and north elevations, at locations tagged AE.18",
+      "needed_by": "2023-10-06",
+      "impact": "Masonry repair at AE.18 locations cannot be priced or scheduled until the detail is identified.",
+      "trade": "Masonry",
+      "references": "A-401, A-402, A-433"
+    }
+  },
+  {
+    "case_id": "F10",
+    "is_simulated": true,
+    "drawing_set": 3,
+    "message": "toilet room cove lights are tagged C8 now, C8 is the pole light. should be C7 like before right? see drawings",
+    "sheets_as_written": "see drawings",
+    "source": {
+      "id": "Dett-A3-RFI63",
+      "seed": "S10",
+      "title": "Cove fixture type in large toilet rooms"
+    },
+    "site_notes": {
+      "location": "Annex Level 1, the two large toilet rooms (including Restroom 177)",
+      "needed_by": "2023-12-15",
+      "impact": "The lighting fixture order for the annex toilet rooms is on hold.",
+      "trade": "Electrical",
+      "references": "E-301, E-801"
+    }
+  },
+  {
+    "case_id": "F11",
+    "is_simulated": true,
+    "drawing_set": 3,
+    "message": "Is RT-1 the same as RT-11 on the A-502 finish schedule? Resilient flooring order for the classroom wing is waiting on this, need an answer by 11/17.",
+    "sheets_as_written": "A-502",
+    "source": {
+      "id": "Dett-A3-RFI38",
+      "seed": "S11",
+      "title": "RT-1 vs RT-11 flooring"
+    },
+    "site_notes": {
+      "location": "Rooms scheduled for RT-1 or RT-11 on the A-502 finish schedule",
+      "needed_by": "2023-11-17",
+      "impact": "Resilient flooring order for the classroom wing is waiting on this answer.",
+      "trade": "Flooring",
+      "references": "A-502, A-503"
+    }
+  },
+  {
+    "case_id": "F12",
+    "is_simulated": true,
+    "drawing_set": 1,
+    "message": "toilet rooms 140, 143, 160 - T-2 cove base goes over the existing T-1 wall tile? any patching needed? need the detail",
+    "sheets_as_written": "A-502",
+    "source": {
+      "id": "Dett-A5-RFI10",
+      "seed": "S12",
+      "title": "Cove base over existing wall tile"
+    },
+    "site_notes": {
+      "location": "Classroom wing Level 1, Toilet Rooms 140, 143 and 160",
+      "needed_by": "2023-12-20",
+      "impact": "Tile work in these toilet rooms is scheduled to start 2024-01-08 and will be held.",
+      "trade": "Tile",
+      "references": "A-502, A-503"
+    }
+  }
+]

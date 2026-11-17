@@ -1,0 +1,5 @@
+# Python 3.10+ standard library only. No pip packages required.
+# External service: Google Gemini API (model gemini-3.5-flash-lite), called over HTTPS from core.py
+# (agents.py and closeout.py use it through core.gemini_json).
+# Optional, only to rebuild data/addendum_drawing_lists.json from the addendum PDFs:
+#   pdftotext (poppler-utils), used by scripts/extract_drawing_lists.py

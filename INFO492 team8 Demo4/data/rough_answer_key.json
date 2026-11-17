@@ -1,0 +1,132 @@
+[
+  {
+    "case_id": "F01",
+    "missing": [
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [
+      "superseded"
+    ],
+    "note": "Location is stated. E-301 was revised in Addenda 2 and 3, after the Addendum 1 set the foreman is using.",
+    "correct_references": "E-301, E-801"
+  },
+  {
+    "case_id": "F02",
+    "missing": [
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [],
+    "note": "\"asap\" is not a date. Location (MDF to IDF route) is stated.",
+    "correct_references": "E-700, E-500"
+  },
+  {
+    "case_id": "F03",
+    "missing": [
+      "location",
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [
+      "partial"
+    ],
+    "note": "Several toilet rooms on Level 2; the room is not identified. The finish schedule sheet (A-502) is not cited.",
+    "correct_references": "A-502, ID-015"
+  },
+  {
+    "case_id": "F04",
+    "missing": [],
+    "ref_issues": [],
+    "note": "Complete control case: location, date and impact are all stated.",
+    "correct_references": "S-001, S-301, S-101"
+  },
+  {
+    "case_id": "F05",
+    "missing": [
+      "location",
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [
+      "nonexistent"
+    ],
+    "note": "There is no A-102; the floor plans are A-102B, A-103B and A-104B. Which corridors is not stated.",
+    "correct_references": "A-102B, A-103B, A-104B; Spec 10 51 13"
+  },
+  {
+    "case_id": "F06",
+    "missing": [
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [
+      "partial"
+    ],
+    "note": "The plan sheet with the keynotes (A-210) is not cited.",
+    "correct_references": "A-210, A-703"
+  },
+  {
+    "case_id": "F07",
+    "missing": [
+      "location",
+      "needed_by"
+    ],
+    "ref_issues": [
+      "typo",
+      "superseded"
+    ],
+    "note": "Letter O typed for zero in FP-200. E-600 was revised in Addenda 2 and 3. Impact is stated.",
+    "correct_references": "E-600, FP-200"
+  },
+  {
+    "case_id": "F08",
+    "missing": [
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [],
+    "note": "\"before the roofers start\" is not a date. Location is stated.",
+    "correct_references": "E-600, PV-600"
+  },
+  {
+    "case_id": "F09",
+    "missing": [
+      "location",
+      "needed_by"
+    ],
+    "ref_issues": [],
+    "note": "Which elevations is not stated. Impact is stated.",
+    "correct_references": "A-401, A-402, A-433"
+  },
+  {
+    "case_id": "F10",
+    "missing": [
+      "location",
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [
+      "missing"
+    ],
+    "note": "No sheet number. Which toilet rooms is not stated.",
+    "correct_references": "E-301, E-801"
+  },
+  {
+    "case_id": "F11",
+    "missing": [],
+    "ref_issues": [],
+    "note": "Complete control case: short but specific; the rooms are those scheduled for RT-1/RT-11.",
+    "correct_references": "A-502, A-503"
+  },
+  {
+    "case_id": "F12",
+    "missing": [
+      "needed_by",
+      "impact"
+    ],
+    "ref_issues": [],
+    "note": "Location is stated. A-502 has not been revised since Addendum 1.",
+    "correct_references": "A-502, A-503"
+  }
+]

@@ -1,0 +1,106 @@
+{
+ "run_at": "2026-11-15T17:18:47+00:00",
+ "model": "gemini-3.5-flash-lite",
+ "runs": 2,
+ "cases": 40,
+ "kinds": {
+  "clean": 12,
+  "see_also": 6,
+  "missing": 8,
+  "deferred": 8,
+  "typo": 6
+ },
+ "code_only": {
+  "cases_scored": 40,
+  "errors": 0,
+  "problems_caught": [
+   16,
+   22
+  ],
+  "false_alarms": [
+   6,
+   18
+  ],
+  "exact_match": [
+   28,
+   40
+  ],
+  "exact_by_kind": {
+   "clean": [
+    12,
+    12
+   ],
+   "deferred": [
+    2,
+    8
+   ],
+   "missing": [
+    8,
+    8
+   ],
+   "see_also": [
+    0,
+    6
+   ],
+   "typo": [
+    6,
+    6
+   ]
+  },
+  "guard_drops": 0
+ },
+ "agent": {
+  "cases_scored": 74,
+  "errors": 6,
+  "problems_caught": [
+   42,
+   42
+  ],
+  "false_alarms": [
+   0,
+   32
+  ],
+  "exact_match": [
+   74,
+   74
+  ],
+  "exact_by_kind": {
+   "clean": [
+    21,
+    21
+   ],
+   "deferred": [
+    15,
+    15
+   ],
+   "missing": [
+    15,
+    15
+   ],
+   "see_also": [
+    11,
+    11
+   ],
+   "typo": [
+    12,
+    12
+   ]
+  },
+  "guard_drops": 1
+ },
+ "real_log": {
+  "rfis": 108,
+  "code_only": {
+   "ok_to_close": 96,
+   "hold": 4,
+   "check": 8
+  },
+  "agent": {
+   "ok_to_close": 101,
+   "error": 2,
+   "hold": 3,
+   "keep_open": 1,
+   "check": 1
+  }
+ }
+}

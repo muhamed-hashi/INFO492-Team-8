@@ -1,0 +1,13 @@
+case,missing (key),ref issues (key),checklist asked,checklist still needs return,agent asked (run 1),agent still needs return (runs),guard blocked (runs),check agent false return (runs)
+F01,needed_by;impact,superseded,needed_by;references,True,needed_by;impact;references,False False,0 0,False False
+F02,needed_by;impact,,needed_by;impact,False,needed_by;impact,False False,0 0,True True
+F03,location;needed_by;impact,partial,needed_by,True,needed_by;impact;references,True True,0 0,False False
+F04,,,,False,,False False,0 0,True True
+F05,location;needed_by;impact,nonexistent,location;needed_by;impact;references,False,references;location;needed_by;impact,False False,0 0,True True
+F06,needed_by;impact,partial,needed_by;impact,True,needed_by;impact;location,True True,1 1,False False
+F07,location;needed_by,typo;superseded,location;needed_by;references,False,references;references;location;needed_by,False False,0 0,False False
+F08,needed_by;impact,,needed_by;impact,False,needed_by,True True,0 0,False False
+F09,location;needed_by,,location;needed_by,False,location;needed_by,False False,0 0,False False
+F10,location;needed_by;impact,missing,needed_by;impact;references,True,location;references;needed_by;impact,False True,0 0,False False
+F11,,,,False,references,False False,0 0,True True
+F12,needed_by;impact,,needed_by;impact,False,needed_by;impact,False False,0 0,False False

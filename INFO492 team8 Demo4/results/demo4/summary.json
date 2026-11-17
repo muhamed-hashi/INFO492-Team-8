@@ -1,0 +1,105 @@
+{
+ "run_at": "2026-11-17T04:41:29+00:00",
+ "model": "gemini-3.5-flash-lite",
+ "runs": 2,
+ "hand_labels": {
+  "labeled_rfis": 0,
+  "double_labeled": 0,
+  "agreed": 0,
+  "disputed_unsettled": 0,
+  "adjudicated": 0
+ },
+ "real_log": {
+  "rfis": 108,
+  "labeled": 0,
+  "label_mix": {},
+  "flags": {
+   "code_only": {
+    "ok_to_close": 95,
+    "hold": 4,
+    "check": 9
+   },
+   "agent_run1": {
+    "ok_to_close": 101,
+    "check": 3,
+    "failed call": 2,
+    "hold": 2
+   },
+   "agent_run2": {
+    "ok_to_close": 103,
+    "check": 2,
+    "keep_open": 1,
+    "hold": 2
+   }
+  },
+  "vs_hand_labels": {
+   "code_only": {
+    "scored": 0,
+    "right": [
+     0,
+     0
+    ],
+    "problems_stopped": [
+     0,
+     0
+    ],
+    "missed_problems": [
+     0,
+     0
+    ],
+    "false_alarms": [
+     0,
+     0
+    ],
+    "wrong_but_caught_by_pm": 0
+   },
+   "agent_run1": {
+    "scored": 0,
+    "right": [
+     0,
+     0
+    ],
+    "problems_stopped": [
+     0,
+     0
+    ],
+    "missed_problems": [
+     0,
+     0
+    ],
+    "false_alarms": [
+     0,
+     0
+    ],
+    "wrong_but_caught_by_pm": 0,
+    "failed_calls": 0
+   },
+   "agent_run2": {
+    "scored": 0,
+    "right": [
+     0,
+     0
+    ],
+    "problems_stopped": [
+     0,
+     0
+    ],
+    "missed_problems": [
+     0,
+     0
+    ],
+    "false_alarms": [
+     0,
+     0
+    ],
+    "wrong_but_caught_by_pm": 0,
+    "failed_calls": 0
+   }
+  },
+  "agent_runs_agree": [
+   104,
+   106
+  ]
+ },
+ "other_sets": {}
+}
