@@ -4,7 +4,7 @@
 
 **Website:** https://muhamed-hashi.github.io/INFO492-Team-8/ (served from `index.html` via GitHub Pages)
 
-**Demo 3 (live):** https://info492-team-8.onrender.com
+**Demo 4 (live, includes Demo 3 RFI flow):** https://info492-team-8.onrender.com
 
 ## Table of contents
 

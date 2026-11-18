@@ -2,15 +2,17 @@
 # Render → New Blueprint → select this repo.
 services:
   - type: web
-    name: team8-rfi-demo3
+    name: team8-rfi-demo4
     runtime: python
-    rootDir: INFO492 team8 Demo3
+    rootDir: INFO492 team8 Demo4
     buildCommand: pip install --upgrade pip
     startCommand: python3 app.py
     healthCheckPath: /health
     envVars:
       - key: PYTHON_VERSION
         value: "3.12.7"
+      - key: DEMO4_RUNTIME
+        value: /var/data/runtime
       - key: DEMO3_RUNTIME
         value: /var/data/runtime
       - key: MAX_AI_CALLS_PER_DAY
@@ -24,6 +26,6 @@ services:
       - key: GEMINI_MODEL
         value: gemini-3.5-flash-lite
     disk:
-      name: demo3-data
+      name: demo4-data
       mountPath: /var/data
       sizeGB: 1
