@@ -65,16 +65,20 @@ that is not in the text, and any drop turns "ok to close" into "check". Code add
 given to two different questions. Recommendation: *check* if anything is not fully answered or the scope changed,
 else *ok to close*; intake flags (no date, several questions, copied answer) are shown but do not stop closing.
 
-Right answer: our stakeholder's own problem list for this document, written by reading the PDF, without our tool.
-We report, per category: his items, found, missed, and flagged items **not on his list** (not automatically false
-alarms: his list names the worst cases, and his date list ends in "etc."). And for the recommendation: of the items
-where he found an answer problem, how many each method stopped; how many it stopped that he did not list.
+Right answer: not the problem list that came with the data set. A teammate made it with an AI tool, so agreement
+with it only shows two AI readings agree; we report it as a reference (agree / not flagged / flagged, not on the list).
+The answer key is **our stakeholder's blind call** on 12 items (question and answer only, no tool output) chosen by a
+fixed rule where the list and our agent disagree: the list calls an answer problem but the agent closed it, the list
+finds the item fine but the agent stopped it, and 6 random others. Per method we then report how many he says need a
+person, how many of those it stopped, what it missed, and what it stopped that he would close; the same for the
+AI-made list. Because the sample is disagreements, this shows which reading was right where it matters, not
+accuracy over the whole log.
 
 Run: `python3 scripts/run_gwa_eval.py` (2 AI runs, about 88 Gemini calls) or `--code-only`; `--rescore` re-scores
 the saved log. Output: `results/gwa/`. Data and the not-blind caveat: [DATA_PROVENANCE.md](DATA_PROVENANCE.md#second-real-log-gwa-response-to-rfi-no-1-real-with-our-stakeholders-problem-list).
 
-Limits: 44 items from one document; only some of his issue types are things an answer check can see; the check
-was built after seeing his list; OCR of pasted pictures is imperfect.
+Limits: 44 items from one document; 12 human-judged items; the check was built after seeing the document and the
+AI-made list; OCR of pasted pictures is imperfect.
 
 # Demo #3 evaluation
 

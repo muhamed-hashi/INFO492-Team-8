@@ -132,10 +132,10 @@ person labels the right answer, and `scripts/import_kevin.py` refuses to build t
 (names list, phone, email, $, street address, links) finds anything. When `data/kevin/closeout_cases.json` exists,
 `scripts/run_demo4_eval.py` scores it as a third set.
 
-### Second real log: GWA "Response to RFI No. 1" (real, with our stakeholder's problem list)
+### Second real log: GWA "Response to RFI No. 1" (real; AI-made problem list as reference only)
 
 After the professor's "real, messier data" feedback, our stakeholder could not share his own RFIs (they sit in
-private chats) but sent a **public** RFI response document and his own **problem list** for it.
+private chats) but sent a **public** RFI response document.
 
 - Document: Guam Waterworks Authority, Hagåtña WWTP Rehabilitation, IFB-06-ENG-2026, "Response to RFI No. 1"
   (44 questions from bidders and the engineer's answers, July 2026), published by GWA:
@@ -148,13 +148,17 @@ private chats) but sent a **public** RFI response document and his own **problem
 - Messiness is real, not planted: no printed date on 30 of 44 items, several questions in one item, answers that only say
   "refer to past plans", answers deferred to "bid opening", the same answer sentence given to two different
   questions, an answer that deletes scope, pictures instead of text.
-- Answer key: `data/gwa/stakeholder_problem_list.csv`, our stakeholder's list (38 rows: item, issue type, evidence).
-  He listed problems on 37 of the 44 items; 7 items (12, 21, 24, 30, 31, 34, 41) have none. Where his list and the
-  printed PDF disagree on a plain fact, we report both and do not change his list: items 4 and 29 are on his
-  "no date" list but carry printed dates (6/29/26, 6/30/26).
-- Which of his issue types our check is meant to find is set by fixed keyword rules on his `issue_type` column
-  (`CATEGORIES` in `scripts/run_gwa_eval.py`), not item by item. His other issue types (unclear scope, contradicting
+- Reference list, **not an answer key**: `data/gwa/ai_problem_list.csv` (38 rows: item, issue type, evidence) was
+  made by a teammate **with an AI tool** reading the PDF. Scoring our AI against another AI's reading is circular,
+  so we report agreement with it only as "two AI readings agree". It names problems on 37 of the 44 items; 7 items
+  (12, 21, 24, 30, 31, 34, 41) have none. It has plain errors: items 4 and 29 are on its "no date" list but carry
+  printed dates (6/29/26, 6/30/26). We did not edit it.
+- Answer key: our stakeholder's own call on 12 items, blind (question and answer only), in his Demo #4 session
+  (`data/kevin_review_demo4.xlsx` → `scripts/import_review.py` → `data/gwa/kevin_calls.csv`). The 12 are chosen by
+  a fixed rule where the reference list and our agent disagree (`review_sample` in `scripts/run_gwa_eval.py`).
+- Which of the list's issue types match our flags is set by fixed keyword rules on its `issue_type` column
+  (`CATEGORIES` in `scripts/run_gwa_eval.py`), not item by item. Its other issue types (unclear scope, contradicting
   specifications, duplicate questions, typos, drawings never issued) are outside the check and reported as such.
 - Not a blind test: the answer check (`closeout.answer_check`, `prompts/answer_check.txt`) and the code baseline's
-  keywords were written after we had seen his list and this document. The prompt contains no item text or project
-  words, but the keyword baseline in particular is optimistic here. A blind test needs a log he has not shown us.
+  keywords were written after we had seen the list and this document. The prompt contains no item text or project
+  words, but the keyword baseline in particular is optimistic here. A blind test needs a log nobody on the team has seen.

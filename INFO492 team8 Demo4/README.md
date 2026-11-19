@@ -58,10 +58,13 @@ included in this addendum", but M-301, M-600 and M-801 are not among the 159 dra
 One real answer ("as revisedA-502", no space) broke our parser; the guard turned it into a "check" instead of a
 silent close.
 
-**Pending:** our stakeholder (a GC assistant PM) uses the live system and gives his own call on each of the 15 RFIs
-either method stopped (`data/dett_labels/stakeholder_review.xlsx`). That measures false alarms on real data,
-judged by someone from industry. It cannot measure problems both methods let through. Real examples from his own
-projects go in [`data/kevin/`](data/kevin/) when received.
+**Stakeholder test (Nov 18, recorded):** our stakeholder judged the live GC check on 7 rough sub RFIs
+(F01–F07). "The AI never once made anything up", and a well-written RFI went straight through; but it sent back 6
+of 7, mostly because it checks whether a field is filled instead of reading the text ("location missing"), and it
+missed what matters most (a suggested fix, urgency, an undersized fire-pump feeder). Per-RFI calls and transcript:
+[`stakeholder_test/`](stakeholder_test/README.md). Not yet done: his call on the 15 Dett RFIs that were stopped at
+close-out and on 12 GWA items (`data/kevin_review_demo4.xlsx`); until then close-out false alarms are not
+judged by someone from industry, and misses both methods let through are not measured.
 
 Errors are reported at two points: what the agent recommends before anyone looks (right, missed problems, false
 alarms), and what would reach the field if the PM followed every recommendation (missed problems only).
@@ -71,14 +74,13 @@ before four fixes) is in [`results/demo4_run1_clean_set/NOTES.md`](results/demo4
 real RFIs it found two answers (A3-RFI53, A3-RFI54) that say "All sheets have been revised and included in this
 addendum" while M-301, M-600 and M-801 are not among the 159 drawings attached to Addendum 3.
 
-**Second real set** (added after our stakeholder sent it): a public RFI log, Guam Waterworks Authority
-"Response to RFI No. 1" (44 bidder questions and answers, July 2026), with **his own problem list** for it as the
-answer key. Here the new **answer check** asks whether each answer actually answered every question, or whether the
-RFI will come back (deferred, only "refer to past plans", scope deleted). Of the 13 items where he found an
-answer problem, the agent stops 10–11 (misses: a "future upgrade" answer and a copied answer), but it also stops
-30–33 of 44 items, 4 of them items he found fine; runs agree on 38 of 42. A keyword rule stops 11 of 13 with fewer
-extra stops, but its keywords were written after reading this document. Reading and limits (not a blind test):
-[results/gwa/NOTES.md](results/gwa/NOTES.md).
+**Second real set** (sent by our stakeholder): a public RFI log, Guam Waterworks Authority "Response to RFI No. 1"
+(44 bidder questions and answers, July 2026), messy as found (no dates, several questions per item, pasted pictures,
+"refer to past plans" answers). The new **answer check** asks whether each answer actually answered every question,
+or whether the RFI will come back. Its problem list was made by a teammate **with an AI tool**, so we use it only as a
+reference, not an answer key: our agent stops 30–33 of 44 items, far more than that list, and closes 2 items it calls
+answer problems. Our stakeholder judges 12 of the disagreements blind in his Demo #4 session; those calls are the
+answer key. Reading and limits: [results/gwa/NOTES.md](results/gwa/NOTES.md).
 
 Two synthetic sets (real answers with planted problems, tidy and messy wording) remain as **stress tests only**,
 run with `--synthetic` and reported separately. On the messy set the code-only baseline stops 7 of 25 planted
@@ -181,11 +183,12 @@ The project clock starts at Addendum 1 (`DEMO_START_ADDENDUM`). The simulated pr
 
 ```bash
 python3 scripts/run_demo4_eval.py          # Demo #4: real log, 2 AI runs (~220 Gemini calls); --code-only needs none; --synthetic adds stress tests
-python3 scripts/make_review_sheet.py       # Demo #4: sheet of stopped RFIs for the stakeholder review (needs openpyxl)
-python3 scripts/run_demo4_eval.py --rescore   # Demo #4: score the saved run against the review, no AI calls
+python3 scripts/make_review_sheet.py       # Demo #4: stakeholder session workbook (test steps, Dett and GWA tabs; needs openpyxl)
+python3 scripts/import_review.py FILLED.xlsx  # his calls -> data/dett_labels/labels.csv and data/gwa/kevin_calls.csv
+python3 scripts/run_demo4_eval.py --rescore   # Demo #4: score the saved run against the review, no AI calls (same for run_gwa_eval.py)
 python3 scripts/run_demo3_eval.py          # Demo #3 drafting (unchanged)
 python3 scripts/run_gwa_eval.py            # Demo #4: second real log (GWA), answer check, 2 AI runs (~88 calls); --code-only needs none
-python3 -m unittest discover tests         # 40 tests, no network needed
+python3 -m unittest discover tests         # 42 tests, no network needed
 ```
 
 ### Demo #3 evaluation (unchanged)
@@ -223,11 +226,11 @@ decisions are saved to `runtime/study.csv` and shown in the control panel (downl
 | `agents.py` | The four Demo #3 agents; sheet lookup, revision check, date parsing, the anti-invention guard |
 | `core.py` | Gemini call and the Demo #2 reference review, reused unchanged |
 | `prompts/` | `closeout_agent.txt`, `answer_check.txt` (Demo #4), `draft_agent.txt`, `check_agent.txt`, `reference_review.txt` (from Demo #2) |
-| `data/` | Real Dett data (`source_rfis.csv`, `drawing_index.json`, `revisions.json`, **`addendum_drawing_lists.json`**), synthetic **`closeout_cases.json`** (tidy) and **`closeout_cases_messy.json`**, **`kevin/`** (stakeholder examples: templates, privacy rules), **`dett_labels/`** (stakeholder review of stopped RFIs), **`gwa/`** (second real log and our stakeholder's problem list), simulated `rough_rfis.json`, labels in `rough_answer_key.json`, demo `users.json` |
-| `scripts/` | **`parse_gwa.py`, `run_gwa_eval.py`, `extract_drawing_lists.py`, `make_review_sheet.py`, `import_kevin.py`, `run_demo4_eval.py`, `make_closeout_cases.py`, `make_messy_cases.py`**, `generate_rough_rfis.py`, `build_revisions.py`, `run_demo3_eval.py`, `watch_worker.py` |
+| `data/` | Real Dett data (`source_rfis.csv`, `drawing_index.json`, `revisions.json`, **`addendum_drawing_lists.json`**), synthetic **`closeout_cases.json`** (tidy) and **`closeout_cases_messy.json`**, **`kevin/`** (stakeholder examples: templates, privacy rules), **`dett_labels/`** (stakeholder review of stopped RFIs), **`gwa/`** (second real log; an AI-made problem list used only as a reference), **`kevin_review_demo4.xlsx`** (stakeholder session: test steps, Dett and GWA review tabs), simulated `rough_rfis.json`, labels in `rough_answer_key.json`, demo `users.json` |
+| `scripts/` | **`parse_gwa.py`, `run_gwa_eval.py`, `extract_drawing_lists.py`, `make_review_sheet.py`, `import_kevin.py`, `import_review.py`, `run_demo4_eval.py`, `make_closeout_cases.py`, `make_messy_cases.py`**, `generate_rough_rfis.py`, `build_revisions.py`, `run_demo3_eval.py`, `watch_worker.py` |
 | `static/` | Front end and the study page |
 | `results/demo4/` | Demo #4 evaluation output (code-only until the labels and AI run are in) |
-| `results/gwa/` | Answer check on the GWA log against our stakeholder's problem list |
+| `results/gwa/` | Answer check on the GWA log (reference: AI-made list; answer key: stakeholder's blind calls, pending) |
 | `results/demo4_run1_clean_set/` | First Demo #4 run (tidy set only, before the fixes), kept for comparison |
 | `results/demo3/` | Demo #3 evaluation output (copied from the Demo #3 folder) |
 | `tests/` | Unit and end-to-end tests with a fake AI |

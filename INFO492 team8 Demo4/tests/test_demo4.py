@@ -310,6 +310,20 @@ class AnswerCheck(unittest.TestCase):
         self.assertEqual(sorted(set(range(1, 45)) - listed), [12, 21, 24, 30, 31, 34, 41])
         self.assertIn('multiple_questions', key[42]); self.assertIn('scope_change', key[32])
 
+    def test_blind_review_sample_is_fixed(self):
+        sys.path.insert(0, str(ROOT / 'scripts'))
+        import csv, run_gwa_eval
+        log = list(csv.DictReader(open(ROOT / 'results' / 'gwa' / 'gwa_log.csv', encoding='utf-8')))
+        self.assertEqual(run_gwa_eval.review_sample(log), [1, 7, 13, 14, 20, 21, 28, 30, 34, 35, 39, 41])
+
+    def test_kevin_scoring(self):
+        sys.path.insert(0, str(ROOT / 'scripts'))
+        import run_gwa_eval
+        log = [{'no': '1', 'x_rec': 'check', 'x_error': ''}, {'no': '2', 'x_rec': 'ok_to_close', 'x_error': ''},
+               {'no': '3', 'x_rec': 'check', 'x_error': ''}]
+        out = run_gwa_eval.score_kevin(log, 'x', {1: 'another_round', 2: 'scope_change', 3: 'ok_to_close'})
+        self.assertEqual((out['stopped_of_those'], out['missed'], out['stopped_but_he_says_ok']), (1, [2], [3]))
+
 
 if __name__ == '__main__':
     unittest.main()
